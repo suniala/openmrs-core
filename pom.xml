@@ -757,7 +757,7 @@
 						<!-- For some reason some packages from org.springframework are being
 						included and causing errors. -->
 						<excludePackageNames>org.springframework.*</excludePackageNames>
-						<additionalparam>-Xdoclint:none</additionalparam>
+						<additionalparam>-Xdoclint:none -Xmaxwarns 100000</additionalparam>
 					</configuration>
 					<executions>
 						<execution>
