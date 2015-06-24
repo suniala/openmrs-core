@@ -90,7 +90,6 @@ public class ImplementationId implements java.io.Serializable {
 	 * <br/>
 	 * Must be limited to 20 characters and numbers. The characters "^" and "|" are not allowed.
 	 *
-	 * @param implementationId the implementationId to set
 	 * @return the implementationId
 	 */
 	@Attribute

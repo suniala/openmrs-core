@@ -153,7 +153,7 @@ public class DrugOrder extends Order implements java.io.Serializable {
 	}
 	
 	/**
-	 * @param asNeeded the value to set
+	 * @param asNeeded the value to set
 	 * @since 1.10
 	 */
 	public void setAsNeeded(Boolean asNeeded) {

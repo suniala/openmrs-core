@@ -39,7 +39,7 @@ public class OpenmrsCoreModuleException extends ModuleMustStartException {
 	}
 	
 	/**
-	 * @param moduleIds map from module id to version that is core and didn't start
+	 * @param modules map from module id to version that is core and didn't start
 	 */
 	public OpenmrsCoreModuleException(Map<String, String> modules) {
 		super(createMessage(modules));

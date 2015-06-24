@@ -21,7 +21,7 @@ import org.openmrs.customdatatype.Customizable;
 
 /**
  * Extension of {@link BaseOpenmrsData} for classes that support customization via user-defined attributes.
- * @param <AttrClass> the type of attribute held
+ * @param <A> the type of attribute held
  * @since 1.9
  */
 public abstract class BaseCustomizableData<A extends Attribute> extends BaseOpenmrsData implements Customizable<A> {

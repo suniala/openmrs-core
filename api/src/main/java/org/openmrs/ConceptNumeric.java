@@ -263,9 +263,9 @@ public class ConceptNumeric extends Concept implements java.io.Serializable {
 	public Integer getDisplayPrecision() {
 		return displayPrecision;
 	}
-	
+
 	/**
-	 * @param displayPrecision, sets displayPrecision to be used for the display of a numeric value
+	 * @param displayPrecision sets displayPrecision to be used for the display of a numeric value
 	 */
 	public void setDisplayPrecision(Integer displayPrecision) {
 		this.displayPrecision = displayPrecision;
