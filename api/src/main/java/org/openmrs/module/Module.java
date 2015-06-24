@@ -734,7 +734,7 @@ public final class Module {
 	 * 'core' when this module is essentially part of the core code and must exist at all times
 	 *
 	 * @return true if this is an OpenMRS core module
-	 * @see {@link ModuleConstants#CORE_MODULES}
+	 * @see ModuleConstants#CORE_MODULES
 	 */
 	public boolean isCoreModule() {
 		return !ModuleUtil.ignoreCoreModules() && ModuleConstants.CORE_MODULES.containsKey(moduleId);

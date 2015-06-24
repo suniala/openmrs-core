@@ -183,7 +183,7 @@ public interface EncounterDAO {
 	 * @param patientId the patient id
 	 * @param includeVoided Specifies whether voided encounters should be included
 	 * @return the number of encounters matching the given search phrase
-	 * @see {@link EncounterService#getCountOfEncounters(String, boolean)}
+	 * @see EncounterService#getCountOfEncounters(String, boolean)
 	 */
 	public Long getCountOfEncounters(String query, Integer patientId, boolean includeVoided);
 	

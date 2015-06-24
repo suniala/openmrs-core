@@ -82,7 +82,7 @@ public class PersonServiceImpl extends BaseOpenmrsService implements PersonServi
 	/**
 	 * @see org.openmrs.api.PersonService#getSimilarPeople(java.lang.String, java.lang.Integer,
 	 *      java.lang.String, java.lang.String)
-	 * @deprecated @see {@link #getSimilarPeople(String, Integer, String)}
+	 * @deprecated @see #getSimilarPeople(String, Integer, String)
 	 */
 	@Transactional(readOnly = true)
 	public Set<Person> getSimilarPeople(String nameSearch, Integer birthyear, String gender, String personType)

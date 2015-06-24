@@ -627,7 +627,7 @@ public class ModuleUtil {
 	 * @return an {@link InputStream} that is not necessarily at the same url, possibly at a 403
 	 *         redirect.
 	 * @throws IOException
-	 * @see {@link #getURLStream(URL)}
+	 * @see #getURLStream(URL)
 	 */
 	protected static InputStream openConnectionCheckRedirects(URLConnection c) throws IOException {
 		boolean redir;

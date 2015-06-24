@@ -111,12 +111,12 @@ public interface PersonService extends OpenmrsService {
 	 *            that are Users are returned
 	 * @return Set<Person> object with all people matching criteria
 	 * @throws APIException
-	 * @see {@link #getSimilarPeople(String, Integer, String)}
+	 * @see #getSimilarPeople(String, Integer, String)
 	 * @since 1.5
 	 * @should limit personType equals Patient searches to only Patients
 	 * @should limit personType equals User searches to only Users
 	 * @should limit return all Persons with personType equals Person
-	 * @deprecated @see {@link #getSimilarPeople(String, Integer, String)}
+	 * @deprecated @see #getSimilarPeople(String, Integer, String)
 	 */
 	@Deprecated
 	public Set<Person> getSimilarPeople(String nameSearch, Integer birthyear, String gender, String personType)

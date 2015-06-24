@@ -589,7 +589,7 @@ public interface EncounterService extends OpenmrsService {
 	 * @param query patient name or identifier
 	 * @return list of encounters for the given patient
 	 * @throws APIException
-	 * @see {@link EncounterService}{@link #getEncountersByPatient(String, boolean)}
+	 * @see EncounterService#getEncountersByPatient(String, boolean)
 	 * @since 1.7
 	 */
 	@Authorized( { PrivilegeConstants.GET_ENCOUNTERS })

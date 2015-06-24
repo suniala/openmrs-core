@@ -17,9 +17,9 @@ package org.openmrs.logic.op;
  * The above will give us a criteria to get the "CD4 COUNT" observations that has the value numeric
  * more than 200
  * 
- * @see {@link GreaterThanEquals}
- * @see {@link LessThan}
- * @see {@link LessThanEquals}
+ * @see GreaterThanEquals
+ * @see LessThan
+ * @see LessThanEquals
  */
 public class GreaterThan implements ComparisonOperator {
 	

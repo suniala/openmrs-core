@@ -24,7 +24,7 @@ import org.openmrs.api.context.UserContext;
  * in the service layer as opposed to calling the thread's start() method to ensure the thread is
  * started after making all the necessary checks.
  *
- * @see {@link HL7Service#startHl7ArchiveMigration()}
+ * @see HL7Service#startHl7ArchiveMigration()
  */
 public class Hl7InArchivesMigrateThread extends Thread {
 	

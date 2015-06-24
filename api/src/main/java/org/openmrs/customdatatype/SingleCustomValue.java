@@ -21,7 +21,7 @@ import org.openmrs.VisitAttribute;
  * The "objectValue" property accessors are convenience methods that use a {@link CustomDatatype} to convert
  * to/from the String serializedValue.
  * @param <D> the descriptor for this value, e.g. VisitAttribute implements SingleCustomValue<VisitAttributeType>
- * @see {@link CustomDatatype}
+ * @see CustomDatatype
  * @since 1.9
  */
 public interface SingleCustomValue<D extends CustomValueDescriptor> {
