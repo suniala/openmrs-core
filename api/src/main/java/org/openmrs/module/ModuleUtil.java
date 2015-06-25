@@ -784,7 +784,7 @@ public class ModuleUtil {
 	}
 	
 	/**
-	 * @see ModuleUtil#refreshApplicationContext(AbstractRefreshableApplicationContext, Module)
+	 * @see ModuleUtil#refreshApplicationContext(AbstractRefreshableApplicationContext, boolean, Module)
 	 */
 	public static AbstractRefreshableApplicationContext refreshApplicationContext(AbstractRefreshableApplicationContext ctx) {
 		return refreshApplicationContext(ctx, false, null);

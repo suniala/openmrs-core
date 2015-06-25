@@ -208,7 +208,7 @@ public class RequiredDataAdvice implements MethodBeforeAdvice {
 	}
 	
 	/**
-	 * Convenience method for {@link #recursivelyHandle(Class, OpenmrsObject, User, Date, String)}.
+	 * Convenience method for {@link #recursivelyHandle(Class, OpenmrsObject, User, Date, String, List)}.
 	 * Calls that method with the current user and the current Date.
 	 *
 	 * @param <H> the type of Handler to get (should extend {@link RequiredDataHandler})
@@ -216,7 +216,7 @@ public class RequiredDataAdvice implements MethodBeforeAdvice {
 	 * @param openmrsObject the object that is being acted upon
 	 * @param reason an optional second argument that was passed to the service method (usually a
 	 *            void/retire reason)
-	 * @see #recursivelyHandle(Class, OpenmrsObject, User, Date, String)
+	 * @see #recursivelyHandle(Class, OpenmrsObject, User, Date, String, List)
 	 */
 	@SuppressWarnings("unchecked")
 	public static <H extends RequiredDataHandler> void recursivelyHandle(Class<H> handlerType, OpenmrsObject openmrsObject,
@@ -294,7 +294,7 @@ public class RequiredDataAdvice implements MethodBeforeAdvice {
 	/**
 	 * This method gets a child attribute off of an OpenmrsObject. It usually uses the getter for
 	 * the attribute, but can use the direct field (even if its private) if told to by the
-	 * {@link #AllowDirectAccess} annotation.
+	 * {@link AllowDirectAccess} annotation.
 	 *
 	 * @param openmrsObject the object to get the collection off of
 	 * @param field the name of the field that is the collection

@@ -90,7 +90,7 @@ public class DWRPatientService implements GlobalPropertyListener {
 	 * Search on the <code>searchValue</code>. If a number is in the search string, do an identifier
 	 * search. Else, do a name search
 	 *
-	 * @see PatientService#getPatients(String, String, List, boolean, int, Integer)
+	 * @see PatientService#getPatients(String, String, List, boolean, Integer, Integer)
 	 * @param searchValue string to be looked for
 	 * @param includeVoided true/false whether or not to included voided patients
 	 * @param start The starting index for the results to return

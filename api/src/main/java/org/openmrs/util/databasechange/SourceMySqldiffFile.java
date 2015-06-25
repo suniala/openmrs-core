@@ -243,7 +243,7 @@ public class SourceMySqldiffFile implements CustomTaskChange {
 	}
 	
 	/**
-	 * @see liquibase.change.custom.CustomChange#setFileOpener(liquibase.FileOpener)
+	 * @see liquibase.change.custom.CustomChange#setFileOpener(ResourceAccessor) 
 	 */
 	@Override
 	public void setFileOpener(ResourceAccessor fileOpener) {

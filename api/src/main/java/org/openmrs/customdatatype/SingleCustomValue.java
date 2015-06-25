@@ -56,7 +56,7 @@ public interface SingleCustomValue<D extends CustomValueDescriptor> {
 	Object getValue() throws InvalidCustomValueException;
 	
 	/**
-	 * Sets the typed value. (This will result in a call to {@link CustomDatatype#toReferenceString(Object)}
+	 * Sets the typed value. (This will result in a call to {@link CustomDatatype#getReferenceStringForValue(Object)}
 	 * @param typedValue
 	 * @throws InvalidCustomValueException
 	 */

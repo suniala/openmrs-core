@@ -76,7 +76,7 @@ public abstract class BaseCustomizableMetadata<A extends Attribute> extends Base
 	}
 	
 	/**
-	 * @see org.openmrs.customdatatype.Customizable#addAttribute(org.openmrs.customdatatype.SingleCustomValue)
+	 * @see org.openmrs.customdatatype.Customizable#addAttribute(Attribute)
 	 */
 	@Override
 	public void addAttribute(A attribute) {

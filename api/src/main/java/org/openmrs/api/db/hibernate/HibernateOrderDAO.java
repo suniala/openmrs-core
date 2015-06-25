@@ -482,7 +482,7 @@ public class HibernateOrderDAO implements OrderDAO {
 	}
 	
 	/**
-	 * @see org.openmrs.api.db.OrderDAO@getOrderType
+	 * @see org.openmrs.api.db.OrderDAO#getOrderType(Integer)
 	 */
 	@Override
 	public OrderType getOrderType(Integer orderTypeId) {
@@ -492,7 +492,7 @@ public class HibernateOrderDAO implements OrderDAO {
 	}
 	
 	/**
-	 * @see org.openmrs.api.db.OrderDAO@getOrderTypeByUuid
+	 * @see org.openmrs.api.db.OrderDAO#getOrderTypeByUuid(String)
 	 */
 	@Override
 	public OrderType getOrderTypeByUuid(String uuid) {
@@ -501,7 +501,7 @@ public class HibernateOrderDAO implements OrderDAO {
 	}
 	
 	/**
-	 * @see org.openmrs.api.db.OrderDAO@getOrderTypes
+	 * @see org.openmrs.api.db.OrderDAO#getOrderTypes(boolean)
 	 */
 	@Override
 	public List<OrderType> getOrderTypes(boolean includeRetired) {

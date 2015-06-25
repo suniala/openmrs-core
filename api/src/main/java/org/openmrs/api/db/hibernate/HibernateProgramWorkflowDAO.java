@@ -92,7 +92,7 @@ public class HibernateProgramWorkflowDAO implements ProgramWorkflowDAO {
 	}
 	
 	/**
-	 * @see org.openmrs.api.db.ProgramWorkflowDAO#getProgramsByName(java.lang.String)
+	 * @see org.openmrs.api.db.ProgramWorkflowDAO#getProgramsByName(String, boolean)
 	 */
 	public List<Program> getProgramsByName(String programName, boolean includeRetired) {
 		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Program.class);

@@ -65,8 +65,7 @@ public class Cohort extends BaseOpenmrsData implements Serializable {
 	/**
 	 * This constructor does not check whether the database contains patients with the given ids,
 	 * but
-	 * 
-	 * @see CohortService.saveCohort(Cohort) will.
+	 * {@link org.openmrs.api.CohortService#saveCohort(Cohort)} will.
 	 * @param name
 	 * @param description optional description
 	 * @param ids option array of Integer ids
@@ -83,8 +82,7 @@ public class Cohort extends BaseOpenmrsData implements Serializable {
 	/**
 	 * This constructor does not check whether the database contains patients with the given ids,
 	 * but
-	 * 
-	 * @see CohortService.saveCohort(Cohort) will.
+	 * {@link org.openmrs.api.CohortService#saveCohort(Cohort)} will.
 	 * @param name
 	 * @param description optional description
 	 * @param patients optional array of patients
@@ -101,8 +99,7 @@ public class Cohort extends BaseOpenmrsData implements Serializable {
 	/**
 	 * This constructor does not check whether the database contains patients with the given ids,
 	 * but
-	 * 
-	 * @see CohortService.saveCohort(Cohort) will.
+	 * {@link org.openmrs.api.CohortService#saveCohort(Cohort)} will.
 	 * @param patientsOrIds optional collection which may contain Patients, or patientIds which may
 	 *            be Integers, Strings, or anything whose toString() can be parsed to an Integer.
 	 */
@@ -114,8 +111,7 @@ public class Cohort extends BaseOpenmrsData implements Serializable {
 	/**
 	 * This constructor does not check whether the database contains patients with the given ids,
 	 * but
-	 * 
-	 * @see CohortService.saveCohort(Cohort) will.
+	 * {@link org.openmrs.api.CohortService#saveCohort(Cohort)} will.
 	 * @param name
 	 * @param description optional description
 	 * @param patientsOrIds optional collection which may contain Patients, or patientIds which may
@@ -140,8 +136,7 @@ public class Cohort extends BaseOpenmrsData implements Serializable {
 	/**
 	 * Convenience contructor taking in a string that is a list of comma separated patient ids This
 	 * constructor does not check whether the database contains patients with the given ids, but
-	 * 
-	 * @see CohortService.saveCohort(Cohort) will.
+	 * {@link org.openmrs.api.CohortService#saveCohort(Cohort)} will.
 	 * @param commaSeparatedIds
 	 */
 	public Cohort(String commaSeparatedIds) {

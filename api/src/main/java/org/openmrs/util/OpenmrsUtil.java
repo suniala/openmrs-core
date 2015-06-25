@@ -1524,8 +1524,7 @@ public class OpenmrsUtil {
 	 * locale.
 	 * 
 	 * @return a simple date format
-	 * @deprecated use {@link Context#getDateFormat()} or {@link
-	 *             #getDateFormat(Context#getLocale())} instead
+	 * @deprecated use {@link Context#getDateFormat()} or {@link #getDateFormat(Locale)} instead
 	 */
 	@Deprecated
 	public static SimpleDateFormat getDateFormat() {

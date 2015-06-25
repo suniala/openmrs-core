@@ -124,27 +124,27 @@ public interface OrderDAO {
 	public List<CareSetting> getCareSettings(boolean includeRetired);
 	
 	/**
-	 * @see OrderService#getOrderTypeByName
+	 * @see org.openmrs.api.OrderService#getOrderTypeByName(String)
 	 */
 	public OrderType getOrderTypeByName(String orderTypeName);
 	
 	/**
-	 * @see OrderService#getOrderFrequency
+	 * @see org.openmrs.api.OrderService#getOrderFrequency
 	 */
 	public OrderFrequency getOrderFrequency(Integer orderFrequencyId);
 	
 	/**
-	 * @see OrderService#getOrderFrequencyByUuid
+	 * @see org.openmrs.api.OrderService#getOrderFrequencyByUuid
 	 */
 	public OrderFrequency getOrderFrequencyByUuid(String uuid);
 	
 	/**
-	 * @see OrderService#getOrderFrequencies(boolean)
+	 * @see org.openmrs.api.OrderService#getOrderFrequencies(boolean)
 	 */
 	List<OrderFrequency> getOrderFrequencies(boolean includeRetired);
 	
 	/**
-	 * @see OrderService#getOrderFrequencies(String, java.util.Locale, boolean, boolean)
+	 * @see org.openmrs.api.OrderService#getOrderFrequencies(String, java.util.Locale, boolean, boolean)
 	 */
 	public List<OrderFrequency> getOrderFrequencies(String searchPhrase, Locale locale, boolean exactLocale,
 	        boolean includeRetired);
@@ -168,22 +168,22 @@ public interface OrderDAO {
 	public boolean isOrderFrequencyInUse(OrderFrequency orderFrequency);
 	
 	/**
-	 * @see OrderService#getOrderFrequencyByConcept
+	 * @see org.openmrs.api.OrderService#getOrderFrequencyByConcept
 	 */
 	public OrderFrequency getOrderFrequencyByConcept(Concept concept);
 	
 	/**
-	 * @see OrderService#getOrderType
+	 * @see org.openmrs.api.OrderService#getOrderType
 	 */
 	public OrderType getOrderType(Integer orderTypeId);
 	
 	/**
-	 * @see OrderService#getOrderTypeByUuid
+	 * @see org.openmrs.api.OrderService#getOrderTypeByUuid
 	 */
 	public OrderType getOrderTypeByUuid(String uuid);
 	
 	/**
-	 * @see OrderService#getOrderTypes
+	 * @see org.openmrs.api.OrderService#getOrderTypes
 	 */
 	public List<OrderType> getOrderTypes(boolean includeRetired);
 	

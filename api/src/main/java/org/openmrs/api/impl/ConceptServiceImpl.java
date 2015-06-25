@@ -937,8 +937,7 @@ public class ConceptServiceImpl extends BaseOpenmrsService implements ConceptSer
 	}
 	
 	/**
-	 * @see org.openmrs.api.ConceptService#mapConceptProposalToConcept(org.openmrs.ConceptProposal,
-	 *      org.openmrs.Concept, java.util.locale)
+	 * @see org.openmrs.api.ConceptService#mapConceptProposalToConcept(ConceptProposal, Concept, Locale)
 	 */
 	public Concept mapConceptProposalToConcept(ConceptProposal cp, Concept mappedConcept, Locale locale) throws APIException {
 		
@@ -1154,7 +1153,7 @@ public class ConceptServiceImpl extends BaseOpenmrsService implements ConceptSer
 	}
 	
 	/**
-	 * @see org.openmrs.api.ConceptService#getAllConceptSources(java.lang.boolean)
+	 * @see org.openmrs.api.ConceptService#getAllConceptSources(boolean)
 	 */
 	@Transactional(readOnly = true)
 	public List<ConceptSource> getAllConceptSources(boolean includeRetired) {

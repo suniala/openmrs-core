@@ -242,7 +242,7 @@ public class PersonServiceImpl extends BaseOpenmrsService implements PersonServi
 	}
 	
 	/**
-	 * @see org.openmrs.api.PersonService#retirePersonAttributeType(org.openmrs.PersonAttributeType)
+	 * @see org.openmrs.api.PersonService#retirePersonAttributeType(PersonAttributeType, String)
 	 */
 	public PersonAttributeType retirePersonAttributeType(PersonAttributeType type, String retiredReason) throws APIException {
 		checkIfPersonAttributeTypesAreLocked();
@@ -1135,7 +1135,7 @@ public class PersonServiceImpl extends BaseOpenmrsService implements PersonServi
 	}
 	
 	/**
-	 * @see org.openmrs.api.PersonService#getWinningPersonMergeLogs(org.openmrs.Person)
+	 * @see org.openmrs.api.PersonService#getWinningPersonMergeLogs(Person, boolean)
 	 */
 	@Override
 	@Transactional(readOnly = true)
@@ -1148,7 +1148,7 @@ public class PersonServiceImpl extends BaseOpenmrsService implements PersonServi
 	}
 	
 	/**
-	 * @see org.openmrs.api.PersonService#getLosingPersonMergeLog(org.openmrs.Person)
+	 * @see org.openmrs.api.PersonService#getLosingPersonMergeLog(Person, boolean)
 	 */
 	@Override
 	@Transactional(readOnly = true)

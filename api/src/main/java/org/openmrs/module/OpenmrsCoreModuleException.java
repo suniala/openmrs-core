@@ -10,6 +10,7 @@
 package org.openmrs.module;
 
 import java.util.Map;
+import java.util.Properties;
 
 import org.openmrs.api.context.Context;
 
@@ -19,7 +20,7 @@ import org.openmrs.api.context.Context;
  * <br/>
  * This error is also thrown when trying to stop a module that is marked as core.
  * 
- * @see Context#startup()
+ * @see Context#startup(Properties)
  * @see ModuleUtil#startup(java.util.Properties)
  * @see ModuleConstants#CORE_MODULES
  */

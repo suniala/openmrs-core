@@ -296,7 +296,7 @@ public interface ConceptDAO {
 	public ConceptSource getConceptSource(Integer conceptSourceId) throws DAOException;
 	
 	/**
-	 * @see org.openmrs.api.ConceptService#getAllConceptSources(java.lang.boolean)
+	 * @see org.openmrs.api.ConceptService#getAllConceptSources(boolean)
 	 */
 	public List<ConceptSource> getAllConceptSources(boolean includeRetired) throws DAOException;
 	
@@ -376,9 +376,6 @@ public interface ConceptDAO {
 	
 	public DrugIngredient getDrugIngredientByUuid(String uuid);
 	
-	/**
-	 * @see org.openmrs.api.ConceptService#getConceptUuids()
-	 */
 	public Map<Integer, String> getConceptUuids();
 	
 	public ConceptDescription getConceptDescriptionByUuid(String uuid);
@@ -386,7 +383,7 @@ public interface ConceptDAO {
 	public ConceptNameTag getConceptNameTagByUuid(String uuid);
 	
 	/**
-	 * @see ConceptService#getConceptMapsBySource(ConceptSource)
+	 * @see ConceptService#getConceptMappingsToSource(ConceptSource)
 	 */
 	public List<ConceptMap> getConceptMapsBySource(ConceptSource conceptSource) throws DAOException;
 	
@@ -499,9 +496,6 @@ public interface ConceptDAO {
 	 */
 	public ConceptReferenceTerm getConceptReferenceTermByUuid(String uuid) throws DAOException;
 	
-	/**
-	 * @see ConceptService#getConceptReferenceTermsBySource(ConceptSource)
-	 */
 	public List<ConceptReferenceTerm> getConceptReferenceTermsBySource(ConceptSource conceptSource) throws DAOException;
 	
 	/**

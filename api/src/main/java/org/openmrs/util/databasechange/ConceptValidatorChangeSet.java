@@ -815,7 +815,7 @@ public class ConceptValidatorChangeSet implements CustomTaskChange {
 	}
 	
 	/**
-	 * @see liquibase.change.custom.CustomChange#setFileOpener(liquibase.ResourceAccessor)
+	 * @see liquibase.change.custom.CustomChange#setFileOpener(ResourceAccessor)
 	 */
 	@Override
 	public void setFileOpener(ResourceAccessor fileOpener) {

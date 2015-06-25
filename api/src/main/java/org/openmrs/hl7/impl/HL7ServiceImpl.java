@@ -265,7 +265,7 @@ public class HL7ServiceImpl extends BaseOpenmrsService implements HL7Service {
 	}
 	
 	/**
-	 * @see org.openmrs.hl7.HL7Service#getHL7InArchiveBatch(int, int, java.lang.String)
+	 * @see org.openmrs.hl7.HL7Service#getHL7InArchiveBatch(int, int, int, String)
 	 */
 	@Override
 	@Transactional(readOnly = true)
@@ -910,7 +910,7 @@ public class HL7ServiceImpl extends BaseOpenmrsService implements HL7Service {
 	}
 	
 	/**
-	 * @see org.openmrs.hl7.HL7Service#parseHL7Message(java.lang.String)
+	 * @see org.openmrs.hl7.HL7Service#parseHL7String(String)
 	 */
 	public Message parseHL7String(String hl7Message) throws HL7Exception {
 		// Any pre-parsing for HL7 messages would go here

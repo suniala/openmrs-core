@@ -173,7 +173,7 @@ public interface ProgramWorkflowService extends OpenmrsService {
 	/**
 	 * Retires the given program
 	 * 
-	 * @deprecated use {@link retireProgram(Program program,String reason)}
+	 * @deprecated use {@link #retireProgram(Program, String)}
 	 * @param program Program to be retired
 	 * @return the Program which has been retired
 	 * @throws APIException
@@ -202,7 +202,7 @@ public interface ProgramWorkflowService extends OpenmrsService {
 	/**
 	 * Unretires the given program
 	 * 
-	 * @deprecated use {@link unretireProgram(Program program)}
+	 * @deprecated use {@link #unretireProgram(Program)}
 	 * @param program Program to be unretired
 	 * @return the Program which has been unretired
 	 * @throws APIException
