@@ -47,7 +47,7 @@ public class Sort {
 	 * This method will sort a collection based on the natural order of it's elements
 	 *
 	 * @param c
-	 * @param isDescending
+	 * @param reverseOrder
 	 * @return a new, sorted copy of the collection
 	 */
 	public static <T extends Comparable<T>> List<T> sort(Collection<T> c, Boolean reverseOrder) {
@@ -59,9 +59,9 @@ public class Sort {
 	/**
 	 * This method will sort a passed Collection
 	 *
-	 * @param c: The collection to sort
-	 * @param sortProperty: The javabean property to sort the elements of the Collection by
-	 * @param isDescending: Boolean indicating whether or not to reverse the order of the collection
+	 * @param c The collection to sort
+	 * @param sortProperty The javabean property to sort the elements of the Collection by
+	 * @param reverseOrder Boolean indicating whether or not to reverse the order of the collection
 	 * @return: A sorted List of the passed elements
 	 */
 	public static <T> List<T> sort(Collection<T> c, String sortProperty, Boolean reverseOrder) {

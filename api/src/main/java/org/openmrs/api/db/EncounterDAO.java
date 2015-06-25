@@ -195,7 +195,7 @@ public interface EncounterDAO {
 	/**
 	 * Saves an encounter role
 	 * 
-	 * @param encounter role to be saved
+	 * @param encounterRole role to be saved
 	 * @throws org.openmrs.api.db.DAOException
 	 */
 	public EncounterRole saveEncounterRole(EncounterRole encounterRole) throws DAOException;

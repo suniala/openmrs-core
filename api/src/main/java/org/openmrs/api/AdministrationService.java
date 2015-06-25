@@ -373,7 +373,7 @@ public interface AdministrationService extends OpenmrsService {
 	/**
 	 * Gets all global properties that end with <code>suffix</code>.
 	 * 
-	 * @param prefix The end of the property name to match.
+	 * @param suffix The end of the property name to match.
 	 * @return a <code>List</code> of <code>GlobalProperty</code>s that match <code>.*suffix</code>
 	 * @since 1.6
 	 * @should return all relevant global properties in the database

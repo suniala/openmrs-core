@@ -40,7 +40,6 @@ public class Hl7InErrorListController {
 	/**
 	 * Render the HL7 error queue messages page
 	 *
-	 * @param modelMap
 	 * @return path
 	 */
 	@RequestMapping("/admin/hl7/hl7InError.htm")

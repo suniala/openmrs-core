@@ -252,7 +252,7 @@ public class TestInstallUtil {
 	}
 	
 	/**
-	 * @param url
+	 * @param urlString
 	 * @param openmrsUsername
 	 * @param openmrsPassword
 	 * @return input stream

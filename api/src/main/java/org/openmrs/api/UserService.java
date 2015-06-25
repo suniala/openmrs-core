@@ -219,7 +219,7 @@ public interface UserService extends OpenmrsService {
 	 * Clears retired flag for a user.
 	 * 
 	 * @param user
-	 * @param reason
+	 * @param user
 	 * @throws APIException
 	 * @should unretire and unmark all attributes
 	 */
@@ -527,7 +527,7 @@ public interface UserService extends OpenmrsService {
 	 * 
 	 * @param givenName
 	 * @param familyName
-	 * @param includeVoided
+	 * @param includeRetired
 	 * @return List<User> object of users matching criteria
 	 * @should fetch users exactly matching the given givenName and familyName
 	 * @should fetch voided users whenincludeVoided is true

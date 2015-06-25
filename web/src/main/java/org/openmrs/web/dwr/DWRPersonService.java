@@ -48,7 +48,7 @@ public class DWRPersonService {
 	 * extends Person
 	 *
 	 * @param name
-	 * @param birthyear
+	 * @param birthdate
 	 * @param age
 	 * @param gender
 	 * @return list of people
@@ -185,7 +185,7 @@ public class DWRPersonService {
 	}
 	
 	/**
-	 * @param patientId
+	 * @param personId
 	 * @return person or null
 	 */
 	public PersonListItem getPerson(Integer personId) {

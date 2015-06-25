@@ -455,9 +455,9 @@ public class DWRPatientService implements GlobalPropertyListener {
 	
 	/**
 	 * @param patientId
-	 * @param reasonForExitId
-	 * @param dateOfExit
-	 * @param causeOfDeath
+	 * @param exitReasonId
+	 * @param exitDateStr
+	 * @param causeOfDeathConceptId
 	 * @param otherReason
 	 * @return empty string or, in case of an error, a description of the error
 	 */
@@ -660,9 +660,7 @@ public class DWRPatientService implements GlobalPropertyListener {
 	 * Resolve an allergy
 	 *
 	 * @param activeListId
-	 * @param resolved
 	 * @param reason
-	 * @param pEndDate
 	 */
 	public void removeAllergy(Integer activeListId, String reason) {
 		Allergy allergy = Context.getPatientService().getAllergy(activeListId);
@@ -724,7 +722,6 @@ public class DWRPatientService implements GlobalPropertyListener {
 	 * Remove a problem, sets the end date
 	 *
 	 * @param activeListId
-	 * @param resolved
 	 * @param reason
 	 * @param pEndDate
 	 */

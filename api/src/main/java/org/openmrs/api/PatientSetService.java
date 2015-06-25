@@ -549,7 +549,7 @@ public interface PatientSetService extends OpenmrsService {
 	 * perform faster by delegating to the database. (The current implementation has *not* been
 	 * optimized.)
 	 * 
-	 * @param cached
+	 * @param cohort
 	 * @return inverse of the given cohort
 	 * @since 1.8
 	 */

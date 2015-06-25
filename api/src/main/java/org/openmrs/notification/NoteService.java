@@ -37,21 +37,21 @@ public interface NoteService {
 	/**
 	 * Creates a Note for a user. Creates a Note for a person.
 	 * 
-	 * @param note, the Note being created
+	 * @param note the Note being created
 	 */
 	public void createNote(Note note) throws Exception;
 	
 	/**
 	 * Gets a note by internal primary key identifier </br>
 	 * 
-	 * @param noteId, the internal primary key identifier for a Note
+	 * @param noteId the internal primary key identifier for a Note
 	 */
 	public Note getNote(Integer noteId) throws Exception;
 	
 	/**
 	 * Save or update the given <code>note</code> in the database </br>
 	 * 
-	 * @param note, note being updated
+	 * @param note note being updated
 	 */
 	public void updateNote(Note note) throws Exception;
 	
@@ -59,8 +59,8 @@ public interface NoteService {
 	 * Mark a note as voided. This functionally removes the Note from the system while keeping a
 	 * semblance </br>
 	 * 
-	 * @param note, note being voided
-	 * @param reason, a reason for the the void action </br>
+	 * @param note note being voided
+	 * @param reason a reason for the the void action </br>
 	 * @should void the Note and set the voidReason
 	 */
 	@Authorized(PrivilegeConstants.DELETE_NOTE)

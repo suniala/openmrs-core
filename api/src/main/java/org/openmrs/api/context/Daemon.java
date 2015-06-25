@@ -215,7 +215,7 @@ public class Daemon {
 	 * Calls the {@link OpenmrsService#onStartup()} method, as a daemon, for an instance
 	 * implementing the {@link OpenmrsService} interface.
 	 *
-	 * @param openmrsService instance implementing the {@link OpenmrsService} interface.
+	 * @param service instance implementing the {@link OpenmrsService} interface.
 	 * @since 1.9
 	 */
 	public static void runStartupForService(final OpenmrsService service) throws ModuleException {
@@ -346,7 +346,7 @@ public class Daemon {
 	 * 				rather use Daemon.isDeamonThread().
 	 * isDaemonThread is preferred for checking to see if you are in that thread or if the current thread is daemon.
 	 *
-	 * @param user, user whom we are checking if daemon
+	 * @param user user whom we are checking if daemon
 	 * @return true if user is Daemon
 	 * @should return true for a daemon user
 	 * @should return false if the user is not a daemon

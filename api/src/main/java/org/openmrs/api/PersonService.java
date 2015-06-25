@@ -178,7 +178,8 @@ public interface PersonService extends OpenmrsService {
 	/**
 	 * Retire a Person Attribute Type
 	 * 
-	 * @param attrTypeId, retiredReason
+	 * @param type
+	 * @param retiredReason
 	 * @should throw an error when trying to retire person attribute type while person attribute types are locked
 	 */
 	@Authorized( { PrivilegeConstants.MANAGE_PERSON_ATTRIBUTE_TYPES })
@@ -187,7 +188,8 @@ public interface PersonService extends OpenmrsService {
 	/**
 	 * Retire a Person Relationship Type
 	 * 
-	 * @param relationshipType, retiredReason
+	 * @param type
+	 * @param retiredReason
 	 */
 	@Authorized( { PrivilegeConstants.MANAGE_RELATIONSHIP_TYPES })
 	public RelationshipType retireRelationshipType(RelationshipType type, String retiredReason) throws APIException;
@@ -195,7 +197,7 @@ public interface PersonService extends OpenmrsService {
 	/**
 	 * Unretire a Person Relationship Type
 	 * 
-	 * @param relationshipType, retiredReason
+	 * @param relationshipType retiredReason
 	 * @Since 1.9
 	 */
 	@Authorized( { PrivilegeConstants.MANAGE_RELATIONSHIP_TYPES })

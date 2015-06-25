@@ -70,7 +70,7 @@ public class CustomResourceLoader {
 	/**
 	 * Returns singleton instance of custom resource loader
 	 *
-	 * @param basedir <b>(optional)</b> the absolute path to directory, that contains resources to
+	 * @param httpRequest <b>(optional)</b> the absolute path to directory, that contains resources to
 	 *            be loaded. If this isn't specified then <code>${CONTEXT-ROOT}/WEB-INF/</code> will
 	 *            be used
 	 * @return the singleton instance of {@link CustomResourceLoader}

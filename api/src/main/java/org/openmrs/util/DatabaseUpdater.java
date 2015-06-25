@@ -655,7 +655,7 @@ public class DatabaseUpdater {
 	}
 	
 	/**
-	 * @param authenticatedUserId the authenticatedUserId to set
+	 * @param userId the authenticatedUserId to set
 	 */
 	public static void setAuthenticatedUserId(Integer userId) {
 		authenticatedUserId = userId;
@@ -677,7 +677,7 @@ public class DatabaseUpdater {
 	 * This method writes the given text to the database updates log file located in the application
 	 * data directory.
 	 *
-	 * @param the text to be written to the file
+	 * @param text text to be written to the file
 	 */
 	public static void writeUpdateMessagesToFile(String text) {
 		PrintWriter writer = null;

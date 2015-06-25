@@ -49,7 +49,7 @@ public class ConceptStopWordFormController {
 	 * Handle the add new ConceptStopWord
 	 *
 	 * @param httpSession
-	 * @param commandObject
+	 * @param conceptStopWord
 	 * @param errors
 	 * @return path to forward to or an error message
 	 * @should add new ConceptStopWord

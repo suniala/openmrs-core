@@ -1983,7 +1983,7 @@ public class OpenmrsUtil {
 	 * argument.
 	 * 
 	 * @param properties
-	 * @param file
+	 * @param outStream
 	 * @param comment (which appears in comments in properties file)
 	 */
 	public static void storeProperties(Properties properties, OutputStream outStream, String comment) {

@@ -97,7 +97,7 @@ public interface LogicService {
 	/**
 	 * Fetch all known (registered) tokens matching a given string
 	 * 
-	 * @param token full or partial token name
+	 * @param partialToken full or partial token name
 	 * @return all tokens containing the given string
 	 * @should return all registered token matching the input fully
 	 * @should return all registered token matching the input partially

@@ -800,7 +800,7 @@ public interface EncounterService extends OpenmrsService {
 	 * Unretire an EncounterRole. This brings back the given encounter role and says that it can be
 	 * used again
 	 * 
-	 * @param encounterRole the encounter role to unretire
+	 * @param encounterType the encounter role to unretire
 	 * @throws APIException
 	 * @since 1.9
 	 * @should unretire type and unmark attributes

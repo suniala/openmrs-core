@@ -949,7 +949,7 @@ public class FormatTag extends TagSupport {
 	
 	/**
 	 * @since 1.9
-	 * @param encounterProviders the encounterProviders to set
+	 * @return the encounterProviders
 	 */
 	public Map<EncounterRole, Set<Provider>> getEncounterProviders() {
 		return encounterProviders;
@@ -957,7 +957,7 @@ public class FormatTag extends TagSupport {
 	
 	/**
 	 * @since 1.9
-	 * @return the encounterProviders
+	 * @param encounterProviders the encounterProviders to set
 	 */
 	public void setEncounterProviders(Map<EncounterRole, Set<Provider>> encounterProviders) {
 		this.encounterProviders = encounterProviders;

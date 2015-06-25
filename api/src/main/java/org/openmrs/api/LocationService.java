@@ -393,7 +393,7 @@ public interface LocationService extends OpenmrsService {
 	 * the Address Hierarchy module.
 	 * 
 	 * @param incomplete the incomplete address
-	 * @param field the address field we are looking for possible values for
+	 * @param fieldName the address field we are looking for possible values for
 	 * @return a list of possible address values for the specified field
 	 * @should return empty list if no possible address matches
 	 * @should return null if method not implemented
