@@ -351,7 +351,7 @@ public class HibernateOrderDAO implements OrderDAO {
 	}
 	
 	/**
-	 * @See OrderDAO#getOrderTypeByName
+	 * @see OrderDAO#getOrderTypeByName
 	 */
 	@Override
 	public OrderType getOrderTypeByName(String orderTypeName) {
@@ -361,7 +361,7 @@ public class HibernateOrderDAO implements OrderDAO {
 	}
 	
 	/**
-	 * @See OrderDAO#getOrderFrequency
+	 * @see OrderDAO#getOrderFrequency
 	 */
 	@Override
 	public OrderFrequency getOrderFrequency(Integer orderFrequencyId) {
@@ -369,7 +369,7 @@ public class HibernateOrderDAO implements OrderDAO {
 	}
 	
 	/**
-	 * @See OrderDAO#getOrderFrequencyByUuid
+	 * @see OrderDAO#getOrderFrequencyByUuid
 	 */
 	@Override
 	public OrderFrequency getOrderFrequencyByUuid(String uuid) {
@@ -378,7 +378,7 @@ public class HibernateOrderDAO implements OrderDAO {
 	}
 	
 	/**
-	 * @See OrderDAO#getOrderFrequencies(boolean)
+	 * @see OrderDAO#getOrderFrequencies(boolean)
 	 */
 	@Override
 	public List<OrderFrequency> getOrderFrequencies(boolean includeRetired) {
@@ -390,7 +390,7 @@ public class HibernateOrderDAO implements OrderDAO {
 	}
 	
 	/**
-	 * @See OrderDAO#getOrderFrequencies(String, java.util.Locale, boolean, boolean)
+	 * @see OrderDAO#getOrderFrequencies(String, java.util.Locale, boolean, boolean)
 	 */
 	@Override
 	public List<OrderFrequency> getOrderFrequencies(String searchPhrase, Locale locale, boolean exactLocale,
@@ -482,7 +482,7 @@ public class HibernateOrderDAO implements OrderDAO {
 	}
 	
 	/**
-	 * @See org.openmrs.api.db.OrderDAO@getOrderType
+	 * @see org.openmrs.api.db.OrderDAO@getOrderType
 	 */
 	@Override
 	public OrderType getOrderType(Integer orderTypeId) {
@@ -492,7 +492,7 @@ public class HibernateOrderDAO implements OrderDAO {
 	}
 	
 	/**
-	 * @See org.openmrs.api.db.OrderDAO@getOrderTypeByUuid
+	 * @see org.openmrs.api.db.OrderDAO@getOrderTypeByUuid
 	 */
 	@Override
 	public OrderType getOrderTypeByUuid(String uuid) {
@@ -501,7 +501,7 @@ public class HibernateOrderDAO implements OrderDAO {
 	}
 	
 	/**
-	 * @See org.openmrs.api.db.OrderDAO@getOrderTypes
+	 * @see org.openmrs.api.db.OrderDAO@getOrderTypes
 	 */
 	@Override
 	public List<OrderType> getOrderTypes(boolean includeRetired) {

@@ -48,7 +48,7 @@ public final class OpenmrsConstants {
 	 * This is the hard coded primary key of the order type for DRUG. This has to be done because
 	 * some logic in the API acts on this order type
 	 * 
-	 * @Deprecated
+	 * @deprecated
 	 */
 	public static final int ORDERTYPE_DRUG = 2;
 	

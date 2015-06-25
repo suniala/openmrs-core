@@ -124,27 +124,27 @@ public interface OrderDAO {
 	public List<CareSetting> getCareSettings(boolean includeRetired);
 	
 	/**
-	 * @See OrderService#getOrderTypeByName
+	 * @see OrderService#getOrderTypeByName
 	 */
 	public OrderType getOrderTypeByName(String orderTypeName);
 	
 	/**
-	 * @See OrderService#getOrderFrequency
+	 * @see OrderService#getOrderFrequency
 	 */
 	public OrderFrequency getOrderFrequency(Integer orderFrequencyId);
 	
 	/**
-	 * @See OrderService#getOrderFrequencyByUuid
+	 * @see OrderService#getOrderFrequencyByUuid
 	 */
 	public OrderFrequency getOrderFrequencyByUuid(String uuid);
 	
 	/**
-	 * @See OrderService#getOrderFrequencies(boolean)
+	 * @see OrderService#getOrderFrequencies(boolean)
 	 */
 	List<OrderFrequency> getOrderFrequencies(boolean includeRetired);
 	
 	/**
-	 * @See OrderService#getOrderFrequencies(String, java.util.Locale, boolean, boolean)
+	 * @see OrderService#getOrderFrequencies(String, java.util.Locale, boolean, boolean)
 	 */
 	public List<OrderFrequency> getOrderFrequencies(String searchPhrase, Locale locale, boolean exactLocale,
 	        boolean includeRetired);
@@ -168,22 +168,22 @@ public interface OrderDAO {
 	public boolean isOrderFrequencyInUse(OrderFrequency orderFrequency);
 	
 	/**
-	 * @See OrderService#getOrderFrequencyByConcept
+	 * @see OrderService#getOrderFrequencyByConcept
 	 */
 	public OrderFrequency getOrderFrequencyByConcept(Concept concept);
 	
 	/**
-	 * @See OrderService#getOrderType
+	 * @see OrderService#getOrderType
 	 */
 	public OrderType getOrderType(Integer orderTypeId);
 	
 	/**
-	 * @See OrderService#getOrderTypeByUuid
+	 * @see OrderService#getOrderTypeByUuid
 	 */
 	public OrderType getOrderTypeByUuid(String uuid);
 	
 	/**
-	 * @See OrderService#getOrderTypes
+	 * @see OrderService#getOrderTypes
 	 */
 	public List<OrderType> getOrderTypes(boolean includeRetired);
 	
