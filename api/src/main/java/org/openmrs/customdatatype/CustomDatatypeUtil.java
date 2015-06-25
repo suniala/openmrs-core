@@ -133,7 +133,7 @@ public class CustomDatatypeUtil {
 	
 	/**
 	 * Deserializes a simple String-based configuration from the serialized form used by
-	 * {@link serializeSimpleConfiguration}
+	 * {@link #serializeSimpleConfiguration(Map)}
 	 * Utility method for {@link AttributeHandler}s that have property-style configuration.
 	 *
 	 * @param serializedConfig

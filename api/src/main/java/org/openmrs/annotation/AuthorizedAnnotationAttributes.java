@@ -61,7 +61,6 @@ public class AuthorizedAnnotationAttributes {
 	 * 
 	 * @param target The target method
 	 * @return Collection of <code>SecurityConfig</code>
-	 * @see Attributes#getAttributes
 	 */
 	public Collection getAttributes(Class target) {
 		Set<String> attributes = new HashSet<String>();
@@ -83,7 +82,6 @@ public class AuthorizedAnnotationAttributes {
 	 * 
 	 * @param method The target method
 	 * @return Collection of <code>SecurityConfig</code>
-	 * @see Attributes#getAttributes
 	 */
 	public Collection getAttributes(Method method) {
 		Set<String> attributes = new HashSet<String>();

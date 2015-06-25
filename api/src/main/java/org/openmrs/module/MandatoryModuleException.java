@@ -10,6 +10,7 @@
 package org.openmrs.module;
 
 import java.util.List;
+import java.util.Properties;
 
 import org.openmrs.util.OpenmrsUtil;
 
@@ -19,7 +20,7 @@ import org.openmrs.util.OpenmrsUtil;
  * <br/>
  * This error is also thrown when trying to stop a module that is marked as mandatory.
  * 
- * @see Context#startup()
+ * @see org.openmrs.api.context.Context#startup(Properties)
  * @see ModuleUtil#getMandatoryModules()
  */
 public class MandatoryModuleException extends ModuleMustStartException {

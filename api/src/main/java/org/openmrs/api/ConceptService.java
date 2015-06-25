@@ -1253,7 +1253,7 @@ public interface ConceptService extends OpenmrsService {
 	/**
 	 * Looks up a list of ConceptMaps for a given ConceptSource
 	 * 
-	 * @deprecated as of version 1.9, use {@link #getConceptMapsBySource(ConceptSource))}
+	 * @deprecated as of version 1.9, use {@link #getConceptMappingsToSource(ConceptSource)}
 	 * @param conceptSource
 	 * @return a List<ConceptMap> objects
 	 * @throws APIException
