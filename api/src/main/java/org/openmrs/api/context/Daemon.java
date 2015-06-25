@@ -299,7 +299,6 @@ public class Daemon {
 	 *
 	 * @param runnable an object implementing the {@link Runnable} interface.
 	 * @param token the token required to run code as the daemon user
-	 * @return the newly spawned {@link Thread}
 	 * @since 1.9.2
 	 */
 	public static void runInDaemonThreadAndWait(final Runnable runnable, DaemonToken token) {

@@ -219,7 +219,6 @@ public interface UserService extends OpenmrsService {
 	 * Clears retired flag for a user.
 	 * 
 	 * @param user
-	 * @param user
 	 * @throws APIException
 	 * @should unretire and unmark all attributes
 	 */

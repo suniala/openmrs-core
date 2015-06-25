@@ -627,7 +627,6 @@ public class ModuleFactory {
 	 * @param isOpenmrsStartup Specifies whether this module is being started at application startup
 	 *            or not, this argument is ignored if a null application context is passed in
 	 * @param applicationContext the spring application context instance to refresh
-	 * @param applicationContext the spring application context instance to refresh
 	 */
 	public static Module startModuleInternal(Module module, boolean isOpenmrsStartup,
 	        AbstractRefreshableApplicationContext applicationContext) throws ModuleException {

@@ -49,7 +49,9 @@ public class DatabaseUtil {
 	public static void loadDatabaseDriver(String connectionUrl) throws ClassNotFoundException {
 		loadDatabaseDriver(connectionUrl, null);
 	}
-	
+
+	public final static String ORDER_ENTRY_UPGRADE_SETTINGS_FILENAME = "order_entry_upgrade_settings.txt";
+
 	/**
 	 * Executes the passed SQL query, enforcing select only if that parameter is set Load the jdbc
 	 * driver class for the database which is specified by the connectionUrl and connectionDriver
@@ -63,9 +65,6 @@ public class DatabaseUtil {
 	 * @param connectionDriver the database driver class name, such as "com.mysql.jdbc.Driver"
 	 * @throws ClassNotFoundException
 	 */
-	
-	public final static String ORDER_ENTRY_UPGRADE_SETTINGS_FILENAME = "order_entry_upgrade_settings.txt";
-	
 	public static String loadDatabaseDriver(String connectionUrl, String connectionDriver) throws ClassNotFoundException {
 		if (StringUtils.hasText(connectionDriver)) {
 			Class.forName(connectionDriver);

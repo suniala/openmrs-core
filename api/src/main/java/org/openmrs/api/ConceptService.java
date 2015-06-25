@@ -1145,7 +1145,7 @@ public interface ConceptService extends OpenmrsService {
 	 * <code>conceptCode</code> and whose {@link ConceptSource} has either a <code>name</code> or
 	 * <code>hl7Code</code> that is equal to the passed <code>mappingCode</code> . Operates under
 	 * the assumption that each mappingCode in a {@link ConceptSource} references one and only one
-	 * non-retired {@link Concept): if the underlying dao method returns more than one non-retired concept, this
+	 * non-retired {@link Concept}: if the underlying dao method returns more than one non-retired concept, this
 	 * method will throw an exception; if the underlying dao method returns more than one concept, but
 	 * only one non-retired concept, this method will return the non-retired concept; if the dao only
 	 * returns retired concepts, this method will simply return the first concept in the list returns by
@@ -1396,7 +1396,7 @@ public interface ConceptService extends OpenmrsService {
 	 * @throws APIException
 	 * @since 1.8
 	 * @deprecated as of 1.11 call {@link #updateConceptIndexes()} or
-	 *             {@link #updateConceptIndex(Concept)
+	 *             {@link #updateConceptIndex(Concept)}
 	 */
 	@Deprecated
 	@Authorized( { PrivilegeConstants.MANAGE_CONCEPTS })

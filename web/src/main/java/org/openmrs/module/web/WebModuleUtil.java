@@ -511,7 +511,6 @@ public class WebModuleUtil {
 	 *
 	 * @param mod
 	 * @param servletContext the servlet context
-	 * @return this module's servlet map
 	 */
 	public static void loadServlets(Module mod, ServletContext servletContext) {
 		Element rootNode = mod.getConfig().getDocumentElement();

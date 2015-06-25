@@ -37,7 +37,7 @@ public interface DatatypeService extends OpenmrsService {
 	 * @param clazz
 	 * @param config
 	 * @return an instantiated {@link CustomDatatype}, with a configuration set
-	 * @throws
+	 * @throws CustomDatatypeException
 	 */
 	<T extends CustomDatatype<?>> T getDatatype(Class<T> clazz, String config) throws CustomDatatypeException;
 	
