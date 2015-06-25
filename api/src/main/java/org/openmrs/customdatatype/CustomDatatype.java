@@ -49,7 +49,7 @@ public interface CustomDatatype<T> {
 	 * values.)
 	 * 
 	 * @param typedValue
-	 * @return
+	 * @return reference string
 	 * @throws UnsupportedOperationException  if it is not feasible to calculate this efficiently (e.g. you'd need to go to remote storage)
 	 */
 	String getReferenceStringForValue(T typedValue) throws UnsupportedOperationException;

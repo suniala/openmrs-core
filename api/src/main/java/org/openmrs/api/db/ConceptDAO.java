@@ -331,18 +331,14 @@ public interface ConceptDAO {
 	public List<Concept> getConceptsByMapping(String code, String sourceName, boolean includeRetired);
 	
 	/**
-	 * Auto generated method comment
-	 * 
 	 * @param uuid
-	 * @return
+	 * @return concept or null
 	 */
 	public Concept getConceptByUuid(String uuid);
 	
 	/**
-	 * Auto generated method comment
-	 * 
 	 * @param uuid
-	 * @return
+	 * @return concept class or null
 	 */
 	public ConceptClass getConceptClassByUuid(String uuid);
 	
@@ -355,34 +351,26 @@ public interface ConceptDAO {
 	public ConceptSource getConceptSourceByUuid(String uuid);
 	
 	/**
-	 * Auto generated method comment
-	 * 
 	 * @param uuid
-	 * @return
+	 * @return concept data type or null
 	 */
 	public ConceptDatatype getConceptDatatypeByUuid(String uuid);
 	
 	/**
-	 * Auto generated method comment
-	 * 
 	 * @param uuid
-	 * @return
+	 * @return concept numeric or null
 	 */
 	public ConceptNumeric getConceptNumericByUuid(String uuid);
 	
 	/**
-	 * Auto generated method comment
-	 * 
 	 * @param uuid
-	 * @return
+	 * @return concept proposal or null
 	 */
 	public ConceptProposal getConceptProposalByUuid(String uuid);
 	
 	/**
-	 * Auto generated method comment
-	 * 
 	 * @param uuid
-	 * @return
+	 * @return drug or null
 	 */
 	public Drug getDrugByUuid(String uuid);
 	
@@ -559,7 +547,7 @@ public interface ConceptDAO {
 	 * specified term
 	 * 
 	 * @param term
-	 * @return
+	 * @return true if term is in use
 	 * @throws DAOException
 	 * @should return true if a term has a conceptMap or more using it
 	 * @should return true if a term has a conceptReferenceTermMap or more using it
@@ -572,7 +560,7 @@ public interface ConceptDAO {
 	 * specified mapType
 	 * 
 	 * @param mapType
-	 * @return
+	 * @return true if map type is in use
 	 * @throws DAOException
 	 * @should return true if a mapType has a conceptMap or more using it
 	 * @should return true if a mapType has a conceptReferenceTermMap or more using it

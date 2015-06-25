@@ -112,7 +112,7 @@ public interface ConceptService extends OpenmrsService {
 	 * Get Concept by its UUID
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return concept or null
 	 * @should find object given valid uuid
 	 * @should return null if no object found with given uuid
 	 */
@@ -415,7 +415,7 @@ public interface ConceptService extends OpenmrsService {
 	 * Get Drug by its UUID
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return drug of null
 	 * @should find object given valid uuid
 	 * @should return null if no object found with given uuid
 	 */
@@ -560,7 +560,7 @@ public interface ConceptService extends OpenmrsService {
 	 * Get ConceptClass by its UUID
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return concept class or null
 	 * @should find object given valid uuid
 	 * @should return null if no object found with given uuid
 	 */
@@ -571,7 +571,7 @@ public interface ConceptService extends OpenmrsService {
 	 * Get ConceptAnswer by its UUID
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return concept answer or null
 	 * @should find object given valid uuid
 	 * @should return null if no object found with given uuid
 	 */
@@ -582,7 +582,7 @@ public interface ConceptService extends OpenmrsService {
 	 * Get ConceptName by its UUID
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return concept name or null
 	 * @should find object given valid uuid
 	 * @should return null if no object found with given uuid
 	 */
@@ -593,7 +593,7 @@ public interface ConceptService extends OpenmrsService {
 	 * Get ConceptSet by its UUID
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return concept set or null
 	 * @should find object given valid uuid
 	 * @should return null if no object found with given uuid
 	 */
@@ -604,7 +604,7 @@ public interface ConceptService extends OpenmrsService {
 	 * Get ConceptSource by its UUID
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return concept source or null
 	 * @should find object given valid uuid
 	 * @should return null if no object found with given uuid
 	 */
@@ -710,7 +710,7 @@ public interface ConceptService extends OpenmrsService {
 	 * Get ConceptDatatype by its UUID
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return concept data type or null
 	 * @should find object given valid uuid
 	 * @should return null if no object found with given uuid
 	 */
@@ -798,7 +798,7 @@ public interface ConceptService extends OpenmrsService {
 	 * Get ConceptNumeric by its UUID
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return concept numeric or null
 	 * @should find object given valid uuid
 	 * @should return null if no object found with given uuid
 	 */
@@ -964,7 +964,7 @@ public interface ConceptService extends OpenmrsService {
 	 * Get ConceptProposal by its UUID
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return concept proposal or null
 	 * @should find object given valid uuid
 	 * @should return null if no object found with given uuid
 	 */
@@ -1231,7 +1231,7 @@ public interface ConceptService extends OpenmrsService {
 	 * Get ConceptDescription by its UUID
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return concept description or null
 	 * @should find object given valid uuid
 	 * @should return null if no object found with given uuid
 	 */

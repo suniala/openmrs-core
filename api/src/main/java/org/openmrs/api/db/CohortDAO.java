@@ -82,10 +82,8 @@ public interface CohortDAO {
 	public Cohort deleteCohort(Cohort cohort) throws DAOException;
 	
 	/**
-	 * Auto generated method comment
-	 * 
 	 * @param uuid
-	 * @return
+	 * @return cohort or null
 	 */
 	public Cohort getCohortByUuid(String uuid);
 	

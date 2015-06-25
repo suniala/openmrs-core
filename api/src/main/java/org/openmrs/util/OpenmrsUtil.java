@@ -2484,7 +2484,7 @@ public class OpenmrsUtil {
 	 * 
 	 * @param s1 the string to compare
 	 * @param s2 the string to compare
-	 * @return
+	 * @return true if strings are equal (ignoring case)
 	 * @should return false if only one of the strings is null
 	 * @should be case insensitive
 	 * @since 1.8

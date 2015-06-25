@@ -381,7 +381,7 @@ public final class Module {
 	/**
 	 * Gets names of modules which should start after this
 	 * @since 1.11
-	 * @return
+	 * @return list of module names or null
 	 */
 	public List<String> getStartBeforeModules() {
 		return this.startBeforeModulesMap == null ? null : new ArrayList<String>(this.startBeforeModulesMap.keySet());

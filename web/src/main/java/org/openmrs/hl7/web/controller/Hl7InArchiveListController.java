@@ -42,7 +42,7 @@ public class Hl7InArchiveListController {
 	 * Render the archived HL7 messages page
 	 *
 	 * @param modelMap
-	 * @return
+	 * @return path
 	 */
 	@RequestMapping("/admin/hl7/hl7InArchives.htm")
 	public String listArchivedHL7s(ModelMap modelMap) {

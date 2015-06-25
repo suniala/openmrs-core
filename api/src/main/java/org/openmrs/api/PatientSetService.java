@@ -550,7 +550,7 @@ public interface PatientSetService extends OpenmrsService {
 	 * optimized.)
 	 * 
 	 * @param cached
-	 * @return
+	 * @return inverse of the given cohort
 	 * @since 1.8
 	 */
 	public Cohort getInverseOfCohort(Cohort cohort);

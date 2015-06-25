@@ -95,10 +95,8 @@ public interface ObsDAO {
 	        String accessionNumber) throws DAOException;
 	
 	/**
-	 * Auto generated method comment
-	 * 
 	 * @param uuid
-	 * @return
+	 * @return obs or null
 	 */
 	public Obs getObsByUuid(String uuid);
 	

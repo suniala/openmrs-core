@@ -90,7 +90,7 @@ public interface EncounterService extends OpenmrsService {
 	 * Get Encounter by its UUID
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return encounter or null
 	 * @should find object given valid uuid
 	 * @should return null if no object found with given uuid
 	 */
@@ -283,7 +283,7 @@ public interface EncounterService extends OpenmrsService {
 	 * Get EncounterType by its UUID
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return encounter type or null
 	 * @should find object given valid uuid
 	 * @should return null if no object found with given uuid
 	 */
@@ -940,7 +940,7 @@ public interface EncounterService extends OpenmrsService {
 	 *
 	 * @param encounter
 	 * @param patient
-	 * @return
+	 * @return transferred encounter
 	 * @since 1.12
 	 *
 	 * @should transfer an encounter with orders and observations to given patient

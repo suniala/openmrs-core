@@ -376,13 +376,11 @@ public class DWRPatientService implements GlobalPropertyListener {
 	}
 	
 	/**
-	 * Auto generated method comment
-	 *
 	 * @param patientId
 	 * @param identifierType
 	 * @param identifier
 	 * @param identifierLocationId
-	 * @return
+	 * @return empty string or, in case of an error, a message key for the error description
 	 */
 	public String addIdentifier(Integer patientId, String identifierType, String identifier, Integer identifierLocationId) {
 		
@@ -456,14 +454,12 @@ public class DWRPatientService implements GlobalPropertyListener {
 	}
 	
 	/**
-	 * Auto generated method comment
-	 *
 	 * @param patientId
 	 * @param reasonForExitId
 	 * @param dateOfExit
 	 * @param causeOfDeath
 	 * @param otherReason
-	 * @return
+	 * @return empty string or, in case of an error, a description of the error
 	 */
 	public String exitPatientFromCare(Integer patientId, Integer exitReasonId, String exitDateStr,
 	        Integer causeOfDeathConceptId, String otherReason) {
@@ -589,11 +585,9 @@ public class DWRPatientService implements GlobalPropertyListener {
 	}
 	
 	/**
-	 * Auto generated method comment
-	 *
 	 * @param patientId
 	 * @param locationId
-	 * @return
+	 * @return empty string
 	 */
 	public String changeHealthCenter(Integer patientId, Integer locationId) {
 		log.warn("Deprecated method in 'DWRPatientService.changeHealthCenter'");

@@ -27,8 +27,7 @@ import org.openmrs.VisitAttribute;
 public interface SingleCustomValue<D extends CustomValueDescriptor> {
 	
 	/**
-	 * The metadata describing this custom value
-	 * @return
+	 * @return metadata describing this custom value
 	 */
 	D getDescriptor();
 	

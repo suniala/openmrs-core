@@ -376,7 +376,7 @@ public interface LogicCriteria {
 	public LogicCriteria within(Duration duration);
 	
 	/**
-	 * @return
+	 * @return logic parameters
 	 */
 	public Map<String, Object> getLogicParameters();
 	

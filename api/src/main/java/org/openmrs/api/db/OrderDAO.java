@@ -72,10 +72,8 @@ public interface OrderDAO {
 	        boolean includeVoided, boolean includeDiscontinuationOrders);
 	
 	/**
-	 * Auto generated method comment
-	 * 
 	 * @param uuid
-	 * @return
+	 * @return order or null
 	 */
 	public Order getOrderByUuid(String uuid);
 	

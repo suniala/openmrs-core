@@ -1046,7 +1046,7 @@ public class ModuleUtil {
 	 *
 	 * @param module
 	 * @param path
-	 * @return
+	 * @return local path
 	 * @should handle ui springmvc css ui dot css example
 	 */
 	public static String getPathForResource(Module module, String path) {

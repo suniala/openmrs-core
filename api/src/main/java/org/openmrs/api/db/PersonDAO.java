@@ -156,10 +156,8 @@ public interface PersonDAO {
 	public void deleteRelationshipType(RelationshipType relationshipType) throws DAOException;
 	
 	/**
-	 * Auto generated method comment
-	 * 
 	 * @param uuid
-	 * @return
+	 * @return person or null
 	 */
 	public Person getPersonByUuid(String uuid);
 	
@@ -172,26 +170,20 @@ public interface PersonDAO {
 	public PersonName getPersonNameByUuid(String uuid);
 	
 	/**
-	 * Auto generated method comment
-	 * 
 	 * @param uuid
-	 * @return
+	 * @return relationship or null
 	 */
 	public Relationship getRelationshipByUuid(String uuid);
 	
 	/**
-	 * Auto generated method comment
-	 * 
 	 * @param uuid
-	 * @return
+	 * @return relationship type or null
 	 */
 	public RelationshipType getRelationshipTypeByUuid(String uuid);
 	
 	/**
-	 * Auto generated method comment
-	 * 
 	 * @param uuid
-	 * @return
+	 * @return person attribute type or null
 	 */
 	public PersonAttributeType getPersonAttributeTypeByUuid(String uuid);
 	

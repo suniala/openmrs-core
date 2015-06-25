@@ -388,7 +388,7 @@ public interface ProgramWorkflowService extends OpenmrsService {
 	 * Get ProgramWorkflow by its UUID
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return program work flow or null
 	 * @should find object given valid uuid
 	 * @should return null if no object found with given uuid
 	 */

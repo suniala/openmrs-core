@@ -117,7 +117,7 @@ public class CustomDatatypeUtil {
 	 * Utility method for {@link AttributeHandler}s that have property-style configuration.
 	 *
 	 * @param simpleConfig
-	 * @return
+	 * @return serialized form
 	 */
 	public static String serializeSimpleConfiguration(Map<String, String> simpleConfig) {
 		if (simpleConfig == null || simpleConfig.size() == 0) {
@@ -137,7 +137,7 @@ public class CustomDatatypeUtil {
 	 * Utility method for {@link AttributeHandler}s that have property-style configuration.
 	 *
 	 * @param serializedConfig
-	 * @return
+	 * @return deserialized configuration
 	 * @should deserialize a configuration serialized by the corresponding serialize method
 	 */
 	@SuppressWarnings("unchecked")

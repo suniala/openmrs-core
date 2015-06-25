@@ -142,7 +142,7 @@ public interface LocationDAO {
 	
 	/**
 	 * @param uuid
-	 * @return
+	 * @return location tag or null
 	 */
 	public LocationTag getLocationTagByUuid(String uuid);
 	
@@ -195,7 +195,7 @@ public interface LocationDAO {
 	 * Get locations that have all the location tags specified.
 	 *
 	 * @param locationTagIdList
-	 * @return
+	 * @return list of locations
 	 * @should get locations having all tags
 	 * @should return empty list when no location has the given tags
 	 * @should ignore null values in location tag list

@@ -102,7 +102,7 @@ public interface UserService extends OpenmrsService {
 	 * Get user by the given uuid.
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return user or null
 	 * @throws APIException
 	 * @should fetch user with given uuid
 	 * @should find object given valid uuid
@@ -358,7 +358,7 @@ public interface UserService extends OpenmrsService {
 	 * Get Role by its UUID
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return role or null
 	 * @should find object given valid uuid
 	 * @should return null if no object found with given uuid
 	 */
@@ -377,7 +377,7 @@ public interface UserService extends OpenmrsService {
 	 * Get Privilege by its UUID
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return privilege or null
 	 * @should find object given valid uuid
 	 * @should return null if no object found with given uuid
 	 * @should fetch privilege for given uuid

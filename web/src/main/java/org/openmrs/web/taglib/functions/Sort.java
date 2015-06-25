@@ -37,7 +37,7 @@ public class Sort {
 	 * This method will sort a collection based on the natural order of it's elements
 	 *
 	 * @param c
-	 * @return
+	 * @return a new, sorted copy of the collection
 	 */
 	public static <T> List<T> sort(Collection<T> c) {
 		return sort(c, null, false);
@@ -48,7 +48,7 @@ public class Sort {
 	 *
 	 * @param c
 	 * @param isDescending
-	 * @return
+	 * @return a new, sorted copy of the collection
 	 */
 	public static <T extends Comparable<T>> List<T> sort(Collection<T> c, Boolean reverseOrder) {
 		List<T> l = new ArrayList<T>(c);

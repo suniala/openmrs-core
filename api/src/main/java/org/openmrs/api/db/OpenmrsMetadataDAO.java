@@ -33,7 +33,7 @@ public interface OpenmrsMetadataDAO<T extends BaseOpenmrsMetadata> extends Openm
 	/**
 	 * Returns total number of persistents (optionally retired)
 	 * @param includeVoided
-	 * @return
+	 * @return total number of persistens
 	 */
 	int getAllCount(boolean includeRetired);
 	
@@ -42,7 +42,7 @@ public interface OpenmrsMetadataDAO<T extends BaseOpenmrsMetadata> extends Openm
 	 * @param includeVoided
 	 * @param firstResult
 	 * @param maxResults
-	 * @return
+	 * @return list of metadata object
 	 */
 	List<T> getAll(boolean includeRetired, Integer firstResult, Integer maxResults);
 	

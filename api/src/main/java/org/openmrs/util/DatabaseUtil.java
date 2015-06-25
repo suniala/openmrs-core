@@ -192,7 +192,7 @@ public class DatabaseUtil {
 	 * @param columnName the column
 	 * @param tableName  the table
 	 * @param connection
-	 * @return
+	 * @return set of unique values
 	 * @throws Exception
 	 */
 	public static <T> Set<T> getUniqueNonNullColumnValues(String columnName, String tableName, Class<T> type,

@@ -600,7 +600,7 @@ public class DatabaseUpdater {
 	 * current liquibase-update-to-latest.xml file
 	 *
 	 * @param changeLogFilenames the filenames of all files to search for unrun changesets
-	 * @return
+	 * @return list of change sets
 	 * @throws Exception
 	 */
 	@Authorized(PrivilegeConstants.VIEW_DATABASE_CHANGES)

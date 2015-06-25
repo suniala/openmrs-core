@@ -40,7 +40,7 @@ public interface FieldGenDatatypeHandler<DT extends CustomDatatype<T>, T> extend
 	 * @param datatype
 	 * @param request
 	 * @param formFieldName
-	 * @return
+	 * @return attribute value
 	 * @throws InvalidAttributeValueException if the submitted value is invalid
 	 */
 	T getValue(DT datatype, HttpServletRequest request, String formFieldName) throws InvalidCustomValueException;

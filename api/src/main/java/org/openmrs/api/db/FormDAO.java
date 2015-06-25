@@ -251,20 +251,16 @@ public interface FormDAO {
 	public void deleteFieldType(FieldType fieldType) throws DAOException;
 	
 	/**
-	 * Auto generated method comment
-	 * 
 	 * @param uuid
-	 * @return
+	 * @return field or null
 	 */
 	public Field getFieldByUuid(String uuid);
 	
 	public FieldAnswer getFieldAnswerByUuid(String uuid);
 	
 	/**
-	 * Auto generated method comment
-	 * 
 	 * @param uuid
-	 * @return
+	 * @return field type or null
 	 */
 	public FieldType getFieldTypeByUuid(String uuid);
 	
@@ -277,18 +273,14 @@ public interface FormDAO {
 	public FieldType getFieldTypeByName(String name);
 	
 	/**
-	 * Auto generated method comment
-	 * 
 	 * @param uuid
-	 * @return
+	 * @return form or null
 	 */
 	public Form getFormByUuid(String uuid);
 	
 	/**
-	 * Auto generated method comment
-	 * 
 	 * @param uuid
-	 * @return
+	 * @return form field or null
 	 */
 	public FormField getFormFieldByUuid(String uuid);
 	

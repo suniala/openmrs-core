@@ -153,7 +153,7 @@ public interface OrderService extends OpenmrsService {
 	 * Get Order by its UUID
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return order or null
 	 * @should find object given valid uuid
 	 * @should return null if no object found with given uuid
 	 */

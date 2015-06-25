@@ -195,26 +195,20 @@ public interface ProgramWorkflowDAO {
 	public ConceptStateConversion getConceptStateConversion(ProgramWorkflow workflow, Concept trigger);
 	
 	/**
-	 * Auto generated method comment
-	 * 
 	 * @param uuid
-	 * @return
+	 * @return concept state conversion or null
 	 */
 	public ConceptStateConversion getConceptStateConversionByUuid(String uuid);
 	
 	/**
-	 * Auto generated method comment
-	 * 
 	 * @param uuid
-	 * @return
+	 * @return patient program or null
 	 */
 	public PatientProgram getPatientProgramByUuid(String uuid);
 	
 	/**
-	 * Auto generated method comment
-	 * 
 	 * @param uuid
-	 * @return
+	 * @return program or null
 	 */
 	public Program getProgramByUuid(String uuid);
 	
@@ -229,20 +223,16 @@ public interface ProgramWorkflowDAO {
 	public List<Program> getProgramsByName(String name, boolean includeRetired);
 	
 	/**
-	 * Auto generated method comment
-	 * 
 	 * @param uuid
-	 * @return
+	 * @return program workflow state or null
 	 */
 	public ProgramWorkflowState getStateByUuid(String uuid);
 	
 	public PatientState getPatientStateByUuid(String uuid);
 	
 	/**
-	 * Auto generated method comment
-	 * 
 	 * @param uuid
-	 * @return
+	 * @return program workflow or null
 	 */
 	public ProgramWorkflow getWorkflowByUuid(String uuid);
 	

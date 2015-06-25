@@ -394,7 +394,7 @@ public interface PersonService extends OpenmrsService {
 	 * Get Relationship by its UUID
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return relationship or null
 	 * @should find object given valid uuid
 	 * @should return null if no object found with given uuid
 	 */
@@ -585,7 +585,7 @@ public interface PersonService extends OpenmrsService {
 	 * Gets the relationship type with the given uuid.
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return relationship type or null
 	 * @throws APIException
 	 * @should find object given valid uuid
 	 * @should return null if no object found with given uuid
@@ -753,7 +753,7 @@ public interface PersonService extends OpenmrsService {
 	 * Get Person by its UUID
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return person or null
 	 * @should find object given valid uuid
 	 * @should return null if no object found with given uuid
 	 */
@@ -764,7 +764,7 @@ public interface PersonService extends OpenmrsService {
 	 * Get PersonAddress by its UUID
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return person address or null
 	 * @should find object given valid uuid
 	 * @should return null if no object found with given uuid
 	 */
@@ -775,7 +775,7 @@ public interface PersonService extends OpenmrsService {
 	 * Get PersonAttribute by its UUID
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return person attribute or null
 	 * @should find object given valid uuid
 	 * @should return null if no object found with given uuid
 	 */
@@ -786,7 +786,7 @@ public interface PersonService extends OpenmrsService {
 	 * Get PersonName by its personNameId
 	 * 
 	 * @param personNameId
-	 * @return
+	 * @return person name or null
 	 * @should find PersonName given valid personNameId
 	 * @should return null if no object found with given personNameId
 	 */
@@ -797,7 +797,7 @@ public interface PersonService extends OpenmrsService {
 	 * Get PersonName by its UUID
 	 * 
 	 * @param uuid
-	 * @return
+	 * @return person name or null
 	 * @should find object given valid uuid
 	 * @should return null if no object found with given uuid
 	 */
@@ -1000,7 +1000,7 @@ public interface PersonService extends OpenmrsService {
 	 * 
 	 * @param uuid
 	 * @param deserialize
-	 * @return
+	 * @return person merge log object
 	 * @throws SerializationException
 	 * @throws APIException
 	 * @should require uuid

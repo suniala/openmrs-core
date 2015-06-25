@@ -73,9 +73,6 @@ public class ShortPatientFormController {
 	@Autowired
 	PatientValidator patientValidator;
 	
-	/**
-	 * @return
-	 */
 	@RequestMapping(method = RequestMethod.GET, value = SHORT_PATIENT_FORM_URL)
 	public void showForm() {
 	}
