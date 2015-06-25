@@ -42,7 +42,7 @@ import java.lang.annotation.Target;
  * The use of this method would therefore be as follows:<br/>
  * 
  * <pre>
- * @Handler( supports = { Order.class } )
+ * {@literal @}Handler( supports = { Order.class } )
  * public class OrderValidator implements Validator { ... } 
  * </pre>
  */

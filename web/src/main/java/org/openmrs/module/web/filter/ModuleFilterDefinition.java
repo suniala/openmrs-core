@@ -92,7 +92,7 @@ public class ModuleFilterDefinition implements Serializable {
 	}
 	
 	/**
-	 * @eturn - the class name of the filter
+	 * @return - the class name of the filter
 	 */
 	public String getFilterClass() {
 		return filterClass;

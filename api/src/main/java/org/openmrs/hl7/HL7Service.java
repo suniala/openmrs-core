@@ -418,7 +418,7 @@ public interface HL7Service extends OpenmrsService {
 	 * @param uuid
 	 * @return the HL7InError or <code>null</code>
 	 * @throws APIException
-	 * @sine 1.9
+	 * @since 1.9
 	 */
 	@Authorized(PrivilegeConstants.PRIV_VIEW_HL7_IN_EXCEPTION)
 	public HL7InError getHL7InErrorByUuid(String uuid) throws APIException;
@@ -642,7 +642,7 @@ public interface HL7Service extends OpenmrsService {
 	 * @param uuid
 	 * @return the queue item or <code>null</code>
 	 * @throws APIException
-	 * @sine 1.9
+	 * @since 1.9
 	 */
 	public HL7QueueItem getHl7QueueItemByUuid(String uuid) throws APIException;
 	

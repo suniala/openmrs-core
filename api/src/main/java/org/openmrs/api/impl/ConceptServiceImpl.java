@@ -1331,8 +1331,7 @@ public class ConceptServiceImpl extends BaseOpenmrsService implements ConceptSer
 	}
 	
 	/**
-	 * @see org.openmrs.api.ConceptService
-	 * @getConceptsByMapping(java.lang.String, java.lang.String)
+	 * @see org.openmrs.api.ConceptService#getConceptsByMapping(java.lang.String, java.lang.String)
 	 */
 	@Transactional(readOnly = true)
 	public List<Concept> getConceptsByMapping(String code, String sourceName) throws APIException {
@@ -1340,8 +1339,7 @@ public class ConceptServiceImpl extends BaseOpenmrsService implements ConceptSer
 	}
 	
 	/**
-	 * @see org.openmrs.api.ConceptService
-	 * @getConceptsByMapping(java.lang.String, java.lang.String, boolean)
+	 * @see org.openmrs.api.ConceptService#getConceptsByMapping(java.lang.String, java.lang.String, boolean)
 	 */
 	@Transactional(readOnly = true)
 	public List<Concept> getConceptsByMapping(String code, String sourceName, boolean includeRetired) throws APIException {

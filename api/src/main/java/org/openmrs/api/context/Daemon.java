@@ -57,7 +57,7 @@ public class Daemon {
 	 * @param isOpenmrsStartup Specifies whether this module is being started at application startup
 	 *            or not
 	 * @param applicationContext the spring application context instance to refresh
-	 * @returns the module returned from {@link ModuleFactory#startModuleInternal(Module)}
+	 * @return the module returned from {@link ModuleFactory#startModuleInternal(Module)}
 	 */
 	public static Module startModule(final Module module, final boolean isOpenmrsStartup,
 	        final AbstractRefreshableApplicationContext applicationContext) throws ModuleException {

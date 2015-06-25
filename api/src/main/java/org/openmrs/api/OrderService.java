@@ -655,7 +655,7 @@ public interface OrderService extends OpenmrsService {
 	 * 
 	 * @return concept list of drug routes
 	 * @since 1.10
-	 * @Should return an empty list if nothing is configured
+	 * @should return an empty list if nothing is configured
 	 */
 	@Authorized(PrivilegeConstants.GET_CONCEPTS)
 	public List<Concept> getDrugRoutes();

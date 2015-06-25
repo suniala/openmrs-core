@@ -40,7 +40,7 @@ public class Filter {
 	 * 
 	 * @param encs Superset of encounters
 	 * @param type EncounterTypeId to match
-	 * @return: Subset of passed encounters that match EncounterTypeId
+	 * @return Subset of passed encounters that match EncounterTypeId
 	 */
 	public static Set<Encounter> filterEncountersByType(Collection<Encounter> encs, Integer type) {
 		log.debug("Filtering encounters for encounter type id: " + type);
@@ -61,7 +61,7 @@ public class Filter {
 	 * 
 	 * @param obs Superset of obs
 	 * @param concept ConceptId to match
-	 * @return: Subset of passed obs that match ConceptId
+	 * @return Subset of passed obs that match ConceptId
 	 */
 	public static Set<Obs> filterObsByConcept(Collection<Obs> obs, Integer concept) {
 		log.debug("Filtering obs for concept id: " + concept);
