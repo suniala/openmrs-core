@@ -326,7 +326,7 @@ public interface ConceptDAO {
 	public Iterator<Concept> conceptIterator();
 	
 	/**
-	 * @see org.openmrs.api.ConceptService@getConceptsByMapping(java.lang.String, java.lang.String)
+	 * @see org.openmrs.api.ConceptService#getConceptsByMapping(java.lang.String, java.lang.String)
 	 */
 	public List<Concept> getConceptsByMapping(String code, String sourceName, boolean includeRetired);
 	

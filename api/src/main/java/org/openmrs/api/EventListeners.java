@@ -69,7 +69,7 @@ public class EventListeners {
 	 * @param nullList
 	 *            if true, nulls the list instead of just clearing it
 	 *
-	 * @see applicationContext-service.xml
+	 * @see "applicationContext-service.xml"
 	 */
 	public void setGlobalPropertyListenersToEmpty(boolean nullList) {
 		if (nullList) {
