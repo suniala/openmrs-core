@@ -12,6 +12,7 @@ package org.openmrs;
 import java.util.Date;
 import java.util.Locale;
 
+import org.openmrs.api.APIException;
 import org.springframework.validation.Errors;
 
 /**
@@ -52,10 +53,10 @@ public interface DosingInstructions {
 	 * 
 	 * @param order DrugOrder to get dosing instructions
 	 * @return DosingInstructions created from DrugOrder
-	 * @throws Exception if dosing type of passing order is not matched with dosing type of
+	 * @throws APIException if dosing type of passing order is not matched with dosing type of
 	 *             implementing dosing instruction
 	 */
-	public DosingInstructions getDosingInstructions(DrugOrder order);
+	public DosingInstructions getDosingInstructions(DrugOrder order) throws APIException;
 	
 	public void validate(DrugOrder order, Errors errors);
 	
