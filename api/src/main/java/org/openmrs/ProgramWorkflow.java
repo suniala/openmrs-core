@@ -172,7 +172,7 @@ public class ProgramWorkflow extends BaseOpenmrsMetadata implements java.io.Seri
 	}
 	
 	/**
-	 * Returns a Set<{@link ProgramWorkflowState}> including all ProgramWorkflowStates, sorted by
+	 * Returns a Set&lt;{@link ProgramWorkflowState}&gt; including all ProgramWorkflowStates, sorted by
 	 * {@link ConceptName}
 	 * 
 	 * @return Set<ProgramWorkflowState> - all ProgramWorkflowStates, sorted by {@link ConceptName}

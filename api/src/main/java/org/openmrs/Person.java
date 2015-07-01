@@ -559,7 +559,7 @@ public class Person extends BaseOpenmrsData implements java.io.Serializable {
 	}
 	
 	/**
-	 * Convenience method< to get all of this person's attributes that have a
+	 * Convenience method to get all of this person's attributes that have a
 	 * PersonAttributeType.name equal to <code>attributeName</code>.
 	 * 
 	 * @param attributeName
