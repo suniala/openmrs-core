@@ -413,7 +413,7 @@ public class Obs extends BaseOpenmrsData implements java.io.Serializable {
 	 * If it's not a group (i.e. {@link #getConcept()}.{@link org.openmrs.Concept#isSet()} is not
 	 * true, then this returns null.
 	 * 
-	 * @return a Set<Obs> of the members of this group.
+	 * @return a Set&lt;Obs&gt; of the members of this group.
 	 * @see #addGroupMember(Obs)
 	 * @see #hasGroupMembers()
 	 */
@@ -512,13 +512,13 @@ public class Obs extends BaseOpenmrsData implements java.io.Serializable {
 	
 	/**
 	 * Convenience method that returns related Obs If the Obs argument is not an ObsGroup: a
-	 * Set<Obs> will be returned containing all of the children of this Obs' parent that are not
+	 * Set&lt;Obs&gt; will be returned containing all of the children of this Obs' parent that are not
 	 * ObsGroups themselves. This will include this Obs by default, unless getObsGroup() returns
-	 * null, in which case an empty set is returned. If the Obs argument is an ObsGroup: a Set<Obs>
+	 * null, in which case an empty set is returned. If the Obs argument is an ObsGroup: a Set&lt;Obs&gt;
 	 * will be returned containing 1. all of this Obs' group members, and 2. all ancestor Obs that
 	 * are not themselves obsGroups.
 	 * 
-	 * @return Set<Obs>
+	 * @return Set&lt;Obs&gt;
 	 */
 	public Set<Obs> getRelatedObservations() {
 		Set<Obs> ret = new HashSet<Obs>();

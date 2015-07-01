@@ -159,7 +159,7 @@ public class ProgramWorkflow extends BaseOpenmrsMetadata implements java.io.Seri
 	 * 
 	 * @param includeRetired - if false, returns only non-retired {@link ProgramWorkflowState}
 	 *            objects in this ProgramWorkflow
-	 * @return Set<ProgramWorkflowState> - all ProgramWorkflowStates matching input parameters
+	 * @return Set&lt;ProgramWorkflowState&gt; - all ProgramWorkflowStates matching input parameters
 	 */
 	public Set<ProgramWorkflowState> getStates(boolean includeRetired) {
 		Set<ProgramWorkflowState> ret = new HashSet<ProgramWorkflowState>();

@@ -1779,7 +1779,7 @@ public class Concept extends BaseOpenmrsObject implements Auditable, Retireable,
 	 * Get all the concept members of current concept
 	 * 
 	 * @since 1.7
-	 * @return List<Concept> the Concepts that are members of this Concept's set
+	 * @return List&lt;Concept&gt; the Concepts that are members of this Concept's set
 	 * @should return concept set members sorted according to the sort weight
 	 * @should return all the conceptMembers of current Concept
 	 * @should return unmodifiable list of conceptMember list

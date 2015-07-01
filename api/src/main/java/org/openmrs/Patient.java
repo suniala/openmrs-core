@@ -139,7 +139,7 @@ public class Patient extends Person implements java.io.Serializable {
 	/**
 	 * Update all identifiers for patient
 	 * 
-	 * @param identifiers Set<PatientIdentifier> to set as update all known identifiers for patient
+	 * @param identifiers Set&lt;PatientIdentifier&gt; to set as update all known identifiers for patient
 	 * @see org.openmrs.PatientIdentifier
 	 */
 	public void setIdentifiers(Set<PatientIdentifier> identifiers) {

@@ -344,7 +344,7 @@ public class Person extends BaseOpenmrsData implements java.io.Serializable {
 	}
 	
 	/**
-	 * @param addresses Set<PersonAddress> list of known addresses for person
+	 * @param addresses Set&lt;PersonAddress&gt; list of known addresses for person
 	 * @see org.openmrs.PersonAddress
 	 */
 	@ElementList(required = false)

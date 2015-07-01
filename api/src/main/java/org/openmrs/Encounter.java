@@ -139,7 +139,7 @@ public class Encounter extends BaseOpenmrsData implements java.io.Serializable {
 	}
 	
 	/**
-	 * @return Returns a Set<Obs> of all non-voided, non-obsGroup children Obs of this Encounter
+	 * @return Returns a Set&lt;Obs&gt; of all non-voided, non-obsGroup children Obs of this Encounter
 	 * @should not return null with null obs set
 	 * @should get obs
 	 * @should not get voided obs
