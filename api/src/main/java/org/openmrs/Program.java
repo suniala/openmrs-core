@@ -101,7 +101,7 @@ public class Program extends BaseOpenmrsMetadata implements java.io.Serializable
 	
 	/**
 	 * Returns a {@link ProgramWorkflow} whose {@link Concept} has any {@link ConceptName} that
-	 * matches the given <code>name</name>
+	 * matches the given <code>name</code>
 	 *
 	 * @param name the {@link ProgramWorkflow} name, in any {@link Locale}
 	 * @return a {@link ProgramWorkflow} which has the passed <code>name</code> in any

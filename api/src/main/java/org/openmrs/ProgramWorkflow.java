@@ -137,7 +137,7 @@ public class ProgramWorkflow extends BaseOpenmrsMetadata implements java.io.Seri
 	
 	/**
 	 * Returns a {@link ProgramWorkflowState} whose {@link Concept} has any {@link ConceptName} that
-	 * matches the given <code>name</name>
+	 * matches the given <code>name</code>
 	 * 
 	 * @param name the {@link ProgramWorkflowState} name, in any {@link Locale}
 	 * @return a {@link ProgramWorkflowState} which has the passed <code>name</code> in any
