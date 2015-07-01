@@ -87,7 +87,6 @@ public class DatabaseUpdater {
 	 *
 	 * @throws InputRequiredException if the changelog file requirest some sort of user input. The
 	 *             error object will list of the user prompts and type of data for each prompt
-	 * @see #update(Map)
 	 * @see #executeChangelog(String, Map)
 	 */
 	public static void executeChangelog() throws DatabaseUpdateException, InputRequiredException {

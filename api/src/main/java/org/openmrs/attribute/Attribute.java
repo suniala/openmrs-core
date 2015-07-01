@@ -25,7 +25,6 @@ import org.openmrs.customdatatype.SingleCustomValue;
  * @param <OT> the type this attribute can belong to
  * @see AttributeType
  * @see Customizable
- * @see AttributeHandler
  * @since 1.9
  */
 public interface Attribute<AT extends AttributeType, OT extends Customizable<?>> extends OpenmrsData, SingleCustomValue<AT> {

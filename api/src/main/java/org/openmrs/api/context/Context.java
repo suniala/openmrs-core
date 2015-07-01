@@ -810,12 +810,8 @@ public class Context {
 	}
 	
 	/**
-	 * Starts the OpenMRS System Should be called prior to any kind of activity <br/>
-	 * <br/>
-	 * If an {@link InputRequiredException} is thrown, a call to {@link DatabaseUpdater#update(Map)}
-	 * will be required with a mapping from question prompt to user answer before startup can be
-	 * called again.
-	 * 
+	 * Starts the OpenMRS System Should be called prior to any kind of activity
+	 *
 	 * @param props Runtime properties to use for startup
 	 * @throws InputRequiredException if the {@link DatabaseUpdater} has determined that updates
 	 *             cannot continue without input from the user
@@ -850,10 +846,6 @@ public class Context {
 	
 	/**
 	 * Starts the OpenMRS System in a _non-webapp_ environment<br/>
-	 * <br/>
-	 * If an {@link InputRequiredException} is thrown, a call to {@link DatabaseUpdater#update(Map)}
-	 * will be required with a mapping from question prompt to user answer before startup can be
-	 * called again. <br/>
 	 * <br/>
 	 * <b>Note:</b> This method calls {@link Context#openSession()}, so you must call
 	 * {@link Context#closeSession()} somewhere on the same thread of this application so as to not

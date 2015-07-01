@@ -566,7 +566,6 @@ public interface HL7Service extends OpenmrsService {
 	 * @param hl7Message the {@link Message} to process and save to the db.
 	 * @return the processed message
 	 * @throws HL7Exception
-	 * @see #processHL7String(String)
 	 * @see #processHL7InQueue(HL7InQueue)
 	 * @should save hl7Message to the database
 	 * @should parse message type supplied by module

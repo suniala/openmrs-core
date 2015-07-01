@@ -20,7 +20,6 @@ import org.openmrs.customdatatype.RepeatingCustomValueDescriptor;
  * AttributeType<Visit>).
  * @see Attribute
  * @see Customizable
- * @see AttributeHandler
  * @since 1.9
  */
 public interface AttributeType<OwningType extends Customizable<?>> extends RepeatingCustomValueDescriptor, OpenmrsMetadata {

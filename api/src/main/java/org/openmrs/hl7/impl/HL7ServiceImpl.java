@@ -247,7 +247,7 @@ public class HL7ServiceImpl extends BaseOpenmrsService implements HL7Service {
 	}
 	
 	/**
-	 * @see org.openmrs.hl7.HL7Service#getHL7InQueueBatch(int, int, java.lang.String)
+	 * @see org.openmrs.hl7.HL7Service#getHL7InQueueBatch(int, int, int, String)
 	 */
 	@Override
 	@Transactional(readOnly = true)

@@ -51,7 +51,7 @@ public class WebImageHandler extends ImageHandler {
 	 * ImageHandler, its an html img tag.
 	 * </ul>
 	 * 
-	 * @see org.openmrs.obs.handler.ImageHandler#getComplexData(org.openmrs.Obs, java.lang.String)
+	 * @see org.openmrs.obs.handler.ImageHandler#getObs(Obs, String)
 	 */
 	@Override
 	public Obs getObs(Obs obs, String view) {

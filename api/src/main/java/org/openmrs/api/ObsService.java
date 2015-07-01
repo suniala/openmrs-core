@@ -43,7 +43,6 @@ import org.openmrs.util.PrivilegeConstants;
  * people, or encounters
  * 
  * @see org.openmrs.Obs
- * @see org.openmrs.ComplexObs
  * @see org.openmrs.MimeType
  * @see org.openmrs.api.context.Context
  */

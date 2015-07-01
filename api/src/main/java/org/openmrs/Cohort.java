@@ -25,12 +25,7 @@ import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
 /**
- * This class represents a list of patientIds. If it is generated from a CohortDefinition via
- * {@link ReportService#evaluate(org.openmrs.report.ReportSchema, Cohort, EvaluationContext)} then
- * it will contain a link back to the CohortDefinition it came from and the EvalutionContext that
- * definition was evaluated in.
- * 
- * @see org.openmrs.cohort.CohortDefinition
+ * This class represents a list of patientIds.
  */
 @Root(strict = false)
 public class Cohort extends BaseOpenmrsData implements Serializable {

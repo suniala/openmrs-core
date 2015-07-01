@@ -48,7 +48,7 @@ public class WebBinaryDataHandler extends BinaryDataHandler {
 	 * Gives a link to the ComplexServlet for this obs
 	 * </ul>
 	 * 
-	 * @see org.openmrs.obs.handler.BinaryDataHandler#getComplexData(org.openmrs.Obs, java.lang.String)
+	 * @see org.openmrs.obs.handler.BinaryDataHandler#getObs(Obs, String)
 	 */
 	@Override
 	public Obs getObs(Obs obs, String view) {

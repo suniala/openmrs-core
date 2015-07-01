@@ -23,8 +23,6 @@ import org.springframework.web.context.support.XmlWebApplicationContext;
  * <br/>
  * After creation, this object is saved to WebModuleUtil for later use. When Spring's root 
  * webApplicationContext is refreshed, this dispatcher servlet needs to be refreshed too.
- * 
- * @see #reInitFrameworkServlet()
  */
 public class StaticDispatcherServlet extends org.springframework.web.servlet.DispatcherServlet {
 	

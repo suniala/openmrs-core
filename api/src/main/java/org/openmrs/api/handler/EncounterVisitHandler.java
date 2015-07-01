@@ -21,7 +21,7 @@ import org.openmrs.api.context.Context;
  * visit. An admin can decide how they want their Encounters automatically assigned to Visits by
  * choosing different handlers.
  * 
- * @see EncounterService#getVisitAssignmentHandlers()
+ * @see EncounterService#getEncounterVisitHandlers()
  * @since 1.9
  */
 public interface EncounterVisitHandler {
