@@ -1125,7 +1125,7 @@ public class Obs extends BaseOpenmrsData implements java.io.Serializable {
 	 * as a string This method is a waste and should be not be used. This was used in the web layer
 	 * because jstl can't pass parameters to a method (${obs.valueAsString[locale]} was used instead
 	 * of what would be convenient ${obs.valueAsString(locale)}) Now the openmrs:format tag should
-	 * be used in the web layer: <openmrs:format obsValue="${obs}"/>
+	 * be used in the web layer: <code>&lt;openmrs:format obsValue="${obs}"/&gt;</code>
 	 * 
 	 * @deprecated
 	 */

@@ -612,8 +612,8 @@ public class Person extends BaseOpenmrsData implements java.io.Serializable {
 	}
 	
 	/**
-	 * Convenience method to get this person's active attributes in map form: <String,
-	 * PersonAttribute>.
+	 * Convenience method to get this person's active attributes in map form: &lt;String,
+	 * PersonAttribute&gt;.
 	 */
 	public Map<String, PersonAttribute> getAttributeMap() {
 		if (attributeMap != null) {
@@ -634,7 +634,7 @@ public class Person extends BaseOpenmrsData implements java.io.Serializable {
 	
 	/**
 	 * Convenience method to get all of this person's attributes (including voided ones) in map
-	 * form: <String, PersonAttribute>.
+	 * form: &lt;String, PersonAttribute&gt;.
 	 * 
 	 * @return All person's attributes in map form
 	 * @since 1.12
