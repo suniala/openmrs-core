@@ -471,8 +471,8 @@ public final class Listener extends ContextLoader implements ServletContextListe
 	}
 	
 	/**
-	 * Load the pre-packaged modules from web/WEB-INF/bundledModules. <br/>
-	 * <br/>
+	 * Load the pre-packaged modules from web/WEB-INF/bundledModules. <br>
+	 * <br>
 	 * This method assumes that the api startup() and WebModuleUtil.startup() will be called later
 	 * for modules that loaded here
 	 *

@@ -67,16 +67,16 @@ public final class OpenmrsConstants {
 	
 	/**
 	 * This holds the current openmrs code version. This version is a string containing spaces and
-	 * words.<br/>
-	 * The format is:<br/>
+	 * words.<br>
+	 * The format is:<br>
 	 * <i>major</i>.<i>minor</i>.<i>maintenance</i> <i>suffix</i> Build <i>buildNumber</i>
 	 */
 	public static final String OPENMRS_VERSION = THIS_PACKAGE.getSpecificationVendor() != null ? THIS_PACKAGE
 	        .getSpecificationVendor() : (getBuildVersion() != null ? getBuildVersion() : getVersion());
 	
 	/**
-	 * This holds the current openmrs code version in a short space-less string.<br/>
-	 * The format is:<br/>
+	 * This holds the current openmrs code version in a short space-less string.<br>
+	 * The format is:<br>
 	 * <i>major</i>.<i>minor</i>.<i>maintenance</i>.<i>revision</i>-<i>suffix</i
 	 * >
 	 */
@@ -240,7 +240,7 @@ public final class OpenmrsConstants {
 	}
 	
 	/**
-	 * A gender character to gender name map<br/>
+	 * A gender character to gender name map<br>
 	 * TODO issues with localization. How should this be handled?
 	 * 
 	 * @return Map<String, String> of gender character to gender name

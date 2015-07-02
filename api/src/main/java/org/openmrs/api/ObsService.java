@@ -347,12 +347,12 @@ public interface ObsService extends OpenmrsService {
 	 * arguments are optional and nullable. If more than one argument is non-null, the result is
 	 * equivalent to an "and"ing of the arguments. (e.g. if both a <code>location</code> and a
 	 * <code>fromDate</code> are given, only Obs that are <u>both</u> at that Location and after the
-	 * fromDate are returned). <br/>
-	 * <br/>
-	 * Note: If <code>whom</code> has elements, <code>personType</code> is ignored <br/>
-	 * <br/>
-	 * Note: to get all observations on a certain date, use:<br/>
-	 * Date fromDate = "2009-08-15";<br/>
+	 * fromDate are returned). <br>
+	 * <br>
+	 * Note: If <code>whom</code> has elements, <code>personType</code> is ignored <br>
+	 * <br>
+	 * Note: to get all observations on a certain date, use:<br>
+	 * Date fromDate = "2009-08-15";<br>
 	 * Date toDate = OpenmrsUtil.lastSecondOfDate(fromDate); List<Obs> obs = getObservations(....,
 	 * fromDate, toDate, ...);
 	 * 
@@ -433,12 +433,12 @@ public interface ObsService extends OpenmrsService {
 	 * arguments. All arguments are optional and nullable. If more than one argument is non-null,
 	 * the result is equivalent to an "and"ing of the arguments. (e.g. if both a
 	 * <code>location</code> and a <code>fromDate</code> are given, only Obs that are <u>both</u> at
-	 * that Location and after the fromDate are returned). <br/>
-	 * <br/>
-	 * Note: If <code>whom</code> has elements, <code>personType</code> is ignored <br/>
-	 * <br/>
-	 * Note: to get all observations count on a certain date, use:<br/>
-	 * Date fromDate = "2009-08-15";<br/>
+	 * that Location and after the fromDate are returned). <br>
+	 * <br>
+	 * Note: If <code>whom</code> has elements, <code>personType</code> is ignored <br>
+	 * <br>
+	 * Note: to get all observations count on a certain date, use:<br>
+	 * Date fromDate = "2009-08-15";<br>
 	 * Date toDate = OpenmrsUtil.lastSecondOfDate(fromDate); List<Obs> obs = getObservations(....,
 	 * fromDate, toDate, ...);
 	 * 

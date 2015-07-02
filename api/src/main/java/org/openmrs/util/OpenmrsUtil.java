@@ -1947,7 +1947,7 @@ public class OpenmrsUtil {
 	}
 	
 	/**
-	 * Convenience method to replace Properties.store(), which isn't UTF-8 compliant <br/>
+	 * Convenience method to replace Properties.store(), which isn't UTF-8 compliant <br>
 	 * NOTE: In Java 6, you will be able to pass the load() and store() methods a UTF-8
 	 * Reader/Writer object as an argument, making this method unnecessary.
 	 * 
@@ -2005,7 +2005,7 @@ public class OpenmrsUtil {
 	/**
 	 * This method is a replacement for Properties.load(InputStream) so that we can load in utf-8
 	 * characters. Currently the load method expects the inputStream to point to a latin1 encoded
-	 * file. <br/>
+	 * file. <br>
 	 * NOTE: In Java 6, you will be able to pass the load() and store() methods a UTF-8
 	 * Reader/Writer object as an argument, making this method unnecessary.
 	 * 

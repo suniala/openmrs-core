@@ -1127,7 +1127,7 @@ public class UserServiceTest extends BaseContextSensitiveTest {
 	}
 	
 	/**
-	 * This is a regression test for TRUNK-2108 <br/>
+	 * This is a regression test for TRUNK-2108 <br>
 	 * 
 	 * @see UserService#getUsers(String,List,boolean)
 	 * @verifies not fail if roles are searched but name is empty

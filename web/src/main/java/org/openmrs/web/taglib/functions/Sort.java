@@ -20,8 +20,8 @@ import org.apache.commons.collections.comparators.ComparableComparator;
 import org.apache.commons.lang.StringUtils;
 
 /**
- * Functions used within taglibs in a webapp jsp page. <br/>
- * <br/>
+ * Functions used within taglibs in a webapp jsp page. <br>
+ * <br>
  * Example:
  *
  * <pre>

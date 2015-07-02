@@ -209,8 +209,8 @@ public class ModuleFactory {
 	
 	/**
 	 * Try to start all of the loaded modules that have the global property <i>moduleId</i>.started
-	 * is set to "true" or the property does not exist. Otherwise, leave it as only "loaded"<br/>
-	 * <br/>
+	 * is set to "true" or the property does not exist. Otherwise, leave it as only "loaded"<br>
+	 * <br>
 	 * Modules that are already started will be skipped.
 	 */
 	public static void startModules() {
@@ -597,11 +597,11 @@ public class ModuleFactory {
 	}
 	
 	/**
-	 * This method should not be called directly.<br/>
-	 * <br/>
+	 * This method should not be called directly.<br>
+	 * <br>
 	 * The {@link #startModule(Module)} (and hence {@link Daemon#startModule(Module)}) calls this
-	 * method in a new Thread and is authenticated as the {@link Daemon} user<br/>
-	 * <br/>
+	 * method in a new Thread and is authenticated as the {@link Daemon} user<br>
+	 * <br>
 	 * Runs through extensionPoints and then calls {@link BaseModuleActivator#willStart()} on the
 	 * Module's activator.
 	 * 
@@ -612,14 +612,14 @@ public class ModuleFactory {
 	}
 	
 	/**
-	 * This method should not be called directly.<br/>
-	 * <br/>
+	 * This method should not be called directly.<br>
+	 * <br>
 	 * The {@link #startModule(Module)} (and hence {@link Daemon#startModule(Module)}) calls this
-	 * method in a new Thread and is authenticated as the {@link Daemon} user<br/>
-	 * <br/>
+	 * method in a new Thread and is authenticated as the {@link Daemon} user<br>
+	 * <br>
 	 * Runs through extensionPoints and then calls {@link BaseModuleActivator#willStart()} on the
-	 * Module's activator. <br/>
-	 * <br/>
+	 * Module's activator. <br>
+	 * <br>
 	 * If a non null application context is passed in, it gets refreshed to make the module's
 	 * services available
 	 * 
@@ -1040,7 +1040,7 @@ public class ModuleFactory {
 	}
 	
 	/**
-	 * Runs through the advice and extension points and removes from api. <br/>
+	 * Runs through the advice and extension points and removes from api. <br>
 	 * Also calls mod.Activator.shutdown()
 	 * 
 	 * @param mod module to stop
@@ -1051,7 +1051,7 @@ public class ModuleFactory {
 	}
 	
 	/**
-	 * Runs through the advice and extension points and removes from api.<br/>
+	 * Runs through the advice and extension points and removes from api.<br>
 	 * Also calls mod.Activator.shutdown()
 	 * 
 	 * @param mod the module to stop
@@ -1063,11 +1063,11 @@ public class ModuleFactory {
 	}
 	
 	/**
-	 * Runs through the advice and extension points and removes from api.<br/>
+	 * Runs through the advice and extension points and removes from api.<br>
 	 * <code>skipOverStartedProperty</code> should only be true when openmrs is stopping modules
 	 * because it is shutting down. When normally stopping a module, use {@link #stopModule(Module)}
 	 * (or leave value as false). This property controls whether the globalproperty is set for
-	 * startup/shutdown. <br/>
+	 * startup/shutdown. <br>
 	 * Also calls module's {@link Activator#shutdown()}
 	 * 
 	 * @param mod module to stop

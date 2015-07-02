@@ -455,8 +455,8 @@ public class PatientSearchCriteria {
 	}
 	
 	/**
-	 * Returns a criteria object comparing the given string to each part of the name. <br/>
-	 * <br/>
+	 * Returns a criteria object comparing the given string to each part of the name. <br>
+	 * <br>
 	 * This criteria is essentially:
 	 * <p/>
 	 *

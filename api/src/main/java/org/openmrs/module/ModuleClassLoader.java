@@ -49,8 +49,8 @@ import org.openmrs.util.OpenmrsConstants;
 import org.openmrs.util.OpenmrsUtil;
 
 /**
- * Standard implementation of module class loader. <br/>
- * Code adapted from the Java Plug-in Framework (JPF) - LGPL - Copyright (C)<br/>
+ * Standard implementation of module class loader. <br>
+ * Code adapted from the Java Plug-in Framework (JPF) - LGPL - Copyright (C)<br>
  * 2004-2006 Dmitry Olshansky
  */
 public class ModuleClassLoader extends URLClassLoader {

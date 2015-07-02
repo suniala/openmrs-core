@@ -962,8 +962,8 @@ public class ORUR01Handler implements Application {
 	}
 	
 	/**
-	 * Get a concept object representing this conceptId and coding system.<br/>
-	 * If codingSystem is 99DCT, then a new Concept with the given conceptId is returned.<br/>
+	 * Get a concept object representing this conceptId and coding system.<br>
+	 * If codingSystem is 99DCT, then a new Concept with the given conceptId is returned.<br>
 	 * Otherwise, the coding system is looked up in the ConceptMap for an openmrs concept mapped to
 	 * that code.
 	 *

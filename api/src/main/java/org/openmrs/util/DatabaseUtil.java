@@ -36,7 +36,7 @@ public class DatabaseUtil {
 	private final static Log log = LogFactory.getLog(DatabaseUtil.class);
 	
 	/**
-	 * Load the jdbc driver class for the database which is specified by the connectionUrl parameter <br/>
+	 * Load the jdbc driver class for the database which is specified by the connectionUrl parameter <br>
 	 * This is only needed when loading up a jdbc connection manually for the first time. This is
 	 * not needed by most users and development practices with the openmrs API.
 	 *
@@ -55,8 +55,8 @@ public class DatabaseUtil {
 	/**
 	 * Executes the passed SQL query, enforcing select only if that parameter is set Load the jdbc
 	 * driver class for the database which is specified by the connectionUrl and connectionDriver
-	 * parameters <br/>
-	 * <br/>
+	 * parameters <br>
+	 * <br>
 	 * This is only needed when loading up a jdbc connection manually for the first time. This is
 	 * not needed by most users and development practices with the openmrs API.
 	 *

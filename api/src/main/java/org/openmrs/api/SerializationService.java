@@ -68,8 +68,8 @@ public interface SerializationService extends OpenmrsService {
 	        Class<? extends OpenmrsSerializer> serializerClass) throws SerializationException;
 	
 	/**
-	 * Gets the list of OpenmrsSerializers that have been registered with this service. <br/>
-	 * <br/>
+	 * Gets the list of OpenmrsSerializers that have been registered with this service. <br>
+	 * <br>
 	 * Modules are able to add more serializers by adding this in their moduleApplicationContext.
 	 * e.g.:
 	 * 

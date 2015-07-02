@@ -38,8 +38,8 @@ import org.openmrs.util.OpenmrsConstants;
 import org.openmrs.util.OpenmrsUtil;
 
 /**
- * Executes (aka "source"s) the given file on the current database. <br/>
- * <br/>
+ * Executes (aka "source"s) the given file on the current database. <br>
+ * <br>
  * Expects parameter: "sqlFile" : name of file on classpath to source on mysql
  */
 public class SourceMySqldiffFile implements CustomTaskChange {

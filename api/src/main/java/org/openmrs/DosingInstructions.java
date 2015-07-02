@@ -22,7 +22,7 @@ import org.springframework.validation.Errors;
  * implementation would cover
  * "200mg for the first week, then up to 400mg for the rest of the prescription". Implementations of
  * this class should store their data in the appropriate fields on the DrugOrder and Order object.
- * In some cases they could store JSON in the dosing instructions field. <br/>
+ * In some cases they could store JSON in the dosing instructions field. <br>
  * NOTE: Any class that implements this interface should have a default constructor.
  * 
  * @since 1.10

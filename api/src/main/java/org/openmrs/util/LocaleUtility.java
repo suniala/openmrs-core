@@ -125,7 +125,7 @@ public class LocaleUtility implements GlobalPropertyListener {
 	
 	/**
 	 * Creates a locale based on a string specification. The specification must be conform with the
-	 * following format: ll_CC_vv <br/>
+	 * following format: ll_CC_vv <br>
 	 * <ul>
 	 * <li>ll: two-character lowercase ISO-639 language code
 	 * <li>CC: two-character uppercase ISO-3166 country code optional

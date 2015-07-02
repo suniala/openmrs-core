@@ -56,8 +56,8 @@ import org.openmrs.annotation.Authorized;
 import org.openmrs.api.context.Context;
 
 /**
- * This class uses Liquibase to update the database. <br/>
- * <br/>
+ * This class uses Liquibase to update the database. <br>
+ * <br>
  * See /metadata/model/liquibase-update-to-latest.xml for the changes. This class will also run
  * arbitrary liquibase xml files on the associated database as well. Details for the database are
  * taken from the openmrs runtime properties.
@@ -718,8 +718,8 @@ public class DatabaseUpdater {
 	 * This method releases the liquibase db lock after a crashed database update. First, it
 	 * checks whether "liquibasechangeloglock" table exists in db. If so, it will check
 	 * whether the database is locked. If thats also true, this means that last attempted db
-	 * update crashed.<br/>
-	 * <br/>
+	 * update crashed.<br>
+	 * <br>
 	 * This should only be called if the user is sure that no one else is currently running
 	 * database updates. This method should be used if there was a db crash while updates
 	 * were being written and the lock table was never cleaned up.

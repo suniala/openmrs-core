@@ -538,8 +538,8 @@ public final class Module {
 	
 	/**
 	 * A map of pointid to classname. The classname is expected to be a class that extends the
-	 * {@link Extension} object. <br/>
-	 * <br/>
+	 * {@link Extension} object. <br>
+	 * <br>
 	 * This map will be expanded into full Extension objects the first time {@link #getExtensions()}
 	 * is called
 	 *
@@ -558,8 +558,8 @@ public final class Module {
 	/**
 	 * Expand the temporary extensionNames map of pointid-classname to full pointid-classobject. <br>
 	 * This has to be done after the fact because when the pointid-classnames are parsed, the
-	 * module's objects aren't fully realized yet and so not all classes can be loaded. <br/>
-	 * <br/>
+	 * module's objects aren't fully realized yet and so not all classes can be loaded. <br>
+	 * <br>
 	 *
 	 * @return a list of full Extension objects
 	 */

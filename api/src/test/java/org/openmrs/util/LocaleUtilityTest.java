@@ -290,8 +290,8 @@ public class LocaleUtilityTest extends BaseContextSensitiveTest {
 	
 	/**
 	 * This test doesn't really test anything, and it should ALWAYS be the last method in this
-	 * class. <br/>
-	 * <br/>
+	 * class. <br>
+	 * <br>
 	 * This method just resets the current user's locale so that when things are run in batches all
 	 * tests still work.
 	 */

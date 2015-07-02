@@ -30,8 +30,8 @@ import org.springframework.util.StringUtils;
 
 /**
  * Controller for the <openmrs:require> taglib used on jsp pages. This taglib restricts the page
- * view to currently logged in (or anonymous) users that have the given privileges. <br/>
- * <br/>
+ * view to currently logged in (or anonymous) users that have the given privileges. <br>
+ * <br>
  * Example use case:
  *
  * <pre>
@@ -65,8 +65,8 @@ public class RequireTag extends TagSupport {
 	
 	/**
 	 * This is where all the magic happens. The privileges are checked and the user is redirected if
-	 * need be. <br/>
-	 * <br/>
+	 * need be. <br>
+	 * <br>
 	 * Returns SKIP_PAGE if the user doesn't have the privilege and SKIP_BODY if it does.
 	 *
 	 * @see javax.servlet.jsp.tagext.TagSupport#doStartTag()

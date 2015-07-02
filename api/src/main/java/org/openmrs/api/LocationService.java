@@ -23,9 +23,9 @@ import org.openmrs.util.OpenmrsConstants;
 import org.openmrs.util.PrivilegeConstants;
 
 /**
- * API methods for managing Locations <br/>
- * <br/>
- * Example Usage: <br/>
+ * API methods for managing Locations <br>
+ * <br>
+ * Example Usage: <br>
  * <code>
  *   List<Location> locations = Context.getLocationService().getAllLocations();
  * </code>

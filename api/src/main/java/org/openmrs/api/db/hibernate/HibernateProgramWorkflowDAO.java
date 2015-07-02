@@ -34,8 +34,8 @@ import org.openmrs.api.db.DAOException;
 import org.openmrs.api.db.ProgramWorkflowDAO;
 
 /**
- * Hibernate specific ProgramWorkflow related functions.<br/>
- * <br/>
+ * Hibernate specific ProgramWorkflow related functions.<br>
+ * <br>
  * This class should not be used directly. All calls should go through the
  * {@link org.openmrs.api.ProgramWorkflowService} methods.
  *

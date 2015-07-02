@@ -65,8 +65,8 @@ public class ConceptNumeric extends Concept implements java.io.Serializable {
 	}
 	
 	/**
-	 * Optional constructor for turning a Concept into a ConceptNumeric <br/>
-	 * <br/>
+	 * Optional constructor for turning a Concept into a ConceptNumeric <br>
+	 * <br>
 	 * Note: This cannot copy over numeric specific values
 	 * 
 	 * @param c

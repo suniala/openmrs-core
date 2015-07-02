@@ -489,9 +489,9 @@ public interface LogicService {
 	public void removeLogicDataSource(String name);
 	
 	/**
-	 * Parse a criteria String to create a new LogicCriteria. <br />
-	 * <br />
-	 * Example: <br />
+	 * Parse a criteria String to create a new LogicCriteria. <br>
+	 * <br>
+	 * Example: <br>
 	 * <code>logicService.parseString("LAST 'CD4 COUNT' < 200");</code>
 	 * 
 	 * @param inStr LogicCriteria expression in a plain String object.
@@ -502,9 +502,9 @@ public interface LogicService {
 	public LogicCriteria parseString(String inStr);
 	
 	/**
-	 * Parse a criteria String to create a new LogicCriteria. <br />
-	 * <br />
-	 * Example: <br />
+	 * Parse a criteria String to create a new LogicCriteria. <br>
+	 * <br>
+	 * Example: <br>
 	 * <code>logicService.parseString("LAST 'CD4 COUNT' < 200");</code>
 	 * 
 	 * @param criteria LogicCriteria expression in a plain String object.

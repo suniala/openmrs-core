@@ -49,7 +49,7 @@ public class Daemon {
 	/**
 	 * This method should not be called directly. The {@link ModuleFactory#startModule(Module)}
 	 * method uses this to start the given module in a new thread that is authenticated as the
-	 * daemon user. <br/>
+	 * daemon user. <br>
 	 * If a non null application context is passed in, it gets refreshed to make the module's
 	 * services available
 	 *
@@ -104,8 +104,8 @@ public class Daemon {
 	}
 	
 	/**
-	 * Executes the given task in a new thread that is authenticated as the daemon user. <br/>
-	 * <br/>
+	 * Executes the given task in a new thread that is authenticated as the daemon user. <br>
+	 * <br>
 	 * This can only be called from {@link TimerSchedulerTask} during actual task execution
 	 *
 	 * @param task the task to run

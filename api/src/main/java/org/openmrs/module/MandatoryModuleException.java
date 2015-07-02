@@ -16,8 +16,8 @@ import org.openmrs.util.OpenmrsUtil;
 
 /**
  * This error is thrown when OpenMRS is started but a module marked as 'mandatory' but was unable to
- * start. <br/>
- * <br/>
+ * start. <br>
+ * <br>
  * This error is also thrown when trying to stop a module that is marked as mandatory.
  * 
  * @see org.openmrs.api.context.Context#startup(Properties)

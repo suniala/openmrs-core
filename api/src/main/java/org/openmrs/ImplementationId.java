@@ -83,11 +83,11 @@ public class ImplementationId implements java.io.Serializable {
 	}
 	
 	/**
-	 * This is the unique id for this implementation. <br/>
-	 * <br/>
+	 * This is the unique id for this implementation. <br>
+	 * <br>
 	 * The implementation id corresponds to the hl7Code of the ConceptSource that this corresponds
-	 * to.<br/>
-	 * <br/>
+	 * to.<br>
+	 * <br>
 	 * Must be limited to 20 characters and numbers. The characters "^" and "|" are not allowed.
 	 *
 	 * @return the implementationId
@@ -98,11 +98,11 @@ public class ImplementationId implements java.io.Serializable {
 	}
 	
 	/**
-	 * This is the unique id for this implementation. <br/>
-	 * <br/>
+	 * This is the unique id for this implementation. <br>
+	 * <br>
 	 * The implementation id corresponds to the hl7Code of the ConceptSource that this corresponds
-	 * to. <br/>
-	 * <br/>
+	 * to. <br>
+	 * <br>
 	 * Must be limited to 20 characters and numbers. The characters "^" and "|" are not allowed.
 	 *
 	 * @param implementationId the implementationId to set

@@ -38,11 +38,11 @@ import org.openmrs.util.Format;
 import org.openmrs.util.Format.FORMAT_TYPE;
 
 /**
- * An observation is a single unit of clinical information. <br/>
- * <br/>
+ * An observation is a single unit of clinical information. <br>
+ * <br>
  * Observations are collected and grouped together into one Encounter (one visit). Obs can be
- * grouped in a hierarchical fashion. <br/>
- * <br/>
+ * grouped in a hierarchical fashion. <br>
+ * <br>
  * <p>
  * The {@link #getObsGroup()} method returns an optional parent. That parent object is also an Obs.
  * The parent Obs object knows about its child objects through the {@link #getGroupMembers()}
@@ -889,8 +889,8 @@ public class Obs extends BaseOpenmrsData implements java.io.Serializable {
 	
 	/**
 	 * Set the ComplexData for this Obs. The ComplexData is stored in the file system or elsewhere,
-	 * but is not persisted to the database. <br/>
-	 * <br/>
+	 * but is not persisted to the database. <br>
+	 * <br>
 	 * {@link ComplexObsHandler}s that are registered to {@link ConceptComplex}s will persist the
 	 * {@link ComplexData#getData()} object to the correct place for the given concept.
 	 * 
@@ -903,8 +903,8 @@ public class Obs extends BaseOpenmrsData implements java.io.Serializable {
 	
 	/**
 	 * Get the ComplexData. This is retrieved by the {@link ComplexObsHandler} from the file system
-	 * or another location, not from the database. <br/>
-	 * <br/>
+	 * or another location, not from the database. <br>
+	 * <br>
 	 * This will be null unless you call:
 	 * 
 	 * <pre>

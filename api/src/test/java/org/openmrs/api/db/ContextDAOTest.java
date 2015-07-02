@@ -26,8 +26,8 @@ import java.util.Properties;
 
 /**
  * This class tests the {@link ContextDAO} linked to from the Context. Currently that file is the
- * {@link HibernateContextDAO}.<br/>
- * <br/>
+ * {@link HibernateContextDAO}.<br>
+ * <br>
  * So far we have thoroughly analyzed:
  * <ul>
  * <li>public User authenticate(String, String) on 21/Aug/2008</li>

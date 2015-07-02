@@ -42,7 +42,7 @@ import org.springframework.validation.Errors;
 /**
  * Contains methods pertaining to doing some administrative tasks in OpenMRS
  * <p>
- * Use:<br/>
+ * Use:<br>
  * 
  * <pre>
  * 

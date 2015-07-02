@@ -30,7 +30,7 @@ import org.openmrs.util.PrivilegeConstants;
 
 /**
  * Contains methods pertaining to management of Programs, ProgramWorkflows, ProgramWorkflowStates,
- * PatientPrograms, PatientStates, and ConceptStateConversions Use:<br/>
+ * PatientPrograms, PatientStates, and ConceptStateConversions Use:<br>
  * 
  * <pre>
  *   Program program = new Program();

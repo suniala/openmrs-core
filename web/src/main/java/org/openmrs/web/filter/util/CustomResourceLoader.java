@@ -106,8 +106,8 @@ public class CustomResourceLoader {
 	
 	/**
 	 * Searches under the base directory on the file system for possible message properties files
-	 * and loads them. <br />
-	 * <br />
+	 * and loads them. <br>
+	 * <br>
 	 * It iterates over each file, nested to the base directory, and decides if this file is a
 	 * messages properties. Then, if file is suitable, it parses the locale from its name. And
 	 * finally, it loads resource bundle for that file and associates it with locale, derived from

@@ -214,10 +214,10 @@ public class ModuleUtil {
 	
 	/**
 	 * This method is an enhancement of {@link #compareVersion(String, String)} and adds support for
-	 * wildcard characters and upperbounds. <br/>
-	 * <br/>
-	 * This method calls {@link ModuleUtil#checkRequiredVersion(String, String)} internally. <br/>
-	 * <br/>
+	 * wildcard characters and upperbounds. <br>
+	 * <br>
+	 * This method calls {@link ModuleUtil#checkRequiredVersion(String, String)} internally. <br>
+	 * <br>
 	 * The require version number in the config file can be in the following format:
 	 * <ul>
 	 * <li>1.2.3</li>
@@ -317,9 +317,9 @@ public class ModuleUtil {
 	
 	/**
 	 * This method is an enhancement of {@link #compareVersion(String, String)} and adds support for
-	 * wildcard characters and upperbounds. <br/>
-	 * <br/>
-	 * <br/>
+	 * wildcard characters and upperbounds. <br>
+	 * <br>
+	 * <br>
 	 * The require version number in the config file can be in the following format:
 	 * <ul>
 	 * <li>1.2.3</li>
@@ -327,7 +327,7 @@ public class ModuleUtil {
 	 * <li>1.2.2 - 1.2.3</li>
 	 * <li>1.2.* - 1.3.*</li>
 	 * </ul>
-	 * <br/>
+	 * <br>
 	 *
 	 * @param version openmrs version number to be compared
 	 * @param versionRange value in the config file for required openmrs version

@@ -29,8 +29,8 @@ import org.openmrs.test.BaseContextSensitiveTest;
 import org.openmrs.test.Verifies;
 
 /**
- * This class should test all methods on the person object.<br/>
- * <br/>
+ * This class should test all methods on the person object.<br>
+ * <br>
  * This class does not touch the database, so it does not need to extend the normal openmrs BaseTest
  */
 public class PersonTest extends BaseContextSensitiveTest {

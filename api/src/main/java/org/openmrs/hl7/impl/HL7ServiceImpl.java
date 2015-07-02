@@ -967,9 +967,9 @@ public class HL7ServiceImpl extends BaseOpenmrsService implements HL7Service {
 	
 	/**
 	 * Sets the given handlers as router applications that are available to HAPI when it is parsing
-	 * an hl7 message.<br/>
+	 * an hl7 message.<br>
 	 * This method is usually used by Spring and the handlers are set in the
-	 * applicationContext-server.xml method.<br/>
+	 * applicationContext-server.xml method.<br>
 	 * The key in the map is a string like "ORU_R01" where the first part is the message type and
 	 * the second is the trigger event.
 	 *

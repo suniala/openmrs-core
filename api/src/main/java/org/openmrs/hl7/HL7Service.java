@@ -533,9 +533,9 @@ public interface HL7Service extends OpenmrsService {
 	public void encounterCreated(Encounter encounter);
 	
 	/**
-	 * Process the given {@link HL7InQueue} item. <br/>
-	 * If an error occurs while processing, a new {@link HL7InError} is created and saved. <br/>
-	 * If no error occurs, a new {@link HL7InArchive} is created and saved.<br/>
+	 * Process the given {@link HL7InQueue} item. <br>
+	 * If an error occurs while processing, a new {@link HL7InError} is created and saved. <br>
+	 * If no error occurs, a new {@link HL7InArchive} is created and saved.<br>
 	 * The given {@link HL7InQueue} is removed from the hl7 in queue table regardless of success or
 	 * failure of the processing.
 	 * 

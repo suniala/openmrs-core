@@ -71,8 +71,8 @@ import org.openmrs.util.ConceptMapTypeComparator;
 import org.openmrs.util.OpenmrsConstants;
 
 /**
- * The Hibernate class for Concepts, Drugs, and related classes. <br/>
- * <br/>
+ * The Hibernate class for Concepts, Drugs, and related classes. <br>
+ * <br>
  * Use the {@link ConceptService} to access these methods
  * 
  * @see ConceptService

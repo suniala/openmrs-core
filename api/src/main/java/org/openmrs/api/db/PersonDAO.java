@@ -192,7 +192,7 @@ public interface PersonDAO {
 	 * bypassing any caches. This is used prior to saving an personAttributeType, so that we can
 	 * change the vlaue of any global property which is in
 	 * {@link OpenmrsConstants#GLOBAL_PROPERTIES_OF_PERSON_ATTRIBUTES} and reference the given
-	 * personAttributeType. <br/>
+	 * personAttributeType. <br>
 	 * 
 	 * @param personAttributeType the personAttributeType get the the name of
 	 * @return the name currently in the database for this personAttributeType

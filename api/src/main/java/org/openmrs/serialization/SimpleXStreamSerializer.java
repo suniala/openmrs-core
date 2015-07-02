@@ -18,7 +18,7 @@ import com.thoughtworks.xstream.io.xml.DomDriver;
 
 /**
  * This serializer uses the xstream library to serialize and deserialize objects.
- * <br/>
+ * <br>
  * All classes are automatically aliased.  So a serialization of the {@link Patient} class
  * will not be:
  * <code>

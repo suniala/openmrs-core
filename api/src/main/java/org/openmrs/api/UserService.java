@@ -24,7 +24,7 @@ import org.openmrs.util.PersonByNameComparator;
 import org.openmrs.util.PrivilegeConstants;
 
 /**
- * Contains methods pertaining to Users in the system Use:<br/>
+ * Contains methods pertaining to Users in the system Use:<br>
  * 
  * <pre>
  * 

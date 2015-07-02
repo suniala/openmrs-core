@@ -19,9 +19,9 @@ import org.springframework.core.type.filter.TypeFilter;
 
 /**
  * This class exists so that Spring component-scans can exclude any unit test classes that were
- * accidentally included on the classpath (like in an omod). <br/>
+ * accidentally included on the classpath (like in an omod). <br>
  * This filter returns true for any class that has a super class that is a Test like
- * BaseContextSensitiveTest or TestCase. <br/>
+ * BaseContextSensitiveTest or TestCase. <br>
  * Example usage:
  * 
  * <pre>

@@ -118,8 +118,8 @@ public class UserValidator implements Validator {
 	}
 	
 	/**
-	 * Convenience method to check the given username against the regular expression. <br/>
-	 * <br/>
+	 * Convenience method to check the given username against the regular expression. <br>
+	 * <br>
 	 * A valid username will have following: <li>Begins with Alphanumeric characters <li>only
 	 * followed by more alphanumeric characters (may include . - _) <li>can be at most 50 characters
 	 * <li>minimum 2 chars case-insensitive Examples: <li>The following username will pass
