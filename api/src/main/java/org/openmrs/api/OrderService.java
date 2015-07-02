@@ -287,7 +287,6 @@ public interface OrderService extends OpenmrsService {
 	 * OrderType as of the specified date. Below is the criteria for determining an active order:
 	 * 
 	 * <pre>
-	 * <p>
 	 * - Not voided
 	 * - Not a discontinuation Order i.e one where action != Action#DISCONTINUE
 	 * - dateActivated is before or equal to asOfDate
@@ -295,7 +294,6 @@ public interface OrderService extends OpenmrsService {
 	 * after asOfDate OR if it has autoExpireDate, then it should be after asOfDate. NOTE: If both
 	 * dateStopped and autoExpireDate are set then dateStopped wins because an order can never
 	 * expire and then stopped later i.e. you stop an order that hasn't yet expired
-	 * <p/>
 	 * <pre/>
 	 * 
 	 * @param patient the patient

@@ -458,7 +458,7 @@ public class PatientSearchCriteria {
 	 * Returns a criteria object comparing the given string to each part of the name. <br>
 	 * <br>
 	 * This criteria is essentially:
-	 * <p/>
+	 * <p>
 	 *
 	 * <pre>
 	 * ... where voided = false &amp;&amp; name in (familyName2, familyName, middleName, givenName)
