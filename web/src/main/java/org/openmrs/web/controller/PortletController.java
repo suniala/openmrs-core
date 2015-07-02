@@ -75,7 +75,7 @@ public class PortletController implements Controller {
 	 *     (if the request has a personId or patientId attribute)
 	 *          (Person) person
 	 *          (List&lt;Relationship&gt;) personRelationships
-	 *          (Map&lt;RelationshipType, List<Relationship&gt;>) personRelationshipsByType
+	 *          (Map&lt;RelationshipType, List&lt;Relationship&gt;&gt;) personRelationshipsByType
 	 *     (if the request has an encounterId attribute)
 	 *          (Integer) encounterId
 	 *          (Encounter) encounter

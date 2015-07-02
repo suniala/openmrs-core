@@ -295,7 +295,7 @@ public interface PatientSetService extends OpenmrsService {
 	 * @param limit the number of patients to limit the results to. If null or less than zero,
 	 *            return all
 	 * @param showMostRecentFirst if true, obs with the highest obsDatetime will be first in the
-	 *            List<List<Object>>
+	 *            List&lt;List&lt;Object&gt;&gt;
 	 * @return <code>Map<patientId, List<List< attribute value >>></code>
 	 */
 	public Map<Integer, List<List<Object>>> getObservationsValues(Cohort patients, Concept c, List<String> attributes,
@@ -408,7 +408,7 @@ public interface PatientSetService extends OpenmrsService {
 	 * TODO write something here
 	 * 
 	 * @param patients Cohort of patients to look up
-	 * @return Map<Integer,Map<String,Object>> with characteristics of specified patients
+	 * @return Map&lt;Integer,Map&lt;String,Object&gt;&gt; with characteristics of specified patients
 	 */
 	public Map<Integer, Map<String, Object>> getCharacteristics(Cohort patients);
 	

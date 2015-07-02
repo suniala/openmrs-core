@@ -1462,7 +1462,7 @@ public class ModuleFactory {
 	/**
 	 * Return the current extension map keyed on extension point id
 	 * 
-	 * @return Map&lt;String, List<Extension&gt;>
+	 * @return Map&lt;String, List&lt;Extension&gt;&gt;
 	 */
 	public static Map<String, List<Extension>> getExtensionMap() {
 		if (extensionMap == null) {
