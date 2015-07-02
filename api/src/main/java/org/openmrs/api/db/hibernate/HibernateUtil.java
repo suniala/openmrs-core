@@ -132,7 +132,7 @@ public class HibernateUtil {
 	 * 
 	 * @param criteria the criteria
 	 * @param serializedAttributeValues the serialized attribute values
-	 * @param &lt;AT&gt; the attribute type
+	 * @param <AT> the attribute type
 	 */
 	public static <AT extends AttributeType> void addAttributeCriteria(Criteria criteria,
 	        Map<AT, String> serializedAttributeValues) {
