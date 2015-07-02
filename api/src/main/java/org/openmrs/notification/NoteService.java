@@ -23,11 +23,11 @@ import org.openmrs.util.PrivilegeConstants;
 public interface NoteService {
 	
 	/**
-	 * Get all Notes for a given user, Does not return voided notes.</br>
+	 * Get all Notes for a given user, Does not return voided notes.<br>
 	 * 
 	 * @param user the user to match on
 	 * @return a List&lt;Note&gt; object containing all non-voided notes for the specified user Get all
-	 *         Notes for a given user, Does not return voided notes.</br>
+	 *         Notes for a given user, Does not return voided notes.<br>
 	 */
 	@Authorized(PrivilegeConstants.GET_NOTE)
 	public List<Note> getNotes(User user) throws Exception;
@@ -40,14 +40,14 @@ public interface NoteService {
 	public void createNote(Note note) throws Exception;
 	
 	/**
-	 * Gets a note by internal primary key identifier </br>
+	 * Gets a note by internal primary key identifier <br>
 	 * 
 	 * @param noteId the internal primary key identifier for a Note
 	 */
 	public Note getNote(Integer noteId) throws Exception;
 	
 	/**
-	 * Save or update the given <code>note</code> in the database </br>
+	 * Save or update the given <code>note</code> in the database <br>
 	 * 
 	 * @param note note being updated
 	 */
@@ -55,10 +55,10 @@ public interface NoteService {
 	
 	/**
 	 * Mark a note as voided. This functionally removes the Note from the system while keeping a
-	 * semblance </br>
+	 * semblance <br>
 	 * 
 	 * @param note note being voided
-	 * @param reason a reason for the the void action </br>
+	 * @param reason a reason for the the void action <br>
 	 * @should void the Note and set the voidReason
 	 */
 	@Authorized(PrivilegeConstants.DELETE_NOTE)
