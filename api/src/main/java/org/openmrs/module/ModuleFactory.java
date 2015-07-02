@@ -1669,7 +1669,7 @@ public class ModuleFactory {
 	 * modules are shut down.
 	 * 
 	 * @param moduleId the moduleId used to identify the module being validated
-	 * @return List<dependentModules> the list of moduleId's which depend on the module about to be
+	 * @return List&lt;dependentModules&gt; the list of moduleId's which depend on the module about to be
 	 *         shutdown.
 	 * @since 1.10
 	 */

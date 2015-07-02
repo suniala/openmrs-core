@@ -899,7 +899,7 @@ public class ModuleUtil {
 	}
 	
 	/**
-	 * Looks at the <moduleid>.mandatory properties and at the currently started modules to make
+	 * Looks at the &lt;moduleid&gt;.mandatory properties and at the currently started modules to make
 	 * sure that all mandatory modules have been started successfully.
 	 *
 	 * @throws ModuleException if a mandatory module isn't started
@@ -971,7 +971,7 @@ public class ModuleUtil {
 	
 	/**
 	 * Returns all modules that are marked as mandatory. Currently this means there is a
-	 * <moduleid>.mandatory=true global property.
+	 * &lt;moduleid&gt;.mandatory=true global property.
 	 *
 	 * @return list of modules ids for mandatory modules
 	 * @should return mandatory module ids
