@@ -249,7 +249,7 @@ public interface AdministrationService extends OpenmrsService {
 	 * 
 	 * @param cd ConceptDatatype to delete
 	 * @throws APIException
-	 * @deprecated use {@link org.openmrs.api#deleteConceptDatatype(ConceptDatatype)}
+	 * @deprecated use {@link org.openmrs.api.ConceptService#purgeConceptDatatype(ConceptDatatype)}
 	 */
 	public void deleteConceptDatatype(ConceptDatatype cd) throws APIException;
 	
