@@ -64,7 +64,7 @@ public abstract class FormEntryHandler extends Extension {
 	 * If your module allows filling out forms, override this method.
 	 * 
 	 * @return the url to go to enter a form. (The framework will take care of adding
-	 *         ?personId=xyz&patientId=xyz&formId=abc to it.)
+	 *         ?personId=xyz&patientId=xyz&amp;formId=abc to it.)
 	 */
 	public String getFormEntryUrl() {
 		return null;
