@@ -25,10 +25,10 @@ import org.openmrs.Obs;
  * Example:
  * 
  * <pre>
- * &lt;c:forEach items="${openmrs:filterObsByConcept(observations, concept)}" var="o" end="0">
+ * &lt;c:forEach items="${openmrs:filterObsByConcept(observations, concept)}" var="o" end="0"&gt;
  *   ....
  *   ....
- * &lt;/c:forEach>
+ * &lt;/c:forEach&gt;
  * </pre>
  */
 public class Filter {

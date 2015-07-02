@@ -29,13 +29,13 @@ import org.openmrs.web.user.UserProperties;
 import org.springframework.util.StringUtils;
 
 /**
- * Controller for the <openmrs:require> taglib used on jsp pages. This taglib restricts the page
+ * Controller for the &lt;openmrs:require&gt; taglib used on jsp pages. This taglib restricts the page
  * view to currently logged in (or anonymous) users that have the given privileges. <br>
  * <br>
  * Example use case:
  *
  * <pre>
- * &lt;openmrs:require privilege="Manage Concept Classes" otherwise="/login.htm" redirect="/admin/concepts/conceptClass.form" />
+ * &lt;openmrs:require privilege="Manage Concept Classes" otherwise="/login.htm" redirect="/admin/concepts/conceptClass.form" /&gt;
  * </pre>
  *
  * This will demand that the user have the "Manage Concept Classes" privilege. If they don't, kick

@@ -29,7 +29,7 @@ import org.springframework.web.servlet.mvc.LastModified;
  * enabled, ".withjstl" is appended to the view name. (This allows us to use jstl (such as the
  * spring:message tag) in some javascript files.) <br>
  * If you specify any 'rewrites' then the specified paths are remapped, e.g:<br>
- * /scripts/jquery/jquery-1.3.2.min.js -> /scripts/jquery/jquery.min.js <br>
+ * /scripts/jquery/jquery-1.3.2.min.js -&gt; /scripts/jquery/jquery.min.js <br>
  * All jstl files are cached in the browser until a server restart or a global property is
  * added/changed/deleted
  */

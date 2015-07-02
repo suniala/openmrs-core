@@ -25,10 +25,10 @@ import org.apache.commons.lang.StringUtils;
  * Example:
  *
  * <pre>
- * &lt;c:forEach items="${openmrs:sort(someListObject)}" var="o" end="0">
+ * &lt;c:forEach items="${openmrs:sort(someListObject)}" var="o" end="0"&gt;
  *   ....
  *   ....
- * &lt;/c:forEach>
+ * &lt;/c:forEach&gt;
  * </pre>
  */
 public class Sort {
