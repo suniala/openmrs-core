@@ -43,7 +43,7 @@ public class SqlDiffFileParser {
 	private static final String SQLDIFF_CHANGELOG_FILENAME = "sqldiff.xml";
 	
 	/**
-	 * Get the diff map. Return a sorted map<version, sql statements>
+	 * Get the diff map. Return a sorted map&lt;version, sql statements&gt;
 	 *
 	 * @return SortedMap&lt;String, String&gt;
 	 * @throws ModuleException

@@ -272,7 +272,7 @@ public interface PatientSetService extends OpenmrsService {
 	 * 
 	 * @param patients
 	 * @param c
-	 * @return Map<patientId, List&lt;Obs values&gt;>
+	 * @return Map&lt;patientId, List&lt;Obs values&gt;&gt;
 	 */
 	public Map<Integer, List<List<Object>>> getObservationsValues(Cohort patients, Concept c);
 	

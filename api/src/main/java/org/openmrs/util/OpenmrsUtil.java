@@ -1499,7 +1499,7 @@ public class OpenmrsUtil {
 	}
 	
 	/**
-	 * Allows easy manipulation of a Map<?, Set>
+	 * Allows easy manipulation of a Map&lt;?, Set&gt;
 	 */
 	public static <K, V> void addToSetMap(Map<K, Set<V>> map, K key, V obj) {
 		Set<V> set = map.get(key);

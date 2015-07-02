@@ -49,7 +49,7 @@ import org.springframework.util.StringUtils;
  * See /metadata/api/spring/applicationContext-service.xml for the mapping of this bean. <br>
  * <br>
  * For an Openmrs Service to use this AOP advice class and take advantage of its automatic variable
- * setting, it must have "&lt;ref local="requiredDataInterceptor"/>" in its "preInterceptors".<br>
+ * setting, it must have "&lt;ref local="requiredDataInterceptor"/&gt;" in its "preInterceptors".<br>
  * <br>
  * By default, this should take care of any child collections on the object being acted on. Any
  * child collection of {@link OpenmrsObject}s will get "handled" (i.e., void data set up, save data

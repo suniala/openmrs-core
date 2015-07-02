@@ -25,9 +25,9 @@ import org.springframework.core.type.filter.TypeFilter;
  * Example usage:
  * 
  * <pre>
- *  &lt;context:component-scan base-package="org.openmrs">
- *    &lt;context:exclude-filter type="custom" expression="org.openmrs.util.TestTypeFilter"/>
- *  &lt;/context:component-scan>
+ *  &lt;context:component-scan base-package="org.openmrs"&gt;
+ *    &lt;context:exclude-filter type="custom" expression="org.openmrs.util.TestTypeFilter"/&gt;
+ *  &lt;/context:component-scan&gt;
  * </pre>
  * 
  * (Look at the applicationContext-service.xml file to see this in action)
