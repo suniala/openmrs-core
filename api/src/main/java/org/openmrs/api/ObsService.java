@@ -590,9 +590,6 @@ public interface ObsService extends OpenmrsService {
 	public List<Object[]> getNumericAnswersForConcept(Concept answer, Boolean sortByValue, Integer personType,
 	        boolean includeVoided);
 	
-	/**
-	 * @deprecated use {@link org.openmrs#Encounter.getObservations()}
-	 */
 	@Deprecated
 	@Authorized(PrivilegeConstants.VIEW_OBS)
 	public Set<Obs> getObservations(Encounter whichEncounter);

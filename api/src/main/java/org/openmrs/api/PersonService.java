@@ -138,21 +138,21 @@ public interface PersonService extends OpenmrsService {
 	public List<Person> getPeople(String searchPhrase, Boolean dead, Boolean voided) throws APIException;
 	
 	/**
-	 * @deprecated @see #getPeople(...)
+	 * @deprecated see {@link #getPeople(String, Boolean)}
 	 */
 	@Deprecated
 	@Authorized( { PrivilegeConstants.VIEW_PERSONS })
 	public Set<Person> findPeople(String searchPhrase, boolean includeVoided) throws APIException;
 	
 	/**
-	 * @deprecated @see #getPeople(...)
+	 * @deprecated see {@link #getPeople(String, Boolean)}
 	 */
 	@Deprecated
 	@Authorized( { PrivilegeConstants.VIEW_PERSONS })
 	public Set<Person> findPeople(String searchPhrase, boolean includeVoided, String roles) throws APIException;
 	
 	/**
-	 * @deprecated @see #getPeople(...)
+	 * @deprecated see {@link #getPeople(String, Boolean)}
 	 */
 	@Deprecated
 	@Authorized( { PrivilegeConstants.VIEW_PERSONS })
@@ -481,7 +481,7 @@ public interface PersonService extends OpenmrsService {
 	public List<Relationship> getRelationships(Person p) throws APIException;
 	
 	/**
-	 * @deprecated use {@link #getRelationships(...)}
+	 * @deprecated use {@link #getRelationships()}
 	 */
 	@Deprecated
 	@Authorized( { PrivilegeConstants.VIEW_RELATIONSHIPS })
