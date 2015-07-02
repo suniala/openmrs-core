@@ -294,7 +294,7 @@ public interface OrderService extends OpenmrsService {
 	 * after asOfDate OR if it has autoExpireDate, then it should be after asOfDate. NOTE: If both
 	 * dateStopped and autoExpireDate are set then dateStopped wins because an order can never
 	 * expire and then stopped later i.e. you stop an order that hasn't yet expired
-	 * <pre/>
+	 * </pre>
 	 * 
 	 * @param patient the patient
 	 * @param orderType The OrderType to match

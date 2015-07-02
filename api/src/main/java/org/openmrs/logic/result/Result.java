@@ -438,9 +438,10 @@ public class Result extends ArrayList<Result> {
 	 *         the default datatype. If the result is a list, then return false only if all members
 	 *         are false
 	 *         <table summary="Return logic">
-	 *         <th>
-	 *         <td>Datatype</td>
-	 *         <td>Returns</td></th>
+	 *         <tr>
+	 *         <th>Datatype</th>
+	 *         <th>Returns</th>
+	 *         </tr>
 	 *         <tr>
 	 *         <td>CODED</td>
 	 *         <td>false for concept FALSE<br>
@@ -515,9 +516,10 @@ public class Result extends ArrayList<Result> {
 	 *         datatype. If the result is a list, then the datetime representation of the first
 	 *         member is returned.
 	 *         <table summary="Return logic">
-	 *         <th>
-	 *         <td>Datatype</td>
-	 *         <td>Returns</td></th>
+	 *         <tr>
+	 *         <th>Datatype</th>
+	 *         <th>Returns</th>
+	 *         </tr>
 	 *         <tr>
 	 *         <td>BOOLEAN</td>
 	 *         <td>null</td>
@@ -559,9 +561,10 @@ public class Result extends ArrayList<Result> {
 	 *         the default datatype. If the result is a list, then the value of the first element is
 	 *         returned.
 	 *         <table summary="Return logic">
-	 *         <th>
-	 *         <td>Datatype</td>
-	 *         <td>Returns</td></th>
+	 *         <tr>
+	 *         <th>Datatype</th>
+	 *         <th>Returns</th>
+	 *         </tr>
 	 *         <tr>
 	 *         <td>BOOLEAN</td>
 	 *         <td>1 for true<br>
@@ -576,6 +579,7 @@ public class Result extends ArrayList<Result> {
 	 *         <td>DATETIME</td>
 	 *         <td>Number of milliseconds since Java's epoch</td>
 	 *         </tr>
+	 *         <tr>
 	 *         <td>TEXT</td>
 	 *         <td>numeric value of text if it can be parsed into a number<br>
 	 *         otherwise zero (0)</td> </tr>
