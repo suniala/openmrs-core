@@ -86,7 +86,7 @@ public interface FormService extends OpenmrsService {
 	public Form getFormByUuid(String uuid) throws APIException;
 	
 	/**
-	 * Get form by exact name & version match. If version is null, then this method behaves like
+	 * Get form by exact name &amp; version match. If version is null, then this method behaves like
 	 * {@link #getForm(String)}
 	 * 
 	 * @param name exact name of the form to fetch
