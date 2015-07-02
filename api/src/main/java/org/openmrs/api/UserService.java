@@ -402,7 +402,7 @@ public interface UserService extends OpenmrsService {
 	public List<User> getAllUsers() throws APIException;
 	
 	/**
-	 * Changes the <code>user<code>'s password
+	 * Changes the <code>user</code>'s password
 	 * ** Restricted to Super User access**
 	 * 
 	 * @param u user

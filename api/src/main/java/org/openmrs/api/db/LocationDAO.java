@@ -42,7 +42,7 @@ public interface LocationDAO {
 	/**
 	 * Get a location by locationId
 	 * 
-	 * @param locationId Internal <code>Integer</code> identifier of the <code>Location<code> to get
+	 * @param locationId Internal <code>Integer</code> identifier of the <code>Location</code> to get
 	 * @return the requested <code>Location</code>
 	 */
 	public Location getLocation(Integer locationId);

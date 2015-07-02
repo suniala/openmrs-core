@@ -829,9 +829,9 @@ public interface EncounterService extends OpenmrsService {
 	 * 
 	 * @param patient the patient to match
 	 * @param includeVoided if voided encounters or visits should be included
-	 * @param query filters results (defaults to return all results if <code>null<code>)
-	 * @param start index to start with (defaults to 0 if <code>null<code>)
-	 * @param length number of results to return (default to return all results if <code>null<code>)
+	 * @param query filters results (defaults to return all results if <code>null</code>)
+	 * @param start index to start with (defaults to 0 if <code>null</code>)
+	 * @param length number of results to return (default to return all results if <code>null</code>)
 	 * @return encounters and empty encounters with only visit set
 	 * @throws APIException
 	 * @since 1.9

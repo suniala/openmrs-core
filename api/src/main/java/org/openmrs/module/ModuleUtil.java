@@ -490,7 +490,7 @@ public class ModuleUtil {
 	}
 	
 	/**
-	 * Expand the given <code>fileToExpand</code> jar to the <code>tmpModuleFile<code> directory
+	 * Expand the given <code>fileToExpand</code> jar to the <code>tmpModuleFile</code> directory
 	 *
 	 * If <code>name</code> is null, the entire jar is expanded. If<code>name</code> is not null,
 	 * then only that path/file is expanded.
