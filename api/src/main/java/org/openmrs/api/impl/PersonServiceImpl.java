@@ -850,7 +850,7 @@ public class PersonServiceImpl extends BaseOpenmrsService implements PersonServi
 	}
 	
 	/**
-	 * @deprecated @see
+	 * @deprecated see
 	 *             {@link org.openmrs.api.PersonService#getPersonAttributeTypes(java.lang.String, java.lang.String)}
 	 */
 	@Transactional(readOnly = true)
