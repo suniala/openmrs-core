@@ -492,7 +492,7 @@ public interface LogicService {
 	 * Parse a criteria String to create a new LogicCriteria. <br>
 	 * <br>
 	 * Example: <br>
-	 * <code>logicService.parseString("LAST 'CD4 COUNT' < 200");</code>
+	 * <code>logicService.parseString("LAST 'CD4 COUNT' &lt; 200");</code>
 	 * 
 	 * @param inStr LogicCriteria expression in a plain String object.
 	 * @return LogicCriteria using all possible operand and operator from the String input
@@ -505,7 +505,7 @@ public interface LogicService {
 	 * Parse a criteria String to create a new LogicCriteria. <br>
 	 * <br>
 	 * Example: <br>
-	 * <code>logicService.parseString("LAST 'CD4 COUNT' < 200");</code>
+	 * <code>logicService.parseString("LAST 'CD4 COUNT' &lt; 200");</code>
 	 * 
 	 * @param criteria LogicCriteria expression in a plain String object.
 	 * @return LogicCriteria using all possible operand and operator from the String input

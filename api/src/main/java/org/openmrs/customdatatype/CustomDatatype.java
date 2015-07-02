@@ -66,7 +66,7 @@ public interface CustomDatatype<T> {
 	T fromReferenceString(String referenceString) throws InvalidCustomValueException;
 	
 	/**
-	 * Converts a reference string to a short (generally < 100 characters) plain-text representation of its value. The return
+	 * Converts a reference string to a short (generally &lt; 100 characters) plain-text representation of its value. The return
 	 * value also indicates whether this representation is a complete view of the value, or if there is more to display. 
 	 * Implementations of this method must be high-performance, e.g. if the method is called thousands of times for a table
 	 * of objects with custom values.
