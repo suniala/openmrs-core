@@ -286,8 +286,8 @@ public interface PatientSetService extends OpenmrsService {
 	/**
 	 * Returns a mapping from patient id to obs for concept <code>c</code>
 	 * <p>
-	 * The returned List< attribute value > is [obs value, attr value, attr value, attr value...]
-	 * The returned List&lt;List< attribute value &gt;> represents the obs rows
+	 * The returned List&lt; attribute value &gt; is [obs value, attr value, attr value, attr value...]
+	 * The returned List&lt;List&lt; attribute value &gt;&gt; represents the obs rows
 	 * 
 	 * @param patients the cohort to restrict to. if null, then all patients are fetched
 	 * @param c the concept to look for in obs.concept_id
@@ -296,7 +296,7 @@ public interface PatientSetService extends OpenmrsService {
 	 *            return all
 	 * @param showMostRecentFirst if true, obs with the highest obsDatetime will be first in the
 	 *            List&lt;List&lt;Object&gt;&gt;
-	 * @return <code>Map<patientId, List<List< attribute value >>></code>
+	 * @return <code>Map&lt;patientId, List&lt;List&lt; attribute value &gt;&gt;&gt;</code>
 	 */
 	public Map<Integer, List<List<Object>>> getObservationsValues(Cohort patients, Concept c, List<String> attributes,
 	        Integer limit, boolean showMostRecentFirst);
