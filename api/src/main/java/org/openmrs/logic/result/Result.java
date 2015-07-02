@@ -437,7 +437,7 @@ public class Result extends ArrayList<Result> {
 	 *         the overridden boolean value (if specifically defined) or a boolean representation of
 	 *         the default datatype. If the result is a list, then return false only if all members
 	 *         are false
-	 *         <table>
+	 *         <table summary="Return logic">
 	 *         <th>
 	 *         <td>Datatype</td>
 	 *         <td>Returns</td></th>
@@ -514,7 +514,7 @@ public class Result extends ArrayList<Result> {
 	 *         datetime value (if specifically defined) or datetime representation of the default
 	 *         datatype. If the result is a list, then the datetime representation of the first
 	 *         member is returned.
-	 *         <table>
+	 *         <table summary="Return logic">
 	 *         <th>
 	 *         <td>Datatype</td>
 	 *         <td>Returns</td></th>
@@ -558,7 +558,7 @@ public class Result extends ArrayList<Result> {
 	 *         the overridden numeric value (if specifically defined) or a numeric representation of
 	 *         the default datatype. If the result is a list, then the value of the first element is
 	 *         returned.
-	 *         <table>
+	 *         <table summary="Return logic">
 	 *         <th>
 	 *         <td>Datatype</td>
 	 *         <td>Returns</td></th>

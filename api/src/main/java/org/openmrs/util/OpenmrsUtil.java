@@ -2091,7 +2091,7 @@ public class OpenmrsUtil {
 	/**
 	 * Utility to check the validity of a password for a certain {@link User}. Passwords must be
 	 * non-null. Their required strength is configured via global properties:
-	 * <table>
+	 * <table summary="Configuration props">
 	 * <tr>
 	 * <th>Description</th>
 	 * <th>Property</th>
