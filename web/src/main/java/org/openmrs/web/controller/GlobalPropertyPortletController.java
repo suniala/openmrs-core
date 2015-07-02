@@ -25,7 +25,7 @@ import org.openmrs.api.context.Context;
  * what is displayed (i.e. "formentry.infopath_url" -> "infopath_url") (default false) *
  * 'hideDescription' whether or not to show the global property's description (default: false) *
  * 'title' will display that title * 'showHeader' whether or not to show a header row in the table
- * (default true) Values put in the model: * 'properties' -> List<GlobalProperty>
+ * (default true) Values put in the model: * 'properties' -> List&lt;GlobalProperty&gt;
  */
 public class GlobalPropertyPortletController extends PortletController {
 	

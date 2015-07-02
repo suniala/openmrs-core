@@ -59,7 +59,7 @@ public interface LocationDAO {
 	 * Get all locations
 	 * 
 	 * @param includeRetired boolean - include retired locations as well?
-	 * @return <code>List<Location></code> object of all <code>Location</code>s, possibly including
+	 * @return <code>List&lt;Location&gt;</code> object of all <code>Location</code>s, possibly including
 	 *         retired locations
 	 */
 	public List<Location> getAllLocations(boolean includeRetired);
@@ -114,7 +114,7 @@ public interface LocationDAO {
 	 * Get all location tags
 	 * 
 	 * @param includeRetired boolean - include retired tags as well?
-	 * @return List<LocationTag> object with all <code>LocationTag</code>s, possibly included
+	 * @return List&lt;LocationTag&gt; object with all <code>LocationTag</code>s, possibly included
 	 *         retired ones
 	 */
 	public List<LocationTag> getAllLocationTags(boolean includeRetired);
@@ -123,7 +123,7 @@ public interface LocationDAO {
 	 * Find all location tags with matching names.
 	 * 
 	 * @param search name to search
-	 * @return List<LocationTag> with all matching <code>LocationTags</code>
+	 * @return List&lt;LocationTag&gt; with all matching <code>LocationTags</code>
 	 */
 	public List<LocationTag> getLocationTags(String search);
 	

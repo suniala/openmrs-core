@@ -87,7 +87,7 @@ public interface FormDAO {
 	 * Get all field types
 	 * 
 	 * @param includeRetired boolean - include retired field types as well?
-	 * @return List<FieldTypes> object with all FieldTypes, possibly including retired ones
+	 * @return List&lt;FieldTypes&gt; object with all FieldTypes, possibly including retired ones
 	 * @throws DAOException
 	 */
 	public List<FieldType> getAllFieldTypes(boolean includeRetired) throws DAOException;
@@ -105,7 +105,7 @@ public interface FormDAO {
 	 * Returns all forms in the database, possibly including retired ones
 	 * 
 	 * @param includeRetired boolean - include retired forms?
-	 * @return List<Form> object of all forms, possibly including retired ones
+	 * @return List&lt;Form&gt; object of all forms, possibly including retired ones
 	 * @throws DAOException
 	 */
 	public List<Form> getAllForms(boolean includeRetired) throws DAOException;
@@ -113,7 +113,7 @@ public interface FormDAO {
 	/**
 	 * Returns all FormFields in the database
 	 * 
-	 * @return List<FormField> object of all FormFields in the database
+	 * @return List&lt;FormField&gt; object of all FormFields in the database
 	 * @throws DAOException
 	 */
 	public List<FormField> getAllFormFields() throws DAOException;

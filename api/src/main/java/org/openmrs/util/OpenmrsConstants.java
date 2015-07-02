@@ -221,7 +221,7 @@ public final class OpenmrsConstants {
 	/**
 	 * These words are ignored in concept and patient searches
 	 * 
-	 * @return Collection<String> of words that are ignored
+	 * @return Collection&lt;String&gt; of words that are ignored
 	 */
 	public static final Collection<String> STOP_WORDS() {
 		List<String> stopWords = new Vector<String>();
@@ -243,7 +243,7 @@ public final class OpenmrsConstants {
 	 * A gender character to gender name map<br>
 	 * TODO issues with localization. How should this be handled?
 	 * 
-	 * @return Map<String, String> of gender character to gender name
+	 * @return Map&lt;String, String&gt; of gender character to gender name
 	 */
 	public static final Map<String, String> GENDER() {
 		Map<String, String> genders = new LinkedHashMap<String, String>();
@@ -729,7 +729,7 @@ public final class OpenmrsConstants {
 	/**
 	 * These roles are given to a user automatically and cannot be assigned
 	 * 
-	 * @return <code>Collection<String></code> of the auto-assigned roles
+	 * @return <code>Collection&lt;String&gt;</code> of the auto-assigned roles
 	 */
 	public static final Collection<String> AUTO_ROLES() {
 		List<String> roles = new Vector<String>();
@@ -1109,7 +1109,7 @@ public final class OpenmrsConstants {
 	 * At OpenMRS startup these global properties/default values/descriptions are inserted into the
 	 * database if they do not exist yet.
 	 * 
-	 * @return List<GlobalProperty> of the core global properties
+	 * @return List&lt;GlobalProperty&gt; of the core global properties
 	 */
 	public static final List<GlobalProperty> CORE_GLOBAL_PROPERTIES() {
 		List<GlobalProperty> props = new Vector<GlobalProperty>();

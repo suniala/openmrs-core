@@ -343,7 +343,7 @@ public final class Module {
 	}
 	
 	/**
-	 * @param requiredModulesMap <code>Map<String,String></code> of the <code>requiredModule</code>s
+	 * @param requiredModulesMap <code>Map&lt;String,String&gt;</code> of the <code>requiredModule</code>s
 	 *            to set
 	 * @since 1.5
 	 */
@@ -390,7 +390,7 @@ public final class Module {
 	/**
 	 * Sets the modules that this module is aware of.
 	 *
-	 * @param awareOfModulesMap <code>Map<String,String></code> of the
+	 * @param awareOfModulesMap <code>Map&lt;String,String&gt;</code> of the
 	 *            <code>awareOfModulesMap</code>s to set
 	 * @since 1.9
 	 */

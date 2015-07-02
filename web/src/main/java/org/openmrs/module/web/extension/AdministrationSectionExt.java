@@ -44,7 +44,7 @@ public abstract class AdministrationSectionExt extends Extension {
 	 * 
 	 * In order to sort the links, you should use a <code>LinkedHashMap</code>.
 	 * 
-	 * @return Map<String, String> of <link, title>
+	 * @return Map&lt;String, String&gt; of <link, title>
 	 */
 	public abstract Map<String, String> getLinks();
 	

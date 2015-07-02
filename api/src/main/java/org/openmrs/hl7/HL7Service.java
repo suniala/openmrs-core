@@ -426,7 +426,7 @@ public interface HL7Service extends OpenmrsService {
 	/**
 	 * Get all <code>HL7InError</code> items from the database
 	 * 
-	 * @return a List<HL7InError> object with all <code>HL7InError</code> items from the database
+	 * @return a List&lt;HL7InError&gt; object with all <code>HL7InError</code> items from the database
 	 * @throws APIException
 	 */
 	@Authorized(HL7Constants.PRIV_VIEW_HL7_IN_EXCEPTION)

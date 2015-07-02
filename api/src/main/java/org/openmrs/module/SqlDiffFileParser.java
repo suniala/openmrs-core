@@ -45,7 +45,7 @@ public class SqlDiffFileParser {
 	/**
 	 * Get the diff map. Return a sorted map<version, sql statements>
 	 *
-	 * @return SortedMap<String, String>
+	 * @return SortedMap&lt;String, String&gt;
 	 * @throws ModuleException
 	 */
 	public static SortedMap<String, String> getSqlDiffs(Module module) throws ModuleException {

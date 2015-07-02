@@ -112,7 +112,7 @@ import org.springframework.aop.Advisor;
  * 		try {
  * 			Context.openSession();
  * 			Context.authenticate("admin", "test");
- * 			List<Patients> patients = Context.getPatientService().getPatientsByName("Fred");
+ * 			List&lt;Patients&gt; patients = Context.getPatientService().getPatientsByName("Fred");
  * 			patients.get(0).setBirthdate(new Date());
  * 			Context.getPatientService().savePatient(patients.get(0));
  * 			...

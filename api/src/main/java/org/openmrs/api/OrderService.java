@@ -403,7 +403,7 @@ public interface OrderService extends OpenmrsService {
 	/**
 	 * Gets all order frequencies
 	 * 
-	 * @return List<OrderFrequency>
+	 * @return List&lt;OrderFrequency&gt;
 	 * @since 1.10
 	 * @param includeRetired specifies whether retired ones should be included or not
 	 * @should return only non retired order frequencies if includeRetired is set to false
@@ -423,7 +423,7 @@ public interface OrderService extends OpenmrsService {
 	 *            matched
 	 * @param includeRetired Specifies if retired order frequencies that match should be included or
 	 *            not
-	 * @return List<OrderFrequency>
+	 * @return List&lt;OrderFrequency&gt;
 	 * @since 1.10
 	 * @should get non retired frequencies with names matching the phrase if includeRetired is false
 	 * @should include retired frequencies if includeRetired is set to true

@@ -101,7 +101,7 @@ public interface EncounterService extends OpenmrsService {
 	 * Get all encounters (not voided) for a patient, sorted by encounterDatetime ascending.
 	 * 
 	 * @param patient
-	 * @return List<Encounter> encounters (not voided) for a patient.
+	 * @return List&lt;Encounter&gt; encounters (not voided) for a patient.
 	 * @should not get voided encounters
 	 * @should throw error when given null parameter
 	 */
@@ -331,7 +331,7 @@ public interface EncounterService extends OpenmrsService {
 	 * are case insensitive so that "NaMe".equals("name") is true. Includes retired EncounterTypes.
 	 * 
 	 * @param name of the encounter type to find
-	 * @return List<EncounterType> matching encounters
+	 * @return List&lt;EncounterType&gt; matching encounters
 	 * @throws APIException
 	 * @should return types by partial name match
 	 * @should return types by partial case insensitive match
@@ -448,7 +448,7 @@ public interface EncounterService extends OpenmrsService {
 	 * Get all encounters (not voided) for a patient
 	 * 
 	 * @param who
-	 * @return List<Encounter> encounters (not voided) for a patient
+	 * @return List&lt;Encounter&gt; encounters (not voided) for a patient
 	 * @deprecated replaced by {@link #getEncountersByPatient(Patient)}
 	 */
 	@Deprecated
@@ -461,7 +461,7 @@ public interface EncounterService extends OpenmrsService {
 	 * 
 	 * @param who
 	 * @param includeVoided No longer supported.
-	 * @return List<Encounter> object of non-voided Encounters
+	 * @return List&lt;Encounter&gt; object of non-voided Encounters
 	 * @deprecated replaced by {@link #getEncountersByPatient(Patient)}
 	 */
 	@Deprecated
@@ -473,7 +473,7 @@ public interface EncounterService extends OpenmrsService {
 	 * 
 	 * @param who
 	 * @param where
-	 * @return List<Encounter> object of all encounters with this patient in specified location
+	 * @return List&lt;Encounter&gt; object of all encounters with this patient in specified location
 	 * @deprecated use
 	 *             {@link #getEncounters(Patient, Location, Date, Date, Collection, Collection, boolean)}
 	 */
@@ -488,7 +488,7 @@ public interface EncounterService extends OpenmrsService {
 	 * @param who
 	 * @param fromDate
 	 * @param toDate
-	 * @return List<Encounter> object of all encounters with this patient in specified date range
+	 * @return List&lt;Encounter&gt; object of all encounters with this patient in specified date range
 	 * @deprecated use
 	 *             {@link #getEncounters(Patient, Location, Date, Date, Collection, Collection, boolean)}
 	 */
@@ -527,7 +527,7 @@ public interface EncounterService extends OpenmrsService {
 	/**
 	 * Get all encounter types (not retired)
 	 * 
-	 * @return A List<EncounterType> object of all non-retired EncounterTypes
+	 * @return A List&lt;EncounterType&gt; object of all non-retired EncounterTypes
 	 * @throws APIException
 	 * @deprecated replaced by {@link #getAllEncounterTypes()}
 	 */

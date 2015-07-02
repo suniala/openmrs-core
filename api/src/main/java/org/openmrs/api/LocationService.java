@@ -27,7 +27,7 @@ import org.openmrs.util.PrivilegeConstants;
  * <br>
  * Example Usage: <br>
  * <code>
- *   List<Location> locations = Context.getLocationService().getAllLocations();
+ *   List&lt;Location&gt; locations = Context.getLocationService().getAllLocations();
  * </code>
  * 
  * @see org.openmrs.api.context.Context

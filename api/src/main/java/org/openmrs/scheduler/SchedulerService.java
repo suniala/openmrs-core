@@ -140,7 +140,7 @@ public interface SchedulerService extends OpenmrsService {
 	/**
 	 * Return SchedulerConstants
 	 * 
-	 * @return SortedMap<String, String>
+	 * @return SortedMap&lt;String, String&gt;
 	 */
 	public SortedMap<String, String> getSystemVariables();
 	

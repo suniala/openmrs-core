@@ -86,7 +86,7 @@ public interface PersonService extends OpenmrsService {
 	 * @param nameSearch string to search the person's name for
 	 * @param birthyear the year of birth to restrict
 	 * @param gender The gender field to search on (Typically just "M" or "F")
-	 * @return Set<Person> object with all people matching criteria
+	 * @return Set&lt;Person&gt; object with all people matching criteria
 	 * @throws APIException
 	 * @should accept greater than three names
 	 * @should match single search to any name part
@@ -109,7 +109,7 @@ public interface PersonService extends OpenmrsService {
 	 * @param personType one of person, user, or patient. If Person, any Person object is returned,
 	 *            if Patient, only Persons that are Patients are returned, if User, only Persons
 	 *            that are Users are returned
-	 * @return Set<Person> object with all people matching criteria
+	 * @return Set&lt;Person&gt; object with all people matching criteria
 	 * @throws APIException
 	 * @see #getSimilarPeople(String, Integer, String)
 	 * @since 1.5
@@ -296,7 +296,7 @@ public interface PersonService extends OpenmrsService {
 	 * Get all PersonAttributeTypes in the database with the option of including the retired types
 	 * 
 	 * @param includeRetired boolean - include retired attribute types as well?
-	 * @return List<PersonAttributeType> object of all PersonAttributeTypes, possibly including
+	 * @return List&lt;PersonAttributeType&gt; object of all PersonAttributeTypes, possibly including
 	 *         retired ones
 	 * @should return all person attribute types including retired when include retired is true
 	 * @should return all person attribute types excluding retired when include retired is false

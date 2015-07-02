@@ -2172,7 +2172,7 @@ public class HibernatePatientSetDAO implements PatientSetDAO {
 	
 	/**
 	 * @param patients
-	 * @param types List<PatientIdentifierTypes> of types to get
+	 * @param types List&lt;PatientIdentifierTypes&gt; of types to get
 	 * @return Map of {@link PatientIdentifier}s
 	 */
 	@SuppressWarnings("unchecked")

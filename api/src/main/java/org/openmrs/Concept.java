@@ -1763,7 +1763,7 @@ public class Concept extends BaseOpenmrsObject implements Auditable, Retireable,
 	/**
 	 * Sort the ConceptSet based on the weight
 	 * 
-	 * @return sortedConceptSet Collection<ConceptSet>
+	 * @return sortedConceptSet Collection&lt;ConceptSet&gt;
 	 */
 	private List<ConceptSet> getSortedConceptSets() {
 		List<ConceptSet> cs = new Vector<ConceptSet>();

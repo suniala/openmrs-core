@@ -214,7 +214,7 @@ public interface FormService extends OpenmrsService {
 	 * 
 	 * @param publishedOnly
 	 * @param includeRetired
-	 * @return List<Form> object of all matching forms
+	 * @return List&lt;Form&gt; object of all matching forms
 	 * @throws APIException
 	 * @deprecated use {@link #getAllForms()} or {@link #getPublishedForms()} or
 	 *             {@link #getForms(String, Boolean, Collection, Boolean, Collection, Collection)}

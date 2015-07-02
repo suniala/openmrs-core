@@ -26,7 +26,7 @@ import java.lang.annotation.Target;
  *    <pre>
  *      private class ClassWithDisableHandlersAnnotation extends BaseOpenmrsData {
  *          {@literal @}DisableHandlers(handlerTypes = {VoidHandler.class, SaveHandler.class})
- *          private List<Person> persons;
+ *          private List&lt;Person&gt; persons;
  *      }
  *    </pre>
  *      You can disable all RequiredDataAdviceHandlers by specifying the parent class: {@literal @}DisableHandlers(handlerTypes = { RequiredDataHandler.class })

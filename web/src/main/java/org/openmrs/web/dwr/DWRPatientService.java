@@ -68,7 +68,7 @@ public class DWRPatientService implements GlobalPropertyListener {
 	 *
 	 * @param searchValue string to be looked for
 	 * @param includeVoided true/false whether or not to included voided patients
-	 * @return Collection<Object> of PatientListItem or String
+	 * @return Collection&lt;Object&gt; of PatientListItem or String
 	 * @should return only patient list items with nonnumeric search
 	 * @should return string warning if invalid patient identifier
 	 * @should not return string warning if searching with valid identifier
@@ -95,7 +95,7 @@ public class DWRPatientService implements GlobalPropertyListener {
 	 * @param includeVoided true/false whether or not to included voided patients
 	 * @param start The starting index for the results to return
 	 * @param length The number of results of return
-	 * @return Collection<Object> of PatientListItem or String
+	 * @return Collection&lt;Object&gt; of PatientListItem or String
 	 * @since 1.8
 	 */
 	public Collection<Object> findBatchOfPatients(String searchValue, boolean includeVoided, Integer start, Integer length) {

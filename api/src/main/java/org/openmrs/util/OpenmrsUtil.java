@@ -675,11 +675,11 @@ public class OpenmrsUtil {
 	}
 	
 	/**
-	 * Takes a String like "size=compact|order=date" and returns a Map<String,String> from the keys
+	 * Takes a String like "size=compact|order=date" and returns a Map&lt;String,String&gt; from the keys
 	 * to the values.
 	 * 
 	 * @param paramList <code>String</code> with a list of parameters
-	 * @return Map<String, String> of the parameters passed
+	 * @return Map&lt;String, String&gt; of the parameters passed
 	 */
 	public static Map<String, String> parseParameterList(String paramList) {
 		Map<String, String> ret = new HashMap<String, String>();
@@ -1866,7 +1866,7 @@ public class OpenmrsUtil {
 	 * Post the given map of variables to the given url string
 	 * 
 	 * @param urlString valid http url to post data to
-	 * @param dataToPost Map<String, String> of key value pairs to post to urlString
+	 * @param dataToPost Map&lt;String, String&gt; of key value pairs to post to urlString
 	 * @return response from urlString after posting
 	 * @deprecated use org.openmrs.util.HttpClient
 	 */

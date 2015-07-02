@@ -527,7 +527,7 @@ public interface UserService extends OpenmrsService {
 	 * @param givenName
 	 * @param familyName
 	 * @param includeRetired
-	 * @return List<User> object of users matching criteria
+	 * @return List&lt;User&gt; object of users matching criteria
 	 * @should fetch users exactly matching the given givenName and familyName
 	 * @should fetch voided users whenincludeVoided is true
 	 * @should not fetch any voided users when includeVoided is false

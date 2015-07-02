@@ -26,7 +26,7 @@ public interface NoteService {
 	 * Get all Notes for a given user, Does not return voided notes.</br>
 	 * 
 	 * @param user the user to match on
-	 * @return a List<Note> object containing all non-voided notes for the specified user Get all
+	 * @return a List&lt;Note&gt; object containing all non-voided notes for the specified user Get all
 	 *         Notes for a given user, Does not return voided notes.</br>
 	 */
 	@Authorized(PrivilegeConstants.GET_NOTE)

@@ -56,7 +56,7 @@ public interface ProgramWorkflowDAO {
 	 * Returns all programs
 	 * 
 	 * @param includeRetired whether or not to include retired programs
-	 * @return List<Program> all existing programs, including retired based on the input parameter
+	 * @return List&lt;Program&gt; all existing programs, including retired based on the input parameter
 	 * @throws DAOException
 	 */
 	public List<Program> getAllPrograms(boolean includeRetired) throws DAOException;
@@ -66,7 +66,7 @@ public interface ProgramWorkflowDAO {
 	 * list will be returned if there are no programs matching this <code>nameFragment</code>
 	 * 
 	 * @param nameFragment is the string used to search for programs
-	 * @return List<Program> - list of Programs whose name matches the input parameter
+	 * @return List&lt;Program&gt; - list of Programs whose name matches the input parameter
 	 * @throws DAOException
 	 */
 	public List<Program> findPrograms(String nameFragment) throws DAOException;
@@ -124,7 +124,7 @@ public interface ProgramWorkflowDAO {
 	 *            before this Date
 	 * @param includeVoided - boolean, if true will return voided PatientPrograms as well. If false,
 	 *            will not return voided PatientPrograms
-	 * @return List<PatientProgram> of PatientPrograms that match the passed input parameters
+	 * @return List&lt;PatientProgram&gt; of PatientPrograms that match the passed input parameters
 	 * @throws DAOException
 	 */
 	public List<PatientProgram> getPatientPrograms(Patient patient, Program program, Date minEnrollmentDate,
@@ -156,7 +156,7 @@ public interface ProgramWorkflowDAO {
 	/**
 	 * Returns all conceptStateConversions
 	 * 
-	 * @return List<ConceptStateConversion> of all ConceptStateConversions that exist
+	 * @return List&lt;ConceptStateConversion&gt; of all ConceptStateConversions that exist
 	 * @throws DAOException
 	 */
 	public List<ConceptStateConversion> getAllConceptStateConversions() throws DAOException;

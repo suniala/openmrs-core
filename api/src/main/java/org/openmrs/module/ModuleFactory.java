@@ -379,7 +379,7 @@ public class ModuleFactory {
 	 * Returns all modules found/loaded into the system (started and not started), with the core
 	 * modules at the start of that list
 	 * 
-	 * @return <code>List<Module></code> of the modules loaded into the system, with the core
+	 * @return <code>List&lt;Module&gt;</code> of the modules loaded into the system, with the core
 	 *         modules first.
 	 */
 	public static List<Module> getLoadedModulesCoreFirst() {
@@ -403,7 +403,7 @@ public class ModuleFactory {
 	 * the moduleId followed by the required version if one is specified
 	 * 
 	 * @param module the module to check required modules for
-	 * @return List<String> of module names + optional required versions:
+	 * @return List&lt;String&gt; of module names + optional required versions:
 	 *         "org.openmrs.formentry 1.8, org.rg.patientmatching"
 	 */
 	private static List<String> getMissingRequiredModules(Module module) {
@@ -432,7 +432,7 @@ public class ModuleFactory {
 	/**
 	 * Returns all modules found/loaded into the system (started and not started)
 	 * 
-	 * @return <code>Collection<Module></code> of the modules loaded into the system
+	 * @return <code>Collection&lt;Module&gt;</code> of the modules loaded into the system
 	 */
 	public static Collection<Module> getLoadedModules() {
 		if (getLoadedModulesMap().size() > 0) {
@@ -444,9 +444,9 @@ public class ModuleFactory {
 	
 	/**
 	 * Returns all modules found/loaded into the system (started and not started) in the form of a
-	 * map<ModuleId, Module>
+	 * map&lt;ModuleId, Module&gt;
 	 * 
-	 * @return map<ModuleId, Module>
+	 * @return map&lt;ModuleId, Module&gt;
 	 */
 	public static Map<String, Module> getLoadedModulesMap() {
 		if (loadedModules == null) {
@@ -458,9 +458,9 @@ public class ModuleFactory {
 	
 	/**
 	 * Returns all modules found/loaded into the system (started and not started) in the form of a
-	 * map<PackageName, Module>
+	 * map&lt;PackageName, Module&gt;
 	 * 
-	 * @return map<PackageName, Module>
+	 * @return map&lt;PackageName, Module&gt;
 	 */
 	public static Map<String, Module> getLoadedModulesMapPackage() {
 		if (loadedModules == null) {
@@ -478,7 +478,7 @@ public class ModuleFactory {
 	/**
 	 * Returns the modules that have been successfully started
 	 * 
-	 * @return <code>Collection<Module></code> of the started modules
+	 * @return <code>Collection&lt;Module&gt;</code> of the started modules
 	 */
 	public static Collection<Module> getStartedModules() {
 		if (getStartedModulesMap().size() > 0) {
@@ -1342,7 +1342,7 @@ public class ModuleFactory {
 	/**
 	 * Get a list of required Privileges defined by the modules
 	 * 
-	 * @return <code>List<Privilege></code> of the required privileges
+	 * @return <code>List&lt;Privilege&gt;</code> of the required privileges
 	 */
 	public static List<Privilege> getPrivileges() {
 		
@@ -1360,7 +1360,7 @@ public class ModuleFactory {
 	/**
 	 * Get a list of required GlobalProperties defined by the modules
 	 * 
-	 * @return <code>List<GlobalProperty></code> object of the module's global properties
+	 * @return <code>List&lt;GlobalProperty&gt;</code> object of the module's global properties
 	 */
 	public static List<GlobalProperty> getGlobalProperties() {
 		
@@ -1435,7 +1435,7 @@ public class ModuleFactory {
 	/**
 	 * Returns all module classloaders This method will not return null
 	 * 
-	 * @return Collection<ModuleClassLoader> all known module classloaders or empty list.
+	 * @return Collection&lt;ModuleClassLoader&gt; all known module classloaders or empty list.
 	 */
 	public static Collection<ModuleClassLoader> getModuleClassLoaders() {
 		Map<Module, ModuleClassLoader> classLoaders = getModuleClassLoaderMap();
@@ -1449,7 +1449,7 @@ public class ModuleFactory {
 	/**
 	 * Return all current classloaders keyed on module object
 	 * 
-	 * @return Map<Module, ModuleClassLoader>
+	 * @return Map&lt;Module, ModuleClassLoader&gt;
 	 */
 	public static Map<Module, ModuleClassLoader> getModuleClassLoaderMap() {
 		if (moduleClassLoaders == null) {
@@ -1462,7 +1462,7 @@ public class ModuleFactory {
 	/**
 	 * Return the current extension map keyed on extension point id
 	 * 
-	 * @return Map<String, List<Extension>>
+	 * @return Map&lt;String, List<Extension&gt;>
 	 */
 	public static Map<String, List<Extension>> getExtensionMap() {
 		if (extensionMap == null) {

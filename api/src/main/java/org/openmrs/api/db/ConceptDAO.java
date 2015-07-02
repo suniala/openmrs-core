@@ -99,7 +99,7 @@ public interface ConceptDAO {
 	 * @param name
 	 * @param loc
 	 * @param searchOnPhrase This puts wildcard characters around the concept name search criteria
-	 * @return List<Concept>
+	 * @return List&lt;Concept&gt;
 	 * @throws DAOException
 	 * @should not return concepts with matching names that are voided
 	 */
@@ -138,7 +138,7 @@ public interface ConceptDAO {
 	 * @param drugName
 	 * @param concept
 	 * @param includeRetired
-	 * @return List<Drug>
+	 * @return List&lt;Drug&gt;
 	 * @throws DAOException
 	 */
 	public List<Drug> getDrugs(String drugName, Concept concept, boolean includeRetired) throws DAOException;

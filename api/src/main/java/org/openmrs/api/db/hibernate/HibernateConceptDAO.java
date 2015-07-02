@@ -785,7 +785,7 @@ public class HibernateConceptDAO implements ConceptDAO {
 	 * returns a list of n-generations of parents of a concept in a concept set
 	 * 
 	 * @param Concept current
-	 * @return List<Concept>
+	 * @return List&lt;Concept&gt;
 	 * @throws DAOException
 	 */
 	@SuppressWarnings("unchecked")
