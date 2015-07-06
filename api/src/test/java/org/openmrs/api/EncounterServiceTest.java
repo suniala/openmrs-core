@@ -39,6 +39,7 @@ import org.openmrs.api.handler.ExistingOrNewVisitAssignmentHandler;
 import org.openmrs.api.handler.ExistingVisitAssignmentHandler;
 import org.openmrs.api.handler.NoVisitAssignmentHandler;
 import org.openmrs.parameter.EncounterSearchCriteria;
+import org.openmrs.parameter.EncounterSearchCriteriaBuilder;
 import org.openmrs.test.BaseContextSensitiveTest;
 import org.openmrs.test.Verifies;
 import org.openmrs.util.OpenmrsConstants;
@@ -887,7 +888,7 @@ public class EncounterServiceTest extends BaseContextSensitiveTest {
 	public void getEncounters_shouldGetEncountersByDateChanged() throws Exception {
 		EncounterService encounterService = Context.getEncounterService();
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-		EncounterSearchCriteria encounterSearchCriteria = new EncounterSearchCriteria().setIncludeVoided(true);
+		EncounterSearchCriteria encounterSearchCriteria = new EncounterSearchCriteriaBuilder().createEncounterSearchCriteria().setIncludeVoided(true);
 		Assert.assertEquals(7, encounterService.getEncounters(
 		    encounterSearchCriteria.setDateChanged(sdf.parse("2006-01-01"))).size());
 		Assert.assertEquals(5, encounterService.getEncounters(

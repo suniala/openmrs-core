@@ -17,7 +17,6 @@ import org.openmrs.Provider;
 import org.openmrs.VisitType;
 import org.openmrs.Visit;
 
-import javax.annotation.Nullable;
 import java.util.Collection;
 import java.util.Date;
 
@@ -49,7 +48,24 @@ public class EncounterSearchCriteria {
 	private Collection<Visit> visits;
 	
 	private boolean includeVoided;
-	
+
+	public EncounterSearchCriteria(Patient patient, Location location, Date fromDate, Date toDate, Date dateChanged,
+								   Collection<Form> enteredViaForms, Collection<EncounterType> encounterTypes,
+								   Collection<Provider> providers, Collection<VisitType> visitTypes,
+								   Collection<Visit> visits, boolean includeVoided) {
+		this.patient = patient;
+		this.location = location;
+		this.fromDate = fromDate;
+		this.toDate = toDate;
+		this.dateChanged = dateChanged;
+		this.enteredViaForms = enteredViaForms;
+		this.encounterTypes = encounterTypes;
+		this.providers = providers;
+		this.visitTypes = visitTypes;
+		this.visits = visits;
+		this.includeVoided = includeVoided;
+	}
+
 	/**
 	 * @return the patient the encounter is for
 	 */
@@ -61,7 +77,7 @@ public class EncounterSearchCriteria {
 	 * @param patient the patient the encounter is for
 	 * @return this parameter object
 	 */
-	public EncounterSearchCriteria setPatient(@Nullable Patient patient) {
+	public EncounterSearchCriteria setPatient(Patient patient) {
 		this.patient = patient;
 		return this;
 	}
@@ -77,7 +93,7 @@ public class EncounterSearchCriteria {
 	 * @param location the location this encounter took place
 	 * @return this parameter object
 	 */
-	public EncounterSearchCriteria setLocation(@Nullable Location location) {
+	public EncounterSearchCriteria setLocation(Location location) {
 		this.location = location;
 		return this;
 	}
@@ -93,7 +109,7 @@ public class EncounterSearchCriteria {
 	 * @param fromDate the minimum date (inclusive) this encounter took place
 	 * @return this parameter object
 	 */
-	public EncounterSearchCriteria setFromDate(@Nullable Date fromDate) {
+	public EncounterSearchCriteria setFromDate(Date fromDate) {
 		this.fromDate = fromDate;
 		return this;
 	}
@@ -109,7 +125,7 @@ public class EncounterSearchCriteria {
 	 * @param toDate toDate the maximum date (exclusive) this encounter took place
 	 * @return this parameter object
 	 */
-	public EncounterSearchCriteria setToDate(@Nullable Date toDate) {
+	public EncounterSearchCriteria setToDate(Date toDate) {
 		this.toDate = toDate;
 		return this;
 	}
@@ -125,7 +141,7 @@ public class EncounterSearchCriteria {
 	 * @param dateChanged the minimum date this encounter was changed
 	 * @return this parameter object
 	 */
-	public EncounterSearchCriteria setDateChanged(@Nullable Date dateChanged) {
+	public EncounterSearchCriteria setDateChanged(Date dateChanged) {
 		this.dateChanged = dateChanged;
 		return this;
 	}
@@ -142,7 +158,7 @@ public class EncounterSearchCriteria {
 	 *                           This search parameter is omitted if the set is null or empty.
 	 * @return this parameter object
 	 */
-	public EncounterSearchCriteria setEnteredViaForms(@Nullable Collection<Form> enteredViaForms) {
+	public EncounterSearchCriteria setEnteredViaForms(Collection<Form> enteredViaForms) {
 		this.enteredViaForms = enteredViaForms;
 		return this;
 	}
@@ -159,7 +175,7 @@ public class EncounterSearchCriteria {
 	 *                           This search parameter is omitted if the set is null or empty.
 	 * @return this parameter object
 	 */
-	public EncounterSearchCriteria setEncounterTypes(@Nullable Collection<EncounterType> encounterTypes) {
+	public EncounterSearchCriteria setEncounterTypes(Collection<EncounterType> encounterTypes) {
 		this.encounterTypes = encounterTypes;
 		return this;
 	}
@@ -176,7 +192,7 @@ public class EncounterSearchCriteria {
 	 *                           This search parameter is omitted if the set is null or empty.
 	 * @return this parameter object
 	 */
-	public EncounterSearchCriteria setProviders(@Nullable Collection<Provider> providers) {
+	public EncounterSearchCriteria setProviders(Collection<Provider> providers) {
 		this.providers = providers;
 		return this;
 	}
@@ -193,7 +209,7 @@ public class EncounterSearchCriteria {
 	 *                           This search parameter is omitted if the set is null or empty.
 	 * @return this parameter object
 	 */
-	public EncounterSearchCriteria setVisitTypes(@Nullable Collection<VisitType> visitTypes) {
+	public EncounterSearchCriteria setVisitTypes(Collection<VisitType> visitTypes) {
 		this.visitTypes = visitTypes;
 		return this;
 	}
@@ -210,7 +226,7 @@ public class EncounterSearchCriteria {
 	 *                           This search parameter is omitted if the set is null or empty.
 	 * @return this parameter object
 	 */
-	public EncounterSearchCriteria setVisits(@Nullable Collection<Visit> visits) {
+	public EncounterSearchCriteria setVisits(Collection<Visit> visits) {
 		this.visits = visits;
 		return this;
 	}

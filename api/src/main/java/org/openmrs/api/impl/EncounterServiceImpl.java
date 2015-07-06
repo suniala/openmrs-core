@@ -44,6 +44,7 @@ import org.openmrs.api.context.Context;
 import org.openmrs.api.db.EncounterDAO;
 import org.openmrs.api.handler.EncounterVisitHandler;
 import org.openmrs.parameter.EncounterSearchCriteria;
+import org.openmrs.parameter.EncounterSearchCriteriaBuilder;
 import org.openmrs.util.HandlerUtil;
 import org.openmrs.util.OpenmrsClassLoader;
 import org.openmrs.util.OpenmrsConstants;
@@ -286,16 +287,16 @@ public class EncounterServiceImpl extends BaseOpenmrsService implements Encounte
 	public List<Encounter> getEncounters(Patient who, Location loc, Date fromDate, Date toDate,
 	        Collection<Form> enteredViaForms, Collection<EncounterType> encounterTypes, Collection<User> providers,
 	        boolean includeVoided) {
-		EncounterSearchCriteria encounterSearchCriteria = new EncounterSearchCriteria();
-		encounterSearchCriteria.setPatient(who);
-		encounterSearchCriteria.setLocation(loc);
-		encounterSearchCriteria.setFromDate(fromDate);
-		encounterSearchCriteria.setToDate(toDate);
-		encounterSearchCriteria.setEnteredViaForms(enteredViaForms);
-		encounterSearchCriteria.setEncounterTypes(encounterTypes);
-		encounterSearchCriteria.setProviders(usersToProviders(providers));
-		encounterSearchCriteria.setIncludeVoided(includeVoided);
-		return this.getEncounters(encounterSearchCriteria);
+		EncounterSearchCriteriaBuilder encounterSearchCriteriaBuilder = new EncounterSearchCriteriaBuilder()
+				.setPatient(who)
+				.setLocation(loc)
+				.setFromDate(fromDate)
+				.setToDate(toDate)
+				.setEnteredViaForms(enteredViaForms)
+				.setEncounterTypes(encounterTypes)
+				.setProviders(usersToProviders(providers))
+				.setIncludeVoided(includeVoided);
+		return getEncounters(encounterSearchCriteriaBuilder.createEncounterSearchCriteria());
 	}
 	
 	/**
@@ -329,18 +330,19 @@ public class EncounterServiceImpl extends BaseOpenmrsService implements Encounte
 	public List<Encounter> getEncounters(Patient who, Location loc, Date fromDate, Date toDate,
 	        Collection<Form> enteredViaForms, Collection<EncounterType> encounterTypes, Collection<Provider> providers,
 	        Collection<VisitType> visitTypes, Collection<Visit> visits, boolean includeVoided) {
-		EncounterSearchCriteria encounterSearchCriteria = new EncounterSearchCriteria();
-		encounterSearchCriteria.setPatient(who);
-		encounterSearchCriteria.setLocation(loc);
-		encounterSearchCriteria.setFromDate(fromDate);
-		encounterSearchCriteria.setToDate(toDate);
-		encounterSearchCriteria.setEnteredViaForms(enteredViaForms);
-		encounterSearchCriteria.setEncounterTypes(encounterTypes);
-		encounterSearchCriteria.setProviders(providers);
-		encounterSearchCriteria.setVisitTypes(visitTypes);
-		encounterSearchCriteria.setVisits(visits);
-		encounterSearchCriteria.setIncludeVoided(includeVoided);
-		return this.getEncounters(encounterSearchCriteria);
+		EncounterSearchCriteriaBuilder encounterSearchCriteriaBuilder = new EncounterSearchCriteriaBuilder()
+				.setPatient(who)
+				.setLocation(loc)
+				.setFromDate(fromDate)
+				.setToDate(toDate)
+				.setEnteredViaForms(enteredViaForms)
+				.setEncounterTypes(encounterTypes)
+				.setProviders(providers)
+				.setVisitTypes(visitTypes)
+				.setVisits(visits)
+				.setIncludeVoided(includeVoided);
+
+		return getEncounters(encounterSearchCriteriaBuilder.createEncounterSearchCriteria());
 	}
 	
 	/**
