@@ -164,8 +164,7 @@ public interface EncounterService extends OpenmrsService {
 	 * @should get encounters by provider
 	 * @should exclude voided encounters
 	 * @should include voided encounters
-	 * @deprecated replaced by
-	 *             {@link #getEncounters(Patient, Location, Date, Date, Collection, Collection, Collection, Collection, Collection, boolean)}
+	 * @deprecated use {@link #getEncounters(EncounterSearchCriteria)} instead
 	 */
 	@Deprecated
 	@Authorized( { PrivilegeConstants.GET_ENCOUNTERS })
@@ -199,6 +198,7 @@ public interface EncounterService extends OpenmrsService {
 	 * @should get encounters by visit
 	 * @should exclude voided encounters
 	 * @should include voided encounters
+	 * @deprecated use {@link #getEncounters(EncounterSearchCriteria)} instead
 	 */
 	@Deprecated
 	@Authorized( { PrivilegeConstants.GET_ENCOUNTERS })
