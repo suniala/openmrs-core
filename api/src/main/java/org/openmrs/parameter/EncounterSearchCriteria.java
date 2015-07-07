@@ -21,9 +21,11 @@ import java.util.Collection;
 import java.util.Date;
 
 /**
- * The search parameter object for encounters
+ * The search parameter object for encounters. A convenience interface for building
+ * instances is provided by {@link EncounterSearchCriteriaBuilder}.
  *
  * @since 1.12
+ * @see EncounterSearchCriteriaBuilder
  */
 public class EncounterSearchCriteria {
 	
@@ -49,6 +51,20 @@ public class EncounterSearchCriteria {
 	
 	private boolean includeVoided;
 
+	/**
+	 * Instead of calling this constructor directly, it is recommended to use {@link EncounterSearchCriteriaBuilder}.
+	 * @param patient the patient the encounter is for
+	 * @param location the location this encounter took place
+	 * @param fromDate the minimum date (inclusive) the encounter took place
+	 * @param toDate the maximum date (exclusive) the encounter took place
+	 * @param dateChanged the minimum date the encounter was changed
+	 * @param enteredViaForms the form that entered this encounter must be in this collection
+	 * @param encounterTypes the type of the encounter must be in this collection
+	 * @param providers the provider of the encounter must be in this collection
+	 * @param visitTypes the visit types of the encounter must be in this collection
+	 * @param visits the visits of the encounter must be in this collection
+	 * @param includeVoided whether to include the voided encounters or not
+	 */
 	public EncounterSearchCriteria(Patient patient, Location location, Date fromDate, Date toDate, Date dateChanged,
 								   Collection<Form> enteredViaForms, Collection<EncounterType> encounterTypes,
 								   Collection<Provider> providers, Collection<VisitType> visitTypes,
@@ -102,7 +118,7 @@ public class EncounterSearchCriteria {
 	}
 
 	/**
-	 * @return the form that entered this encounter must be in this list
+	 * @return the form that entered this encounter must be in this collection
 	 */
 	public Collection<Form> getEnteredViaForms() {
 		return enteredViaForms;

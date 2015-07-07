@@ -14,17 +14,33 @@ import org.openmrs.*;
 import java.util.Collection;
 import java.util.Date;
 
+/**
+ * A convenience builder for {@link EncounterSearchCriteria}. Create a builder, set
+ * its properties to desired values and finally call {@link #createEncounterSearchCriteria()}
+ * to create the actual search criteria instance.
+ * @see EncounterSearchCriteria
+ */
 public class EncounterSearchCriteriaBuilder {
     private Patient patient;
+
     private Location location;
+
     private Date fromDate;
+
     private Date toDate;
+
     private Date dateChanged;
+
     private Collection<Form> enteredViaForms;
+
     private Collection<EncounterType> encounterTypes;
+
     private Collection<Provider> providers;
+
     private Collection<VisitType> visitTypes;
+
     private Collection<Visit> visits;
+
     private boolean includeVoided;
 
     /**
@@ -37,7 +53,7 @@ public class EncounterSearchCriteriaBuilder {
     }
 
     /**
-     * @param location the location this encounter took place
+     * @param location the location the encounter took place
      * @return this builder instance
      */
     public EncounterSearchCriteriaBuilder setLocation(Location location) {
@@ -46,7 +62,7 @@ public class EncounterSearchCriteriaBuilder {
     }
 
     /**
-     * @param fromDate the minimum date (inclusive) this encounter took place
+     * @param fromDate the minimum date (inclusive) the encounter took place
      * @return this builder instance
      */
     public EncounterSearchCriteriaBuilder setFromDate(Date fromDate) {
@@ -55,7 +71,7 @@ public class EncounterSearchCriteriaBuilder {
     }
 
     /**
-     * @param toDate toDate the maximum date (exclusive) this encounter took place
+     * @param toDate the maximum date (exclusive) the encounter took place
      * @return this builder instance
      */
     public EncounterSearchCriteriaBuilder setToDate(Date toDate) {
@@ -64,7 +80,7 @@ public class EncounterSearchCriteriaBuilder {
     }
 
     /**
-     * @param dateChanged the minimum date this encounter was changed
+     * @param dateChanged the minimum date the encounter was changed
      * @return this builder instance
      */
     public EncounterSearchCriteriaBuilder setDateChanged(Date dateChanged) {
@@ -131,6 +147,10 @@ public class EncounterSearchCriteriaBuilder {
         return this;
     }
 
+    /**
+     * Create an {@link EncounterSearchCriteria} with the properties of this builder instance.
+     * @return a new search criteria instance
+     */
     public EncounterSearchCriteria createEncounterSearchCriteria() {
         return new EncounterSearchCriteria(patient, location, fromDate, toDate, dateChanged, enteredViaForms,
                 encounterTypes, providers, visitTypes, visits, includeVoided);
