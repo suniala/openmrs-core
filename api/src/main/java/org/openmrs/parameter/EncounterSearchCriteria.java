@@ -9,16 +9,16 @@
  */
 package org.openmrs.parameter;
 
+import java.util.Collection;
+import java.util.Date;
+
 import org.openmrs.EncounterType;
 import org.openmrs.Form;
 import org.openmrs.Location;
 import org.openmrs.Patient;
 import org.openmrs.Provider;
-import org.openmrs.VisitType;
 import org.openmrs.Visit;
-
-import java.util.Collection;
-import java.util.Date;
+import org.openmrs.VisitType;
 
 /**
  * The search parameter object for encounters. A convenience interface for building

@@ -9,10 +9,16 @@
  */
 package org.openmrs.parameter;
 
-import org.openmrs.*;
-
 import java.util.Collection;
 import java.util.Date;
+
+import org.openmrs.EncounterType;
+import org.openmrs.Form;
+import org.openmrs.Location;
+import org.openmrs.Patient;
+import org.openmrs.Provider;
+import org.openmrs.Visit;
+import org.openmrs.VisitType;
 
 /**
  * A convenience builder for {@link EncounterSearchCriteria}. Create a builder, set
