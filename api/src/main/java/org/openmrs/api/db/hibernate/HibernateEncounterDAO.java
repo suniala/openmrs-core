@@ -111,63 +111,50 @@ public class HibernateEncounterDAO implements EncounterDAO {
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public List<Encounter> getEncounters(EncounterSearchCriteria encounterSearchCriteria) {
-		
-		Patient patient = encounterSearchCriteria.getPatient();
-		Location location = encounterSearchCriteria.getLocation();
-		Date fromDate = encounterSearchCriteria.getFromDate();
-		Date toDate = encounterSearchCriteria.getToDate();
-		Date dateChanged = encounterSearchCriteria.getDateChanged();
-		Collection<Form> enteredViaForms = encounterSearchCriteria.getEnteredViaForms();
-		Collection<EncounterType> encounterTypes = encounterSearchCriteria.getEncounterTypes();
-		Collection<Provider> providers = encounterSearchCriteria.getProviders();
-		Collection<VisitType> visitTypes = encounterSearchCriteria.getVisitTypes();
-		Collection<Visit> visits = encounterSearchCriteria.getVisits();
-		Boolean includeVoided = encounterSearchCriteria.getIncludeVoided();
-		
+	public List<Encounter> getEncounters(EncounterSearchCriteria searchCriteria) {
 		Criteria crit = sessionFactory.getCurrentSession().createCriteria(Encounter.class);
 		
-		if (patient != null && patient.getPatientId() != null) {
-			crit.add(Restrictions.eq("patient", patient));
+		if (searchCriteria.getPatient() != null && searchCriteria.getPatient().getPatientId() != null) {
+			crit.add(Restrictions.eq("patient", searchCriteria.getPatient()));
 		}
-		if (location != null && location.getLocationId() != null) {
-			crit.add(Restrictions.eq("location", location));
+		if (searchCriteria.getLocation() != null && searchCriteria.getLocation().getLocationId() != null) {
+			crit.add(Restrictions.eq("location", searchCriteria.getLocation()));
 		}
-		if (fromDate != null) {
-			crit.add(Restrictions.ge("encounterDatetime", fromDate));
+		if (searchCriteria.getFromDate() != null) {
+			crit.add(Restrictions.ge("encounterDatetime", searchCriteria.getFromDate()));
 		}
-		if (toDate != null) {
-			crit.add(Restrictions.le("encounterDatetime", toDate));
+		if (searchCriteria.getToDate() != null) {
+			crit.add(Restrictions.le("encounterDatetime", searchCriteria.getToDate()));
 		}
-		if (dateChanged != null) {
+		if (searchCriteria.getDateChanged() != null) {
 			crit.add(
 					Restrictions.or(
 							Restrictions.and(
 									Restrictions.isNull("dateChanged"),
-									Restrictions.ge("dateCreated", dateChanged)
+									Restrictions.ge("dateCreated", searchCriteria.getDateChanged())
 							),
-							Restrictions.ge("dateChanged", dateChanged)
+							Restrictions.ge("dateChanged", searchCriteria.getDateChanged())
 					)
 			);
 		}
-		if (enteredViaForms != null && enteredViaForms.size() > 0) {
-			crit.add(Restrictions.in("form", enteredViaForms));
+		if (searchCriteria.getEnteredViaForms() != null && searchCriteria.getEnteredViaForms().size() > 0) {
+			crit.add(Restrictions.in("form", searchCriteria.getEnteredViaForms()));
 		}
-		if (encounterTypes != null && encounterTypes.size() > 0) {
-			crit.add(Restrictions.in("encounterType", encounterTypes));
+		if (searchCriteria.getEncounterTypes() != null && searchCriteria.getEncounterTypes().size() > 0) {
+			crit.add(Restrictions.in("encounterType", searchCriteria.getEncounterTypes()));
 		}
-		if (providers != null && providers.size() > 0) {
+		if (searchCriteria.getProviders() != null && searchCriteria.getProviders().size() > 0) {
 			crit.createAlias("encounterProviders", "ep");
-			crit.add(Restrictions.in("ep.provider", providers));
+			crit.add(Restrictions.in("ep.provider", searchCriteria.getProviders()));
 		}
-		if (visitTypes != null && visitTypes.size() > 0) {
+		if (searchCriteria.getVisitTypes() != null && searchCriteria.getVisitTypes().size() > 0) {
 			crit.createAlias("visit", "v");
-			crit.add(Restrictions.in("v.visitType", visitTypes));
+			crit.add(Restrictions.in("v.visitType", searchCriteria.getVisitTypes()));
 		}
-		if (visits != null && visits.size() > 0) {
-			crit.add(Restrictions.in("visit", visits));
+		if (searchCriteria.getVisits() != null && searchCriteria.getVisits().size() > 0) {
+			crit.add(Restrictions.in("visit", searchCriteria.getVisits()));
 		}
-		if (!includeVoided) {
+		if (!searchCriteria.getIncludeVoided()) {
 			crit.add(Restrictions.eq("voided", false));
 		}
 		crit.addOrder(Order.asc("encounterDatetime"));
