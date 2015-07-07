@@ -140,8 +140,15 @@ public class HibernateEncounterDAO implements EncounterDAO {
 			crit.add(Restrictions.le("encounterDatetime", toDate));
 		}
 		if (dateChanged != null) {
-			crit.add(Restrictions.or(Restrictions.and(Restrictions.isNull("dateChanged"), Restrictions.ge("dateCreated",
-			    dateChanged)), Restrictions.ge("dateChanged", dateChanged)));
+			crit.add(
+					Restrictions.or(
+							Restrictions.and(
+									Restrictions.isNull("dateChanged"),
+									Restrictions.ge("dateCreated", dateChanged)
+							),
+							Restrictions.ge("dateChanged", dateChanged)
+					)
+			);
 		}
 		if (enteredViaForms != null && enteredViaForms.size() > 0) {
 			crit.add(Restrictions.in("form", enteredViaForms));
