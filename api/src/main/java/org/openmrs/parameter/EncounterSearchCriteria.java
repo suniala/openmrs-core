@@ -56,7 +56,7 @@ public class EncounterSearchCriteria {
 	 * @param patient the patient the encounter is for
 	 * @param location the location this encounter took place
 	 * @param fromDate the minimum date (inclusive) the encounter took place
-	 * @param toDate the maximum date (exclusive) the encounter took place
+	 * @param toDate the maximum date (inclusive) the encounter took place
 	 * @param dateChanged the minimum date the encounter was changed
 	 * @param enteredViaForms the form that entered this encounter must be in this collection
 	 * @param encounterTypes the type of the encounter must be in this collection
@@ -104,7 +104,7 @@ public class EncounterSearchCriteria {
 	}
 
 	/**
-	 * @return the maximum date (exclusive) this encounter took place
+	 * @return the maximum date (inclusive) this encounter took place
 	 */
 	public Date getToDate() {
 		return toDate;

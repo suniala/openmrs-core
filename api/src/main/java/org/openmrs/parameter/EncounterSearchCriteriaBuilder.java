@@ -77,7 +77,7 @@ public class EncounterSearchCriteriaBuilder {
     }
 
     /**
-     * @param toDate the maximum date (exclusive) the encounter took place
+     * @param toDate the maximum date (inclusive) the encounter took place
      * @return this builder instance
      */
     public EncounterSearchCriteriaBuilder setToDate(Date toDate) {
